@@ -4552,8 +4552,8 @@
             visible: 0,
             id: "f",
             type: "game",
-            code: "heroku-worldwide-f",
-            at: p.heroku("danger1master"),
+            code: "glitch-worldwide-m",
+            at: p.glitch("project-friends"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
