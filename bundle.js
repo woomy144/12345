@@ -4550,9 +4550,9 @@
         servers: [
           {
             visible: 0,
-            id: "f",
+            id: "d",
             type: "game",
-            code: "heroku-worldwide-m",
+            code: "heroku-worldwide-d",
             at: p.heroku("danger1master"),
             prefer: !0
             // featured: 1, // For Featured Status.
