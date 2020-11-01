@@ -1,18 +1,11 @@
 # Update
 
-- add xkxbosses
-- add 2 game modes ffa 2tdm
-- nothing
+- add awp-(5/3)
+- 
+- 
 
 # Event
+- Free testbed
+- event testbed end in 03.11.2020
+- token-vazora
 
--N/A
--N/A
--N/A
--N/A
-
--N/A
-
--N/A
-
--N/A
