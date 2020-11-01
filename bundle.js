@@ -4550,18 +4550,18 @@
         servers: [
           {
             visible: 0,
-            id: "d",
+            id: "f",
             type: "game",
-            code: "heroku-worldwide-d",
+            code: "heroku-worldwide-f",
             at: p.heroku("danger1master"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
           {
             visible: 0,
-            id: "f",
+            id: "o",
             type: "ek'sffa",
-            code: "glitch-worldwide-f",
+            code: "glitch-worldwide-o",
             at: p.glitch("project-friends1")
             // featured: 1, // For Featured Status.
           }
