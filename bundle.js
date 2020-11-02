@@ -3714,7 +3714,7 @@
                     );
                   } else
                     W[6].draw(
-                      "Arras Template",
+                      "Forge Arras",
                       h + 200,
                       m - 42 - 2,
                       15,
