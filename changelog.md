@@ -8,7 +8,7 @@
 
 -UPGATE-02.11.2020
 -added awp-ice
-
+-added awp-54*3
 
 # Event
 - Free testbed
