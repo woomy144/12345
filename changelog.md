@@ -11,8 +11,9 @@
 -added awp-6u9i
 
 
-# Event
-- Free testbed
-- event testbed end in 03.11.2020
-- token-vazora
+-UPDATE-03.11.2020
+-added new boss awp-ega and awp-ega mk2
+-bosses can spawn
 
+# Event
+- free testbed ended
