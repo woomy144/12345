@@ -15,6 +15,7 @@
 -added new boss awp-ega and awp-ega mk2
 -bosses can spawn
 -added Fallen Booster
+-added Fallen Overlord
 
 # Event
 - free testbed ended
