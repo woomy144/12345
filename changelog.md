@@ -9,6 +9,7 @@
 -UPGATE-02.11.2020
 -added awp-ice
 -added awp-6u9i
+-added Fallen Booster
 
 
 -UPDATE-03.11.2020
