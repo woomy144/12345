@@ -16,11 +16,12 @@
 -added Fallen Booster
 -added Fallen Overlord
 --------------------------------------
--UPDATE-08.11.2020 mini
+-UPDATE-08.11.2020 Big
 -added guardian boss
 -added god of guardians boss
 -bosses spawn
 -added expertengineer tank
+-added dual gunner tank
 ---------------------------------------
 # Event
 - free testbed ended
