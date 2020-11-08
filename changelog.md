@@ -9,6 +9,11 @@
 -UPGATE-02.11.2020
 -added awp-ice
 -added awp-6u9i
+-----------------------------
+-UPDATE-08.11.2020 mini
+-added guardian boss
+-added god of guardians boss
+-bosses spawn
 
 
 -UPDATE-03.11.2020
