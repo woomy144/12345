@@ -20,6 +20,7 @@
 -added guardian boss
 -added god of guardians boss
 -bosses spawn
+-added expertengineer tank
 ---------------------------------------
 # Event
 - free testbed ended
