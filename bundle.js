@@ -4559,6 +4559,15 @@
           },
           {
             visible: 0,
+            id: "a",
+            type: "AWP-BOSS-RUSHHH",
+            code: "heroku-local-a",
+            at: p.heroku("awpbossrush"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
             id: "o",
             type: "ek'sffa",
             code: "glitch-worldwide-o",
