@@ -4560,7 +4560,7 @@
           {
             visible: 0,
             id: "a",
-            type: "AWP-BOSS-RUSHHH",
+            type: "a",
             code: "heroku-local-a",
             at: p.heroku("awpbossrush"),
             prefer: !0
