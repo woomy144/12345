@@ -1,11 +1,8 @@
 # Update
 
 -UPGATE-01.11.2020
-
-
 - add awp-(5/3)
-
-
+--------------------------------------
 -UPGATE-02.11.2020
 -added awp-ice
 -added awp-6u9i
@@ -23,5 +20,11 @@
 -added expertengineer tank
 -added dual gunner tank
 ---------------------------------------
+-UPDATE-14.11.2020
+-added doublebuilder tank
+-added bentbuilder tank
+-cooming soon added penta boss
+-UPGATE-01.11.2020
+- add awp-(5/3)
 # Event
 - free testbed ended
