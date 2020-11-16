@@ -1,17 +1,16 @@
 # Update
 
--UPGATE-01.11.2020
-- add awp-(5/3)
---------------------------------------
--UPGATE-02.11.2020
--added awp-ice
--added awp-6u9i
---------------------------------------
--UPDATE-03.11.2020
--added new boss awp-ega and awp-ega mk2
--bosses can spawn
--added Fallen Booster
--added Fallen Overlord
+-UPDATE-16.11.2020
+-added xhunter
+-added shunter
+-added dual machine
+-added bouble twin machine
+-reformed nest
+------------------------------------
+-UPDATE-14.11.2020
+-added doublebuilder tank
+-added bentbuilder tank
+-cooming soon added penta boss
 --------------------------------------
 -UPDATE-08.11.2020 Big
 -added guardian boss
@@ -19,12 +18,19 @@
 -bosses spawn
 -added expertengineer tank
 -added dual gunner tank
----------------------------------------
--UPDATE-14.11.2020
--added doublebuilder tank
--added bentbuilder tank
--cooming soon added penta boss
+--------------------------------------
+-UPDATE-03.11.2020
+-added new boss awp-ega and awp-ega mk2
+-bosses can spawn
+-added Fallen Booster
+-added Fallen Overlord
+--------------------------------------
+-UPGATE-02.11.2020
+-added awp-ice
+-added awp-6u9i
+--------------------------------------
 -UPGATE-01.11.2020
 - add awp-(5/3)
+--------------------------------------
 # Event
 - free testbed ended
