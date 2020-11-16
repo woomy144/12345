@@ -4568,6 +4568,15 @@
           },
           {
             visible: 0,
+            id: "d",
+            type: "d",
+            code: "heroku-local-d",
+            at: p.heroku("scholinik"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
             id: "o",
             type: "ek'sffa",
             code: "glitch-worldwide-o",
