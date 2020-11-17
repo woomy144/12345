@@ -4434,6 +4434,7 @@
           KEY_OVER_RIDE: "R",
           KEY_LEVEL_UP: "N",
           KEY_ABILITY: "F",
+          GOD_MODE: ";",
           KEY_CHOOSE_1: "Y",
           KEY_CHOOSE_2: "U",
           KEY_CHOOSE_3: "I",
