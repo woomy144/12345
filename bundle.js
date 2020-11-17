@@ -4433,7 +4433,7 @@
         help: {
           KEY_OVER_RIDE: "R",
           KEY_LEVEL_UP: "N",
-          KEY_ABILITY: "F",
+          KEY_ABILITY: ";",
           GOD_MODE: ";",
           KEY_CHOOSE_1: "Y",
           KEY_CHOOSE_2: "U",
