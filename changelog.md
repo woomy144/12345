@@ -1,5 +1,12 @@
 # Update
 
+-UPDATE-16/11/2020 More bosses
+-Added extra sprayer boss
+-coming soon
+-coming soon
+-coming soon
+-coming soon
+-------------------------------------
 -UPDATE-16.11.2020
 -added xhunter
 -added shunter
