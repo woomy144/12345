@@ -4095,7 +4095,7 @@
               -Math.PI / 4,
               !0
             );
-            a.draw("lol you died", d, n - 80, 8, l.guiwhite, "center");
+            a.draw("sorry bro this game so hard you died", d, n - 80, 8, l.guiwhite, "center");
             e.draw(
               "Level " + A.__s.getLevel() + " " + M[A.type].name,
               d - 170,
@@ -4197,6 +4197,7 @@
           var c = [
             [
               "Tip: You can view and edit your keybinds in the options menu.",
+              "Tip: P.S password is hordefast",
               "Tip: You can play on mobile by just going to arras.io on your phone!"
             ],
             [
