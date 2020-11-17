@@ -4550,6 +4550,15 @@
         servers: [
           {
             visible: 0,
+            id: "4",
+            type: "4tdm",
+            code: "heroku-worldwide-4",
+            at: p.heroku("r38v4v"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
             id: "f",
             type: "ffa",
             code: "heroku-worldwide-f",
