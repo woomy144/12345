@@ -4567,32 +4567,6 @@
             at: p.heroku("ohhhhhhhhhhhh"),
             prefer: !0
             // featured: 1, // For Featured Status.
-          },
-          {
-            visible: 0,
-            id: "a",
-            type: "a",
-            code: "heroku-local-a",
-            at: p.heroku("awpbossrush"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          },
-          {
-            visible: 0,
-            id: "d",
-            type: "d",
-            code: "heroku-local-d",
-            at: p.heroku("scholinik"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          },
-          {
-            visible: 0,
-            id: "o",
-            type: "ek'sffa",
-            code: "glitch-worldwide-o",
-            at: p.glitch("project-friends1")
-            // featured: 1, // For Featured Status.
           }
         ]
           .map((a, e) => ({ data: a, i: e }))
