@@ -3,6 +3,8 @@
 UPDATE-21/11/2020 SMAL update
 -added molot boss
 -added awp-1 boss
+-reformed class bots
+-event bots developer 3days
 -------------------------------------
 -UPDATE-16/11/2020 More bosses
 -Added extra sprayer boss
