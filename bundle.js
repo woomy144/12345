@@ -4561,6 +4561,24 @@
           },
           {
             visible: 0,
+            id: "a",
+            type: "bosses",
+            code: "heroku-worldwide-a",
+            at: p.heroku("awpbossrush"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
+            id: "d",
+            type: "4dom",
+            code: "heroku-worldwide-d",
+            at: p.heroku("scholinik"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },
+          {
+            visible: 0,
             id: "f",
             type: "ffa",
             code: "heroku-worldwide-f",
