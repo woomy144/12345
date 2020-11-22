@@ -1,5 +1,11 @@
 # Update
 
+UPDATE-22/11/2020 MORE
+-added twin laucher tank
+-added ayto sniper tank
+-added controller tank
+-added fallen skimmer boss
+------------------------------------
 UPDATE-21/11/2020 SMAL update
 -added molot boss
 -added awp-1 boss
