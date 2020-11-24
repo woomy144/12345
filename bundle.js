@@ -4555,7 +4555,7 @@
             id: "4",
             type: "4tdm",
             code: "heroku-worldwide-4",
-            at: p.heroku("r38v4v"),
+            at: p.heroku("vazora1"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
@@ -4564,7 +4564,7 @@
             id: "a",
             type: "bosses",
             code: "heroku-worldwide-a",
-            at: p.heroku("awpbossrush"),
+            at: p.heroku("vazora2"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
@@ -4573,7 +4573,7 @@
             id: "d",
             type: "4dom",
             code: "heroku-worldwide-d",
-            at: p.heroku("scholinik"),
+            at: p.heroku("vazora3"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
@@ -4582,7 +4582,7 @@
             id: "f",
             type: "ffa",
             code: "heroku-worldwide-f",
-            at: p.heroku("ohhhhhhhhhhhh"),
+            at: p.heroku("vazora4"),
             prefer: !0
             // featured: 1, // For Featured Status.
           }
