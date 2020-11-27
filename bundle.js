@@ -3718,7 +3718,7 @@
                       h + 200,
                       m - 42 - 2,
                       15,
-                      l.guiwhite,
+                      l.lgreen,
                       "right"
                     );
                   W[2].draw(
