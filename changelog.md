@@ -1,5 +1,17 @@
 # Update
 
+UPDATE-27/11/2020
+added-auto gunner tank
+added-auto streamliner tnks
+added-swarm gunner tank
+added-constructorsquare boss
+added-auto swarm gunner tank
+added-granade sentry
+added- mini defender sentry
+added-elite trapper sentry
+added-auto 9 tank
+added-destroy sniper tnks
+--------------------------------------
 UPDATE-22/11/2020 MORE
 -added twin laucher tank
 -added ayto sniper tank
