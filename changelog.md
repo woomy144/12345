@@ -1,24 +1,24 @@
 # Update
 
-UPDATE-27/11/2020
-added-auto gunner tank
-added-auto streamliner tnks
-added-swarm gunner tank
-added-constructorsquare boss
-added-auto swarm gunner tank
-added-granade sentry
-added- mini defender sentry
-added-elite trapper sentry
-added-auto 9 tank
-added-destroy sniper tnks
+-UPDATE-27/11/2020
+-added-auto gunner tank
+-added-auto streamliner tnks
+-added-swarm gunner tank
+-added-constructorsquare boss
+-added-auto swarm gunner tank
+-added-granade sentry
+-added- mini defender sentry
+-added-elite trapper sentry
+-added-auto 9 tank
+-added-destroy sniper tank
 --------------------------------------
-UPDATE-22/11/2020 MORE
+-UPDATE-22/11/2020 MORE
 -added twin laucher tank
 -added ayto sniper tank
 -added controller tank
 -added fallen skimmer boss
 ------------------------------------
-UPDATE-21/11/2020 SMAL update
+-UPDATE-21/11/2020 SMAL update
 -added molot boss
 -added awp-1 boss
 -reformed class bots
