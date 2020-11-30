@@ -75,7 +75,7 @@ h3 {
   font-size: 14px;
   font-weight: bold;
   line-height: 13px;
-  padding-left: 10px;
+  padding-left: 0px;
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.15);
