@@ -153,9 +153,9 @@ input.error {
   position: relative;
   margin: 0 auto;
   max-height: 390px;
-  padding: 10px;
+  padding: 33px;
   border-radius: 5px;
-  background-color: blue;
+  background-color: #DDE6EB;
   box-sizing: border-box;
   overflow: hidden;
 }
