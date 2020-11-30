@@ -155,7 +155,7 @@ input.error {
   max-height: 390px;
   padding: 10px;
   border-radius: 5px;
-  background-color: red;
+  background-color: blue;
   box-sizing: border-box;
   overflow: hidden;
 }
