@@ -4590,7 +4590,7 @@
            visible: 0,
             id: "o",
             type: "dev",
-            code: "heroku-us-o",
+            code: "heroku-sv-o",
             at: p.heroku("devservers1"),
             prefer: !0
             // featured: 1, // For Featured Status.
