@@ -191,8 +191,8 @@ body.mobile #linkHolder { display: none; }
 
 .startMenuHolder {
   width: 350px;
-  height: 1150px;
-  padding: 10px;
+  height: 350px;
+  padding: 99px;
   overflow: hidden;
   display: inline-block;
   vertical-align: text-top;
