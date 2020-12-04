@@ -150,11 +150,11 @@ input.error {
 }
 
 #startMenu {
-  width: 1000px;
+  width: 800px;
   position: relative;
   margin: 0 auto;
-  max-height: 600px;
-  padding: 10px;
+  max-height: 350px;
+  padding: 20px;
   border-radius: 5px;
   background-color: #DDE6EB;
   box-sizing: border-box;
