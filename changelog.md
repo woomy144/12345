@@ -1,5 +1,17 @@
 # Update
 
+-UPDATE-05/12/2020
+-added triple dual tank
+-added auto 4 tank
+-added eo dual tank
+-added triple baby tank
+-added ordskimmer tank
+-added dordrive tank
+-added double skimmer tank
+-added proda palisade boss
+-added equnometer boss
+-added awp-log awp-boss
+---------------------------------
 -UPDATE-27/11/2020
 -added-auto gunner tank
 -added-auto streamliner tnks
