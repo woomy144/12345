@@ -4536,6 +4536,7 @@
             [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
             [
               { id: "f", to: "FFA" },
+              { id: "1", to: "1 Team", end: "1TDM" },
               { id: "2", to: "2 Team", end: "2TDM" },
               { id: "3", to: "Defender", end: "Survival Mode" },
               { id: "4", to: "4 Team", end: "4TDM" }
@@ -4588,9 +4589,9 @@
           },
           {
            visible: 0,
-            id: "be",
+            id: "1",
             type: "x-k-x",
-            code: "heroku-sv-be",
+            code: "heroku-sv-1",
             at: p.heroku("devservers1"),
             prefer: !0
             // featured: 1, // For Featured Status.
