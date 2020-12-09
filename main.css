@@ -190,9 +190,9 @@ body.mobile #linkHolder { display: none; }
 }
 
 .startMenuHolder {
-  width: 350px;
-  height: 350px;
-  padding: 10px;
+  width: 400px;
+  height: 400px;
+  padding: 13px;
   overflow: hidden;
   display: inline-block;
   vertical-align: text-top;
