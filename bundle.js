@@ -4592,7 +4592,7 @@
             id: "p",
             type: "dev",
             code: "local-sv-p",
-            at: p.Local("localhost:8000"),
+            at: p.Localhost("localhost:8000"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
