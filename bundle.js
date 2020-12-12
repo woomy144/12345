@@ -4591,7 +4591,7 @@
             visible: 0,
             id: "p",
             type: "dev",
-            code: "heroku-sv-p",
+            code: "local-sv-p",
             at: p.local("localhost:8000"),
             prefer: !0
             // featured: 1, // For Featured Status.
