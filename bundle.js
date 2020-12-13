@@ -4555,7 +4555,7 @@
             visible: 0,
             id: "4",
             type: "4tdm",
-            code: "heroku-worldwide-4",
+            code: "heroku-la-4",
             at: p.heroku("vazora1"),
             prefer: !0
             // featured: 1, // For Featured Status.
@@ -4564,7 +4564,7 @@
             visible: 0,
             id: "a",
             type: "bosses",
-            code: "heroku-worldwide-a",
+            code: "heroku-london-a",
             at: p.heroku("vazora2"),
             prefer: !0
             // featured: 1, // For Featured Status.
@@ -4573,7 +4573,7 @@
             visible: 0,
             id: "d",
             type: "4dom",
-            code: "heroku-worldwide-d",
+            code: "heroku-oregon-d",
             at: p.heroku("vazora3"),
             prefer: !0
             // featured: 1, // For Featured Status.
@@ -4582,17 +4582,8 @@
             visible: 0,
             id: "f",
             type: "ffa",
-            code: "heroku-worldwide-f",
+            code: "heroku-montreal-f",
             at: p.heroku("vazora4"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          },
-          {
-            visible: 0,
-            id: "p",
-            type: "dev",
-            code: "local-sv-p",
-            at: p.Localhost("localhost:8000"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
