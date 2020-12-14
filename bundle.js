@@ -4579,15 +4579,6 @@
             // featured: 1, // For Featured Status.
           },
           {
-             visible: 0,
-            id: "d",
-            type: "4dom",
-            code: "local-oregon-d",
-            at: p.heroku("vazora3"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          },
-          {
             visible: 0,
             id: "f",
             type: "ffa",
