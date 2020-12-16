@@ -4567,15 +4567,6 @@
           },
           {
             visible: 0,
-            id: "o",
-            type: "dev",
-            code: "heroku-london-o",
-            at: p.heroku("vazora2"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          },
-          {
-            visible: 0,
             id: "d",
             type: "4dom",
             code: "heroku-oregon-d",
