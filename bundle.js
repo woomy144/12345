@@ -3721,11 +3721,11 @@
                     );
                   } else
                     W[6].draw(
-                      "Arras Template",
+                      "Extra arras",
                       h + 200,
                       m - 42 - 2,
                       15,
-                      l.guiwhite,
+                      l.green,
                       "right"
                     );
                   W[2].draw(
