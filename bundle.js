@@ -415,6 +415,8 @@
           d = "Unknown Theme";
           let a = "";
           var c = h.indexOf("\x00");
+           var lol = (D.color != null) ? T(e(D.color), F.status.getColor(), F.status.getBlend()) : T(l.grey, F.status.getColor(), F.status.getBlend());
+            k(h, lol); 
           if (-1 === c) return null;
           d = h.slice(0, c) || d;
           h = h.slice(c + 1);
@@ -2744,7 +2746,8 @@
                           (D.length / 2 - r) * Math.sin(D.angle + m));
                     var C = f * (D.length / 2 - (1 === D.aspect ? w[A] : 0)),
                       L = (f * D.width) / 2,
-                      G = D.aspect;
+                      COLOR = D.color,
+                        G = D.aspect;
                     D = D.angle + m;
                     var X = L;
                     0 < G ? (X *= G) : 0 > G && (L *= -G);
@@ -2752,15 +2755,19 @@
                     let b = Math.atan2(L, C);
                     X = Math.sqrt(C * C + X * X);
                     C = Math.sqrt(C * C + L * L);
-                    var lol =
-                      D.color != null
-                        ? T(
-                            e(D.color),
-                            F.status.getColor(),
-                            F.status.getBlend()
-                          )
-                        : T(l.grey, F.status.getColor(), F.status.getBlend());
-                    k(h, lol);
+                      if (COLOR==null){
+                        COLOR = 16
+                      }
+                      k(h, e(COLOR));
+                //*    var lol =
+                   //   D.color != null
+                    //    ? T(
+                      //      e(D.color),
+                     //       F.status.getColor(),
+                      //      F.status.getBlend()
+                      //    )
+                      //  : T(l.grey, F.status.getColor(), F.status.getBlend());
+                 //   k(h, lol); */
                     d.beginPath();
                     d.moveTo(v + X * Math.cos(D + G), r + X * Math.sin(D + G));
                     d.lineTo(
@@ -3714,11 +3721,11 @@
                     );
                   } else
                     W[6].draw(
-                      "Extra-arras.io",
+                      "Arras Template",
                       h + 200,
                       m - 42 - 2,
                       15,
-                      l.lgreen,
+                      l.guiwhite,
                       "right"
                     );
                   W[2].draw(
@@ -4095,7 +4102,7 @@
               -Math.PI / 4,
               !0
             );
-            a.draw("sorry bro this game so hard you died", d, n - 80, 8, l.guiwhite, "center");
+            a.draw("lol you died", d, n - 80, 8, l.guiwhite, "center");
             e.draw(
               "Level " + A.__s.getLevel() + " " + M[A.type].name,
               d - 170,
@@ -4197,7 +4204,6 @@
           var c = [
             [
               "Tip: You can view and edit your keybinds in the options menu.",
-              "Tip: P.S password is hordefast",
               "Tip: You can play on mobile by just going to arras.io on your phone!"
             ],
             [
@@ -4434,7 +4440,7 @@
         help: {
           KEY_OVER_RIDE: "R",
           KEY_LEVEL_UP: "N",
-          KEY_ABILITY: ";",
+          KEY_ABILITY: "F",
           GOD_MODE: ";",
           KEY_CHOOSE_1: "Y",
           KEY_CHOOSE_2: "U",
@@ -4536,7 +4542,6 @@
             [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
             [
               { id: "f", to: "FFA" },
-              { id: "1", to: "1 Team", end: "1TDM" },
               { id: "2", to: "2 Team", end: "2TDM" },
               { id: "3", to: "Defender", end: "Survival Mode" },
               { id: "4", to: "4 Team", end: "4TDM" }
