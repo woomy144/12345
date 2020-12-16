@@ -3684,11 +3684,11 @@
                 else {
                   if (b.showDebug) {
                     W[6].draw(
-                      "Arras Template",
+                      "Extra Arras",
                       h + 200,
                       m - 84 - 2,
                       15,
-                      l.guiwhite,
+                      l.green,
                       "right"
                     );
                     let b = t.getPeriodicAverage();
