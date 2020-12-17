@@ -1,5 +1,12 @@
 # Update
 
+-UPDATE-17/12/2020
+-added twintion
+-added vulcanire
+-added blacker
+-added Mragrixe
+-added sidgig
+--------------------------------
 -UPDATE-13/12/2020
 -added awp-hyper
 -added snakles
