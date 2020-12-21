@@ -1,5 +1,12 @@
 # Update
 
+-UPDATE-21/12/2020
+-added twinlilfactory
+-added ultra trapper
+-added awp-deagle
+-added fallen minigun
+-added red factory
+-----------------------------------
 -UPDATE-17/12/2020
 -added twintion
 -added vulcanire
