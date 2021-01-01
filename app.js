@@ -63,25 +63,18 @@ var app =
 	var global = __webpack_require__(1);
 	var util = __webpack_require__(2);
 
-	// ======================================================================
-	// Chat System.
-	// ======================================================================
-	var modifyOverlyLongName = function modifyOverlyLongName(name, fontSize, maxLength) {
-		var nameLength = measureText(name, fontSize);
+	// ==============================================================================
+	// Spaceball Shooter.
+	// ==============================================================================
+	resources.load(['img/space_ball-071bc4b90d.png']);
 
-		// Need to check the length of name in pixels, otherwise,
-		// Arabic names tend to mess up the display.
-		// Examples:
-		// ﷽﷽﷽﷽﷽﷽﷽﷽﷽
-		// ﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽﷽
-		if (nameLength >= maxLength) {
-			return 'a spoopy 👻';
-		} else {
-			return name;
-		}
+	var spaceBallSpriteInfo = {
+		url: 'img/space_ball-071bc4b90d.png',
+		width: 93,
+		height: 100,
+		frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 	};
-	// ======================================================================
-
+	// ==============================================================================
 
 	// Get color
 	var config = {
@@ -376,17 +369,7 @@ var app =
 	    minimap = [],
 	    upgradeSpin = 0,
 	    messages = [],
-
-
-	// ============================================================
-	// Chat System.
-	// ============================================================
-	chatMessages = [],
-
-
-	// ============================================================
-
-	messageFade = 0,
+	    messageFade = 0,
 	    newMessage = 0,
 	    metrics = {
 		latency: 0,
@@ -601,15 +584,6 @@ var app =
 
 	global.target = target;
 	global.player = player;
-
-	// ============================================================
-	// Chat system.
-	// ============================================================
-	global.playersList = [];
-	global.playersListIndex = 0;
-	global.selectedPlayerId = 0;
-	// ============================================================
-
 	global.canUpgrade = false;
 	global.canSkill = false;
 	global.message = '';
@@ -931,13 +905,6 @@ var app =
 								z.twiggle = get.next();
 								z.layer = get.next();
 								z.color = get.next();
-
-								// =============================================
-								// Chat System.
-								// =============================================
-								z.roleColorIndex = get.next();
-								// =============================================
-
 								// Update health, flagging as injured if needed
 								if (isNew) {
 									z.health = get.next() / 255;
@@ -1298,45 +1265,6 @@ var app =
 								global.message = '';
 							}
 						}break;
-
-					// =============================================================
-					// Chat System.
-					// =============================================================
-					// Receive player id.
-					case 'I':
-						{
-							if (global.player) {
-								console.log('Player id received: ' + m[0]);
-								player.id = m[0];
-								global.player.id = m[0];
-							}
-						}break;
-
-					// Receive player name.
-					case 'N':
-						{
-							if (global.player) {
-								console.log('Player name received: ' + m[0]);
-								global.playerName = player.name = m[0];
-							}
-						}break;
-
-					// Receive players list.
-					case 'L':
-						{
-							// ==================================================
-							// The array contains alternate id and name.
-							// For example:
-							// m[0] => Player Id
-							// m[1] => Player Name
-							// m[2] => Player Id
-							// m[3] => Player Name
-							// ==================================================
-							global.playersList = m;
-						}break;
-					// =============================================================
-
-					//
 					case 'R':
 						{
 							// room setup
@@ -1399,20 +1327,6 @@ var app =
 								global.message = '';
 							}
 						}break;
-
-					// Original.
-					// case 'm': { // message
-					//     messages.push({
-					//         text: m[0],
-					//         status: 2,
-					//         alpha: 0,
-					//         time: Date.now(),
-					//     });
-					// } break;
-
-					// =============================================================================
-					// Chat System.
-					// =============================================================================
 					case 'm':
 						{
 							// message
@@ -1420,26 +1334,9 @@ var app =
 								text: m[0],
 								status: 2,
 								alpha: 0,
-								time: Date.now(),
-								colorIndex: m[1]
+								time: Date.now()
 							});
 						}break;
-
-					case 'h':
-						{
-							// Chat message
-							chatMessages.push({
-								status: 2,
-								alpha: 0,
-								time: Date.now(),
-								playerName: m[0],
-								text: m[1],
-								colorIndex: m[2]
-							});
-						}break;
-					// =============================================================================
-
-
 					case 'u':
 						{
 							// uplink
@@ -1942,6 +1839,40 @@ var app =
 			context.globalAlpha = 1;
 			setColor(context, mixColors(getColor(instance.color), render.status.getColor(), render.status.getBlend()));
 			drawPoly(context, xx, yy, drawSize / m.size * m.realSize, m.shape, rot);
+
+			// ===========================================================================
+			// Spaceball Shooter bullet.
+			// ===========================================================================
+			if (instance.layer === 20) {
+				if (!instance.spaceBallSprite) {
+					var animationInfo = spaceBallSpriteInfo;
+					var destWidth = scale * ratio * animationInfo.width;
+					var destHeight = scale * ratio * animationInfo.height;
+
+					instance.spaceBallSprite = new Sprite(animationInfo.url, [0, 0], // Position
+					[animationInfo.width, animationInfo.height], // Source size 
+					[destWidth, destHeight], // Destination size
+					24, // Animation speed
+					animationInfo.frames, // Frames
+					null, // Direction (default is horizontal)
+					false); // Play once                   
+				}
+
+				var now = getNow();
+				var dt = instance.spaceBallTime ? (now - instance.spaceBallTime) / 1000.0 : 0;
+
+				// Add 90 degrees to align with the rotation of the bullet.
+				var rotation = rot + 180 * (Math.PI / 180);
+				var alpha = instance.render.status.getFade();
+
+				// dt, destX, destY, destXOffset, destYOffset,  rotation, alpha
+				instance.spaceBallSprite.update(dt, x, y, 0, 0, rotation, alpha);
+				instance.spaceBallSprite.render(ctx);
+
+				instance.spaceBallTime = now;
+			}
+			// ===========================================================================
+
 			// Draw turrets above us
 			if (source.turrets.length === m.turrets.length) {
 				for (var _i6 = 0; _i6 < m.turrets.length; _i6++) {
@@ -1993,29 +1924,7 @@ var app =
 		if (instance.nameplate && instance.id !== _gui.playerid) {
 			if (instance.render.textobjs == null) instance.render.textobjs = [TextObj(), TextObj()];
 			if (instance.name !== "\0") {
-				// ================================================================================
-				// Chat System.
-				// ================================================================================
-				var nameColor = color.guiwhite;
-				var colorIndex = instance.roleColorIndex;
-
-				if (colorIndex) {
-					nameColor = getColor(colorIndex);
-				}
-
-				var playerNameFontSize = 16;
-				var playerName = modifyOverlyLongName(instance.name, playerNameFontSize, 600);
-
-				// Draw other players' names.
-				instance.render.textobjs[0].draw(playerName, x, y - realSize - 30, playerNameFontSize, nameColor, 'center');
-				// ================================================================================
-
-				// Original.
-				// instance.render.textobjs[0].draw(
-				//     instance.name,
-				//     x, y - realSize - 30, 16, color.guiwhite, 'center'
-				// );
-
+				instance.render.textobjs[0].draw(instance.name, x, y - realSize - 30, 16, color.guiwhite, 'center');
 				instance.render.textobjs[1].draw(util.handleLargeNumber(instance.score, true), x, y - realSize - 16, 8, color.guiwhite, 'center');
 			} else {
 				instance.render.textobjs[0].draw('a spoopy 👻', x, y - realSize - 30, 16, color.lavender, 'center');
@@ -2281,14 +2190,7 @@ var app =
 					drawBar(_x25 - msg.len / 2, _x25 + msg.len / 2, _y + height / 2, height, color.black);
 					// Draw the text
 					ctx.globalAlpha = Math.min(1, msg.alpha);
-
-					// ==================================================================================
-					// Chat System.
-					// ==================================================================================
-					var chatColor = getColor(msg.colorIndex);
-					msg.textobj.draw(_text, _x25, _y + height / 2, height - 4, chatColor, 'center', true);
-					// ==================================================================================
-
+					msg.textobj.draw(_text, _x25, _y + height / 2, height - 4, color.guiwhite, 'center', true);
 					// Iterate and move
 					_y += vspacing + height;
 					if (msg.status > 1) {
@@ -2310,90 +2212,19 @@ var app =
 				ctx.globalAlpha = 1;
 			}
 
-			// ==============================================================================
-			// Chat System.
-			// ==============================================================================
-			{
-				// Draw chat messages
-				var _vspacing = 4;
-				var _height = 22;
-				var _x26 = 50;
-				var _y2 = global.screenHeight / 3 + spacing;
-
-				ctx.save();
-				ctx.lineCap = 'miter';
-				ctx.lineJoin = 'miter';
-
-				// Draw each message
-				for (var _i8 = chatMessages.length - 1; _i8 >= 0; _i8--) {
-					var chatMessageObj = chatMessages[_i8];
-					var playerName = chatMessageObj.playerName;
-					var message = chatMessageObj.text;
-
-					var tmpPlayerName = playerName;
-					var tmpMessage = message;
-
-					// Give it a textobj if it doesn't have one
-					if (chatMessageObj.textobj == null) {
-						chatMessageObj.textobj = TextObj();
-					}
-
-					if (chatMessageObj.playerNameDrawWidth == null) {
-						chatMessageObj.playerNameDrawWidth = measureText(tmpPlayerName, _height - 4);
-					}
-
-					if (chatMessageObj.messageDrawWidth == null) {
-						chatMessageObj.messageDrawWidth = measureText(tmpMessage, _height - 4);
-					}
-
-					var totalDrawWidth = chatMessageObj.playerNameDrawWidth + chatMessageObj.messageDrawWidth;
-
-					if (totalDrawWidth < 1000) {
-						// Player name.
-						var playerNameX1 = _x26 - 4;
-						var playerNameX2 = _x26 + chatMessageObj.playerNameDrawWidth + 4;
-
-						// Chat message.
-						var chatX1 = playerNameX2; // + 10;
-						var chatX2 = chatX1 + chatMessageObj.messageDrawWidth + 12;
-						ctx.globalAlpha = 1.0;
-						drawBar(chatX1, chatX2, _y2 + _height / 2, _height, color.black);
-
-						var messageColor = getColor(chatMessageObj.colorIndex);
-						chatMessageObj.textobj.draw(tmpMessage, chatX1 + 2, _y2 + _height / 2 + 1, _height - 4, messageColor, 'left', true);
-
-						// Draw player name and background on top of the message.
-						ctx.globalAlpha = 0.6;
-						drawBar(playerNameX1, playerNameX2, _y2 + _height / 2, _height, color.black);
-
-						var playerNameColor = getColor(chatMessageObj.colorIndex);
-						ctx.globalAlpha = 0.8;
-						chatMessageObj.textobj.draw(tmpPlayerName, playerNameX1, _y2 + _height / 2 + 1, _height - 4, playerNameColor, 'left', true);
-
-						// Iterate and move
-						_y2 += _vspacing + _height;
-					}
-				}
-				ctx.restore();
-
-				ctx.globalAlpha = 1;
-			}
-			// ==============================================================================
-
-
 			{
 				// Draw skill bars
 				global.canSkill = !!_gui.points;
 				statMenu.set(0 + (global.canSkill || global.died || global.statHover));
 				global.clickables.stat.hide();
 
-				var _vspacing2 = 4;
-				var _height2 = 15;
+				var _vspacing = 4;
+				var _height = 15;
 				var gap = 35;
 				var _len5 = alcoveSize * global.screenWidth; // The 30 is for the value modifiers
 				var save = _len5;
-				var _x27 = -spacing - 2 * _len5 + statMenu.get() * (2 * spacing + 2 * _len5);
-				var _y3 = global.screenHeight - spacing - _height2;
+				var _x26 = -spacing - 2 * _len5 + statMenu.get() * (2 * spacing + 2 * _len5);
+				var _y2 = global.screenHeight - spacing - _height;
 				var ticker = 11;
 				var namedata = _gui.getStatNames(mockups[_gui.type].statnames || -1);
 				_gui.skills.forEach(function drawASkillBar(skill) {
@@ -2412,108 +2243,108 @@ var app =
 						if (extension) {
 							_max = cap;
 						}
-						drawBar(_x27 + _height2 / 2, _x27 - _height2 / 2 + _len5 * ska(cap), _y3 + _height2 / 2, _height2 - 3 + config.graphical.barChunk, color.black);
-						drawBar(_x27 + _height2 / 2, _x27 + _height2 / 2 + (_len5 - gap) * ska(cap), _y3 + _height2 / 2, _height2 - 3, color.grey);
-						drawBar(_x27 + _height2 / 2, _x27 + _height2 / 2 + (_len5 - gap) * ska(level), _y3 + _height2 / 2, _height2 - 3.5, col);
+						drawBar(_x26 + _height / 2, _x26 - _height / 2 + _len5 * ska(cap), _y2 + _height / 2, _height - 3 + config.graphical.barChunk, color.black);
+						drawBar(_x26 + _height / 2, _x26 + _height / 2 + (_len5 - gap) * ska(cap), _y2 + _height / 2, _height - 3, color.grey);
+						drawBar(_x26 + _height / 2, _x26 + _height / 2 + (_len5 - gap) * ska(level), _y2 + _height / 2, _height - 3.5, col);
 						// Blocked-off area
 						if (blocking) {
 							ctx.lineWidth = 1;
 							ctx.strokeStyle = color.grey;
 							for (var j = cap + 1; j < _max; j++) {
-								drawGuiLine(_x27 + (_len5 - gap) * ska(j), _y3 + 1.5, _x27 + (_len5 - gap) * ska(j), _y3 - 3 + _height2);
+								drawGuiLine(_x26 + (_len5 - gap) * ska(j), _y2 + 1.5, _x26 + (_len5 - gap) * ska(j), _y2 - 3 + _height);
 							}
 						}
 						// Vertical dividers
 						ctx.strokeStyle = color.black;
 						ctx.lineWidth = 1;
 						for (var _j = 1; _j < level + 1; _j++) {
-							drawGuiLine(_x27 + (_len5 - gap) * ska(_j), _y3 + 1.5, _x27 + (_len5 - gap) * ska(_j), _y3 - 3 + _height2);
+							drawGuiLine(_x26 + (_len5 - gap) * ska(_j), _y2 + 1.5, _x26 + (_len5 - gap) * ska(_j), _y2 - 3 + _height);
 						}
 						// Skill name
 						_len5 = save * ska(_max);
 						var textcolor = level == maxLevel ? col : !_gui.points || cap !== maxLevel && level == cap ? color.grey : color.guiwhite;
-						text.skillNames[ticker - 1].draw(name, Math.round(_x27 + _len5 / 2) + 0.5, _y3 + _height2 / 2, _height2 - 5, textcolor, 'center', true);
+						text.skillNames[ticker - 1].draw(name, Math.round(_x26 + _len5 / 2) + 0.5, _y2 + _height / 2, _height - 5, textcolor, 'center', true);
 						// Skill key
-						text.skillKeys[ticker - 1].draw('[' + ticker % 10 + ']', Math.round(_x27 + _len5 - _height2 * 0.25) - 1.5, _y3 + _height2 / 2, _height2 - 5, textcolor, 'right', true);
+						text.skillKeys[ticker - 1].draw('[' + ticker % 10 + ']', Math.round(_x26 + _len5 - _height * 0.25) - 1.5, _y2 + _height / 2, _height - 5, textcolor, 'right', true);
 						if (textcolor === color.guiwhite) {
 							// If it's active
-							global.clickables.stat.place(ticker - 1, _x27, _y3, _len5, _height2);
+							global.clickables.stat.place(ticker - 1, _x26, _y2, _len5, _height);
 						}
 						// Skill value
 						if (level) {
-							text.skillValues[ticker - 1].draw(textcolor === col ? 'MAX' : '+' + level, Math.round(_x27 + _len5 + 4) + 0.5, _y3 + _height2 / 2, _height2 - 5, col, 'left', true);
+							text.skillValues[ticker - 1].draw(textcolor === col ? 'MAX' : '+' + level, Math.round(_x26 + _len5 + 4) + 0.5, _y2 + _height / 2, _height - 5, col, 'left', true);
 						}
 						// Move on 
-						_y3 -= _height2 + _vspacing2;
+						_y2 -= _height + _vspacing;
 					}
 				});
-				global.clickables.hover.place(0, 0, _y3, 0.8 * _len5, 0.8 * (global.screenHeight - _y3));
+				global.clickables.hover.place(0, 0, _y2, 0.8 * _len5, 0.8 * (global.screenHeight - _y2));
 				if (_gui.points !== 0) {
 					// Draw skillpoints to spend
-					text.skillPoints.draw('x' + _gui.points, Math.round(_x27 + _len5 - 2) + 0.5, Math.round(_y3 + _height2 - 4) + 0.5, 20, color.guiwhite, 'right');
+					text.skillPoints.draw('x' + _gui.points, Math.round(_x26 + _len5 - 2) + 0.5, Math.round(_y2 + _height - 4) + 0.5, 20, color.guiwhite, 'right');
 				}
 			}
 
 			{
 				// Draw name, exp and score bar
-				var _vspacing3 = 4;
+				var _vspacing2 = 4;
 				var _len6 = 1.65 * alcoveSize * global.screenWidth;
-				var _height3 = 25;
-				var _x28 = (global.screenWidth - _len6) / 2;
-				var _y4 = global.screenHeight - spacing - _height3;
+				var _height2 = 25;
+				var _x27 = (global.screenWidth - _len6) / 2;
+				var _y3 = global.screenHeight - spacing - _height2;
 
 				ctx.lineWidth = 1;
 				// Handle exp
 				// Draw the exp bar
-				drawBar(_x28, _x28 + _len6, _y4 + _height3 / 2, _height3 - 3 + config.graphical.barChunk, color.black);
-				drawBar(_x28, _x28 + _len6, _y4 + _height3 / 2, _height3 - 3, color.grey);
-				drawBar(_x28, _x28 + _len6 * _gui.__s.getProgress(), _y4 + _height3 / 2, _height3 - 3.5, color.gold);
+				drawBar(_x27, _x27 + _len6, _y3 + _height2 / 2, _height2 - 3 + config.graphical.barChunk, color.black);
+				drawBar(_x27, _x27 + _len6, _y3 + _height2 / 2, _height2 - 3, color.grey);
+				drawBar(_x27, _x27 + _len6 * _gui.__s.getProgress(), _y3 + _height2 / 2, _height2 - 3.5, color.gold);
 				// Draw the class type
-				text.class.draw('Level ' + _gui.__s.getLevel() + ' ' + mockups[_gui.type].name, _x28 + _len6 / 2, _y4 + _height3 / 2, _height3 - 4, color.guiwhite, 'center', true);
-				_height3 = 14;
-				_y4 -= _height3 + _vspacing3;
+				text.class.draw('Level ' + _gui.__s.getLevel() + ' ' + mockups[_gui.type].name, _x27 + _len6 / 2, _y3 + _height2 / 2, _height2 - 4, color.guiwhite, 'center', true);
+				_height2 = 14;
+				_y3 -= _height2 + _vspacing2;
 				// Draw the %-of-leader bar
-				drawBar(_x28 + _len6 * 0.1, _x28 + _len6 * 0.9, _y4 + _height3 / 2, _height3 - 3 + config.graphical.barChunk, color.black);
-				drawBar(_x28 + _len6 * 0.1, _x28 + _len6 * 0.9, _y4 + _height3 / 2, _height3 - 3, color.grey);
-				drawBar(_x28 + _len6 * 0.1, _x28 + _len6 * (0.1 + 0.8 * (max ? Math.min(1, _gui.__s.getScore() / max) : 1)), _y4 + _height3 / 2, _height3 - 3.5, color.green);
+				drawBar(_x27 + _len6 * 0.1, _x27 + _len6 * 0.9, _y3 + _height2 / 2, _height2 - 3 + config.graphical.barChunk, color.black);
+				drawBar(_x27 + _len6 * 0.1, _x27 + _len6 * 0.9, _y3 + _height2 / 2, _height2 - 3, color.grey);
+				drawBar(_x27 + _len6 * 0.1, _x27 + _len6 * (0.1 + 0.8 * (max ? Math.min(1, _gui.__s.getScore() / max) : 1)), _y3 + _height2 / 2, _height2 - 3.5, color.green);
 				// Draw the score
-				text.score.draw('Score: ' + util.handleLargeNumber(_gui.__s.getScore()), _x28 + _len6 / 2, _y4 + _height3 / 2, _height3 - 2, color.guiwhite, 'center', true);
+				text.score.draw('Score: ' + util.handleLargeNumber(_gui.__s.getScore()), _x27 + _len6 / 2, _y3 + _height2 / 2, _height2 - 2, color.guiwhite, 'center', true);
 				// Draw the name
 				ctx.lineWidth = 4;
-				text.name.draw(player.name, Math.round(_x28 + _len6 / 2) + 0.5, Math.round(_y4 - 10 - _vspacing3) + 0.5, 32, color.guiwhite, 'center');
+				text.name.draw(player.name, Math.round(_x27 + _len6 / 2) + 0.5, Math.round(_y3 - 10 - _vspacing2) + 0.5, 32, color.guiwhite, 'center');
 			}
 
 			{
 				// Draw minimap and FPS monitors
 				var _len7 = alcoveSize * global.screenWidth;
-				var _height4 = _len7;
-				var _x29 = global.screenWidth - _len7 - spacing;
-				var _y5 = global.screenHeight - _height4 - spacing;
+				var _height3 = _len7;
+				var _x28 = global.screenWidth - _len7 - spacing;
+				var _y4 = global.screenHeight - _height3 - spacing;
 
 				ctx.globalAlpha = 0.5;
 				var _W = roomSetup[0].length,
 				    _H = roomSetup.length,
-				    _i9 = 0;
+				    _i8 = 0;
 				roomSetup.forEach(function (row) {
 					var j = 0;
 					row.forEach(function (cell) {
 						ctx.fillStyle = getZoneColor(cell, false);
-						drawGuiRect(_x29 + j++ * _len7 / _W, _y5 + _i9 * _height4 / _H, _len7 / _W, _height4 / _H);
+						drawGuiRect(_x28 + j++ * _len7 / _W, _y4 + _i8 * _height3 / _H, _len7 / _W, _height3 / _H);
 					});
-					_i9++;
+					_i8++;
 				});
 				ctx.fillStyle = color.grey;
-				drawGuiRect(_x29, _y5, _len7, _height4);
+				drawGuiRect(_x28, _y4, _len7, _height3);
 				minimap.forEach(function (o) {
 					if (o[2] === 17) {
 						ctx.fillStyle = mixColors(getColor(o[2]), color.black, 0.5);
 						ctx.globalAlpha = 0.8;
-						drawGuiRect(_x29 + o[0] / global.gameWidth * _len7, _y5 + o[1] / global.gameHeight * _height4, 1, 1);
+						drawGuiRect(_x28 + o[0] / global.gameWidth * _len7, _y4 + o[1] / global.gameHeight * _height3, 1, 1);
 					} else {
 						ctx.strokeStyle = mixColors(getColor(o[2]), color.black, 0.5);
 						ctx.lineWidth = 1;
 						ctx.globalAlpha = 1;
-						drawGuiRect(_x29 + o[0] / global.gameWidth * _len7 - 1, _y5 + o[1] / global.gameWidth * _height4 - 1, 3, 3, true);
+						drawGuiRect(_x28 + o[0] / global.gameWidth * _len7 - 1, _y4 + o[1] / global.gameWidth * _height3 - 1, 3, 3, true);
 						ctx.lineWidth = 3;
 					}
 				});
@@ -2521,55 +2352,47 @@ var app =
 				ctx.lineWidth = 1;
 				ctx.strokeStyle = color.black;
 				drawGuiRect( // My position
-				_x29 + player.x / global.gameWidth * _len7 - 1, _y5 + player.y / global.gameWidth * _height4 - 1, 3, 3, true);
+				_x28 + player.x / global.gameWidth * _len7 - 1, _y4 + player.y / global.gameWidth * _height3 - 1, 3, 3, true);
 				ctx.lineWidth = 3;
 				ctx.fillStyle = color.black;
-				drawGuiRect(_x29, _y5, _len7, _height4, true); // Border
+				drawGuiRect(_x28, _y4, _len7, _height3, true); // Border
 
-				drawGuiRect(_x29, _y5 - 40, _len7, 30);
-				lagGraph(lag.get(), _x29, _y5 - 40, _len7, 30, color.teal);
-				gapGraph(metrics.rendergap, _x29, _y5 - 40, _len7, 30, color.pink);
-				timingGraph(GRAPHDATA, _x29, _y5 - 40, _len7, 30, color.yellow);
+				drawGuiRect(_x28, _y4 - 40, _len7, 30);
+				lagGraph(lag.get(), _x28, _y4 - 40, _len7, 30, color.teal);
+				gapGraph(metrics.rendergap, _x28, _y4 - 40, _len7, 30, color.pink);
+				timingGraph(GRAPHDATA, _x28, _y4 - 40, _len7, 30, color.yellow);
 				// Text
-				text.debug[5].draw('Prediction: ' + Math.round(GRAPHDATA) + 'ms', _x29 + _len7, _y5 - 50 - 5 * 14, 10, color.guiwhite, 'right');
-				text.debug[4].draw('Update Rate: ' + metrics.updatetime + 'Hz', _x29 + _len7, _y5 - 50 - 4 * 14, 10, color.guiwhite, 'right');
-				text.debug[3].draw('Latency: ' + metrics.latency + 'ms', _x29 + _len7, _y5 - 50 - 3 * 14, 10, color.guiwhite, 'right');
-				text.debug[2].draw('Client FPS: ' + metrics.rendertime, _x29 + _len7, _y5 - 50 - 2 * 14, 10, color.guiwhite, 'right');
-				text.debug[1].draw('Server Speed: ' + (100 * _gui.fps).toFixed(2) + '%' + (_gui.fps === 1 ? '' : ' OVERLOADED!'), _x29 + _len7, _y5 - 50 - 1 * 14, 10, _gui.fps === 1 ? color.guiwhite : color.orange, 'right');
-				text.debug[0].draw(serverName, _x29 + _len7, _y5 - 50, 10, color.guiwhite, 'right');
+				text.debug[5].draw('Prediction: ' + Math.round(GRAPHDATA) + 'ms', _x28 + _len7, _y4 - 50 - 5 * 14, 10, color.guiwhite, 'right');
+				text.debug[4].draw('Update Rate: ' + metrics.updatetime + 'Hz', _x28 + _len7, _y4 - 50 - 4 * 14, 10, color.guiwhite, 'right');
+				text.debug[3].draw('Latency: ' + metrics.latency + 'ms', _x28 + _len7, _y4 - 50 - 3 * 14, 10, color.guiwhite, 'right');
+				text.debug[2].draw('Client FPS: ' + metrics.rendertime, _x28 + _len7, _y4 - 50 - 2 * 14, 10, color.guiwhite, 'right');
+				text.debug[1].draw('Server Speed: ' + (100 * _gui.fps).toFixed(2) + '%' + (_gui.fps === 1 ? '' : ' OVERLOADED!'), _x28 + _len7, _y4 - 50 - 1 * 14, 10, _gui.fps === 1 ? color.guiwhite : color.orange, 'right');
+				text.debug[0].draw(serverName, _x28 + _len7, _y4 - 50, 10, color.guiwhite, 'right');
 			}
 
 			{
 				// Draw leaderboard
-				var _vspacing4 = 4;
+				var _vspacing3 = 4;
 				var _len8 = alcoveSize * global.screenWidth;
-				var _height5 = 14;
-				var _x30 = global.screenWidth - _len8 - spacing;
-				var _y6 = spacing + _height5 + 7;
-				text.lbtitle.draw('Leaderboard:', Math.round(_x30 + _len8 / 2) + 0.5, Math.round(_y6 - 6) + 0.5, _height5 + 4, color.guiwhite, 'center');
-				var _i10 = 0;
+				var _height4 = 14;
+				var _x29 = global.screenWidth - _len8 - spacing;
+				var _y5 = spacing + _height4 + 7;
+				text.lbtitle.draw('Leaderboard:', Math.round(_x29 + _len8 / 2) + 0.5, Math.round(_y5 - 6) + 0.5, _height4 + 4, color.guiwhite, 'center');
+				var _i9 = 0;
 				lb.data.forEach(function (entry) {
-					drawBar(_x30, _x30 + _len8, _y6 + _height5 / 2, _height5 - 3 + config.graphical.barChunk, color.black);
-					drawBar(_x30, _x30 + _len8, _y6 + _height5 / 2, _height5 - 3, color.grey);
+					drawBar(_x29, _x29 + _len8, _y5 + _height4 / 2, _height4 - 3 + config.graphical.barChunk, color.black);
+					drawBar(_x29, _x29 + _len8, _y5 + _height4 / 2, _height4 - 3, color.grey);
 					var shift = Math.min(1, entry.score / max);
-					drawBar(_x30, _x30 + _len8 * shift, _y6 + _height5 / 2, _height5 - 3.5, entry.barcolor);
-
-					// ==============================================================
-					// Chat System.
-					// ==============================================================
-					var leaderboardNameFontSize = _height5 - 5;
-					var leaderboardName = modifyOverlyLongName(entry.label, leaderboardNameFontSize, 200);
-					// ==============================================================
-
+					drawBar(_x29, _x29 + _len8 * shift, _y5 + _height4 / 2, _height4 - 3.5, entry.barcolor);
 					// Leadboard name + score 
-					text.leaderboard[_i10++].draw(leaderboardName + ': ' + util.handleLargeNumber(Math.round(entry.score)), _x30 + _len8 / 2, _y6 + _height5 / 2, _height5 - 5, color.guiwhite, 'center', true);
+					text.leaderboard[_i9++].draw(entry.label + ': ' + util.handleLargeNumber(Math.round(entry.score)), _x29 + _len8 / 2, _y5 + _height4 / 2, _height4 - 5, color.guiwhite, 'center', true);
 					// Mini-image
-					var scale = _height5 / entry.position.axis,
-					    xx = _x30 - 1.5 * _height5 - scale * entry.position.middle.x * 0.707,
-					    yy = _y6 + 0.5 * _height5 + scale * entry.position.middle.x * 0.707;
+					var scale = _height4 / entry.position.axis,
+					    xx = _x29 - 1.5 * _height4 - scale * entry.position.middle.x * 0.707,
+					    yy = _y5 + 0.5 * _height4 + scale * entry.position.middle.x * 0.707;
 					drawEntity(xx, yy, entry.image, 1 / scale, scale * scale / entry.image.size, -Math.PI / 4, true);
 					// Move down
-					_y6 += _vspacing4 + _height5;
+					_y5 += _vspacing3 + _height4;
 				});
 			}
 
@@ -2580,68 +2403,72 @@ var app =
 				global.clickables.upgrade.hide();
 				if (_gui.upgrades.length > 0) {
 					global.canUpgrade = true;
-					// var getClassUpgradeKey = function(number) {
-					//     switch (number) {
-					//         case 0: return 'y';
-					//         case 1: return 'h';
-					//         case 2: return 'u';
-					//         case 3: return 'j';
-					//         case 4: return 'i';
-					//         case 5: return 'k';
-					//         case 6: return 'o';
-					//         case 7: return 'l';
-					//     }
-					// };
+					var getClassUpgradeKey = function getClassUpgradeKey(number) {
+						switch (number) {
+							case 0:
+								return 'y';
+							case 1:
+								return 'h';
+							case 2:
+								return 'u';
+							case 3:
+								return 'j';
+							case 4:
+								return 'i';
+							case 5:
+								return 'k';
+							case 6:
+								return 'o';
+							case 7:
+								return 'l';
+						}
+					};
 					var internalSpacing = 8;
 					var _len9 = alcoveSize * global.screenWidth / 2 * 1;
-					var _height6 = _len9;
-					var _x31 = glide * 2 * spacing - spacing;
-					var _y7 = spacing;
-					var xo = _x31;
+					var _height5 = _len9;
+					var _x30 = glide * 2 * spacing - spacing;
+					var _y6 = spacing;
+					var xo = _x30;
 					var xxx = 0;
-					var yo = _y7;
+					var yo = _y6;
 					var _ticker = 0;
 					upgradeSpin += 0.01;
 					var colorIndex = 10;
-					var _i11 = 0;
+					var _i10 = 0;
 					_gui.upgrades.forEach(function drawAnUpgrade(model) {
-						if (_y7 > yo) yo = _y7;
-						xxx = _x31;
-						global.clickables.upgrade.place(_i11++, _x31, _y7, _len9, _height6);
+						if (_y6 > yo) yo = _y6;
+						xxx = _x30;
+						global.clickables.upgrade.place(_i10++, _x30, _y6, _len9, _height5);
 						// Draw box
 						ctx.globalAlpha = 0.5;
 						ctx.fillStyle = getColor(colorIndex);
-						drawGuiRect(_x31, _y7, _len9, _height6);
+						drawGuiRect(_x30, _y6, _len9, _height5);
 						ctx.globalAlpha = 0.1;
 						ctx.fillStyle = getColor(-10 + colorIndex++);
-						drawGuiRect(_x31, _y7, _len9, _height6 * 0.6);
+						drawGuiRect(_x30, _y6, _len9, _height5 * 0.6);
 						ctx.fillStyle = color.black;
-						drawGuiRect(_x31, _y7 + _height6 * 0.6, _len9, _height6 * 0.4);
+						drawGuiRect(_x30, _y6 + _height5 * 0.6, _len9, _height5 * 0.4);
 						ctx.globalAlpha = 1;
 						// Find offset location with rotation
 						var picture = getEntityImageFromMockup(model, _gui.color),
 						    position = mockups[model].position,
 						    scale = 0.6 * _len9 / position.axis,
-						    xx = _x31 + 0.5 * _len9 - scale * position.middle.x * Math.cos(upgradeSpin),
-						    yy = _y7 + 0.5 * _height6 - scale * position.middle.x * Math.sin(upgradeSpin);
+						    xx = _x30 + 0.5 * _len9 - scale * position.middle.x * Math.cos(upgradeSpin),
+						    yy = _y6 + 0.5 * _height5 - scale * position.middle.x * Math.sin(upgradeSpin);
 						drawEntity(xx, yy, picture, 1, scale / picture.size, upgradeSpin, true);
 						// Tank name
-						text.upgradeNames[_i11 - 1].draw(picture.name, _x31 + 0.9 * _len9 / 2, _y7 + _height6 - 6, _height6 / 8 - 3, color.guiwhite, 'center');
+						text.upgradeNames[_i10 - 1].draw(picture.name, _x30 + 0.9 * _len9 / 2, _y6 + _height5 - 6, _height5 / 8 - 3, color.guiwhite, 'center');
 						// Upgrade key
-						// text.upgradeKeys[i-1].draw(
-						//     '[' + getClassUpgradeKey(ticker) + ']',
-						//     x + len - 4, y + height - 6,
-						//     height/8 - 3, color.guiwhite, 'right'
-						// );
+						text.upgradeKeys[_i10 - 1].draw('[' + getClassUpgradeKey(_ticker) + ']', _x30 + _len9 - 4, _y6 + _height5 - 6, _height5 / 8 - 3, color.guiwhite, 'right');
 						ctx.strokeStyle = color.black;
 						ctx.globalAlpha = 1;
 						ctx.lineWidth = 3;
-						drawGuiRect(_x31, _y7, _len9, _height6, true); // Border
+						drawGuiRect(_x30, _y6, _len9, _height5, true); // Border
 						if (_ticker++ % 2) {
-							_y7 -= _height6 + internalSpacing;
-							_x31 += glide * (_len9 + internalSpacing);
+							_y6 -= _height5 + internalSpacing;
+							_x30 += glide * (_len9 + internalSpacing);
 						} else {
-							_y7 += _height6 + internalSpacing;
+							_y6 += _height5 + internalSpacing;
 						}
 					});
 					// Draw box
@@ -2649,7 +2476,7 @@ var app =
 					    _msg = "Don't Upgrade",
 					    m = measureText(_msg, h - 3) + 10;
 					var xx = xo + (xxx + _len9 + internalSpacing - xo) / 2,
-					    yy = yo + _height6 + internalSpacing;
+					    yy = yo + _height5 + internalSpacing;
 					drawBar(xx - m / 2, xx + m / 2, yy + h / 2, h + config.graphical.barChunk, color.black);
 					drawBar(xx - m / 2, xx + m / 2, yy + h / 2, h, color.white);
 					text.skipUpgrades.draw(_msg, xx, yy + h / 2, h - 2, color.guiwhite, 'center', true);
@@ -2736,36 +2563,6 @@ var app =
 			text.message.draw(global.message, global.screenWidth / 2, global.screenHeight / 2 + 30, 15, color.orange, 'center');
 		};
 	}();
-
-	// ===============================================================
-	// Chat System.
-	// ===============================================================
-	setInterval(cleanUpChatMessages, 9000);
-
-	function cleanUpChatMessages() {
-		try {
-			if (chatMessages) {
-				if (chatMessages.length >= 8) {
-					while (chatMessages.length >= 8) {
-						chatMessages[0].textobj.remove();
-						chatMessages.splice(0, 1);
-					}
-				} else {
-					if (chatMessages.length > 0) {
-						// Display chat for at most 8 seconds.
-						if (Date.now() - chatMessages[0].time >= 8000) {
-							chatMessages[0].textobj.remove();
-							chatMessages.splice(0, 1);
-						}
-					}
-				}
-			}
-		} catch (error) {
-			console.log('[cleanUpChatMessages()]');
-			console.log(error);
-		}
-	}
-	// ===============================================================
 
 	// The main function
 	function animloop() {
@@ -2873,13 +2670,7 @@ var app =
 		startPingTime: 0,
 		toggleMassState: 0,
 		backgroundColor: '#f2fbff',
-		lineColor: '#000000',
-
-		// ===============================
-		// Chat system.
-		// ===============================
-		isChatMode: false
-		// ===============================
+		lineColor: '#000000'
 	};
 
 	/***/
@@ -3012,162 +2803,6 @@ var app =
 				switch (event.keyCode) {
 					case 13:
 						if (global.died) this.parent.socket.talk('s', global.playerName, 0);global.died = false;break; // Enter to respawn
-
-					// ======================================================================
-					// Chat system.
-					// ======================================================================
-					// H
-					case 72:
-						if (!global.died) {
-							if (global.isChatMode === false) {
-								// Chat input textbox.
-								var chatInput = document.createElement('input');
-								chatInput.id = 'chatInput';
-								chatInput.tabindex = 4;
-								chatInput.style.font = 'bold 18px Ubuntu';
-								chatInput.maxlength = '200';
-								chatInput.placeholder = 'Enter to send.Esc to cancel.Введите,чтобы отправить.Esc,чтобы отменить.';
-
-								// =============================================
-								// Players list drop down list.
-								// =============================================
-								var playersDropDownList = document.createElement("select");
-								playersDropDownList.id = "playersList";
-								playersDropDownList.className = 'players-list';
-
-								// Add default option.
-								var allOption = document.createElement("option");
-								allOption.value = '0';
-								allOption.text = '-- All --';
-								playersDropDownList.appendChild(allOption);
-
-								try {
-									var players = global.playersList;
-
-									//Create and append the options
-									for (var i = 0; i < players.length; i += 2) {
-										var option = document.createElement("option");
-										option.value = players[i];
-										option.text = players[i + 1];
-										playersDropDownList.appendChild(option);
-									}
-
-									// Try to set the value to previously selected player id.
-									playersDropDownList.value = global.selectedPlayerId;
-
-									// Player does not exist anymore?
-									if (playersDropDownList.value != global.selectedPlayerId) {
-										// Change to default index.
-										playersDropDownList.selectedIndex = 0;
-									}
-								} catch (error) {
-									console.log(error);
-								}
-
-								// =============================================
-								// Chat input wrapper div.
-								var chatInputWrapper = document.createElement('div');
-								chatInputWrapper.style.position = 'absolute';
-								chatInputWrapper.style.width = '720px';
-
-								chatInputWrapper.style.left = '50%';
-								chatInputWrapper.style.bottom = '100px';
-								chatInputWrapper.style.transform = 'translate(-50%, -50%)';
-								chatInputWrapper.style.margin = '0 auto';
-								chatInputWrapper.style.visibility = 'hidden';
-
-								chatInputWrapper.appendChild(playersDropDownList);
-								chatInputWrapper.appendChild(chatInput);
-								document.body.appendChild(chatInputWrapper);
-
-								// Sending chat.
-								chatInput.addEventListener('keydown', function (event) {
-									if (event.key === 'Enter' || event.keyCode === 13) {
-										// ========================================================================
-										// Check again if the player died, otherwise, it hangs the client.
-										// There will be an error saying that "color is undefined" in app.js file.
-										// ========================================================================
-										// Death chat experiment.
-										if (global.died) {
-											global.socket.talk('s', global.playerName, 0);
-											global.died = false;
-										} else {
-											var chatMessage = chatInput.value;
-
-											if (chatMessage) {
-												var maxLen = 100;
-												var trimmedMessage = chatMessage.length > maxLen ? chatMessage.substring(0, maxLen - 3) + "..." : chatMessage.substring(0, maxLen);
-
-												var ddl = playersDropDownList;
-												if (ddl) {
-													global.playersListIndex = ddl.selectedIndex;
-													global.selectedPlayerId = ddl.options[ddl.selectedIndex].value;
-												}
-
-												global.socket.talk('h', trimmedMessage, global.selectedPlayerId);
-
-												chatInputWrapper.removeChild(playersDropDownList);
-												chatInputWrapper.removeChild(chatInput);
-												document.body.removeChild(chatInputWrapper);
-
-												var gameCanvas = document.getElementById('gameCanvas');
-												gameCanvas.focus();
-
-												global.isChatMode = false;
-											}
-										}
-									}
-								});
-
-								// Cancelling chat - pressing ESC in players dropdown list.
-								playersDropDownList.addEventListener('keydown', function (event) {
-									if (event.key === 'Esc' || event.keyCode === 27) {
-										chatInputWrapper.removeChild(playersDropDownList);
-										chatInputWrapper.removeChild(chatInput);
-										document.body.removeChild(chatInputWrapper);
-
-										var gameCanvas = document.getElementById('gameCanvas');
-										gameCanvas.focus();
-										global.isChatMode = false;
-									}
-								});
-
-								// Cancelling chat.
-								chatInput.addEventListener('keydown', function (event) {
-									if (event.key === 'Esc' || event.keyCode === 27) {
-										chatInputWrapper.removeChild(playersDropDownList);
-										chatInputWrapper.removeChild(chatInput);
-										document.body.removeChild(chatInputWrapper);
-
-										var gameCanvas = document.getElementById('gameCanvas');
-										gameCanvas.focus();
-										global.isChatMode = false;
-									}
-								});
-
-								global.isChatMode = true;
-
-								// To remove initial "i" letter.
-								setTimeout(function () {
-									chatInput.value = '';
-									chatInputWrapper.style.visibility = 'visible';
-									chatInput.focus();
-								}, 10);
-							} else {
-								// Already in chat mode, focus the chat input textbox.
-								var existingChatInput = document.getElementById('chatInput');
-								if (existingChatInput) {
-									// Remove 'h' from the input.
-									var oldValue = existingChatInput.value;
-									existingChatInput.value = '';
-									existingChatInput.focus();
-									existingChatInput.value = oldValue;
-								}
-							}
-						}
-						break;
-					// ===========================================
-
 					case global.KEY_UP_ARROW:
 					case global.KEY_UP:
 						this.parent.socket.cmd.set(0, true);break;
@@ -3224,18 +2859,26 @@ var app =
 								this.parent.socket.talk('x', 9);break;
 						}
 					}
-					// if (global.canUpgrade) {
-					//     switch (event.keyCode) {
-					//     case global.KEY_CHOOSE_1:  this.parent.socket.talk('U', 0); break;
-					//     case global.KEY_CHOOSE_2:  this.parent.socket.talk('U', 1); break;
-					//     case global.KEY_CHOOSE_3:  this.parent.socket.talk('U', 2); break;
-					//     case global.KEY_CHOOSE_4:  this.parent.socket.talk('U', 3); break;
-					//     case global.KEY_CHOOSE_5:  this.parent.socket.talk('U', 4); break;
-					//     case global.KEY_CHOOSE_6:  this.parent.socket.talk('U', 5); break;
-					//     case global.KEY_CHOOSE_7:  this.parent.socket.talk('U', 6); break;
-					//     case global.KEY_CHOOSE_8:  this.parent.socket.talk('U', 7); break;
-					//     }
-					// }
+					if (global.canUpgrade) {
+						switch (event.keyCode) {
+							case global.KEY_CHOOSE_1:
+								this.parent.socket.talk('U', 0);break;
+							case global.KEY_CHOOSE_2:
+								this.parent.socket.talk('U', 1);break;
+							case global.KEY_CHOOSE_3:
+								this.parent.socket.talk('U', 2);break;
+							case global.KEY_CHOOSE_4:
+								this.parent.socket.talk('U', 3);break;
+							case global.KEY_CHOOSE_5:
+								this.parent.socket.talk('U', 4);break;
+							case global.KEY_CHOOSE_6:
+								this.parent.socket.talk('U', 5);break;
+							case global.KEY_CHOOSE_7:
+								this.parent.socket.talk('U', 6);break;
+							case global.KEY_CHOOSE_8:
+								this.parent.socket.talk('U', 7);break;
+						}
+					}
 				}
 			}
 		}, {
@@ -3455,25 +3098,25 @@ var app =
 					}
 					return arrUint16[0];
 				case 'Uint32':
-					for (var _i12 = 0; _i12 < 4; _i12++) {
-						charUint32[_i12] = str.charCodeAt(offset++);
+					for (var _i11 = 0; _i11 < 4; _i11++) {
+						charUint32[_i11] = str.charCodeAt(offset++);
 					}
 					return arrUint32[0];
 				case 'Sint8':
 					return -1 - str.charCodeAt(offset++);
 				case 'Sint16':
-					for (var _i13 = 0; _i13 < 2; _i13++) {
-						charUint16[_i13] = str.charCodeAt(offset++);
+					for (var _i12 = 0; _i12 < 2; _i12++) {
+						charUint16[_i12] = str.charCodeAt(offset++);
 					}
 					return -1 - arrUint16[0];
 				case 'Sint32':
-					for (var _i14 = 0; _i14 < 4; _i14++) {
-						charUint32[_i14] = str.charCodeAt(offset++);
+					for (var _i13 = 0; _i13 < 4; _i13++) {
+						charUint32[_i13] = str.charCodeAt(offset++);
 					}
 					return -1 - arrUint32[0];
 				case 'Float32':
-					for (var _i15 = 0; _i15 < 4; _i15++) {
-						charFloat32[_i15] = str.charCodeAt(offset++);
+					for (var _i14 = 0; _i14 < 4; _i14++) {
+						charFloat32[_i14] = str.charCodeAt(offset++);
 					}
 					return arrFloat32[0];
 				default:
@@ -3519,8 +3162,8 @@ var app =
 								var _len11 = typeDecoder(str, 'Uint16', offset);offset += 2;
 								var arr = str.slice(offset, offset + _len11);
 								var buf = new Uint16Array(_len11 / 2);
-								for (var _i16 = 0; _i16 < _len11; _i16 += 2) {
-									buf[_i16 / 2] = typeDecoder(arr, 'Uint16', _i16);
+								for (var _i15 = 0; _i15 < _len11; _i15 += 2) {
+									buf[_i15 / 2] = typeDecoder(arr, 'Uint16', _i15);
 								}
 								output.push(String.fromCharCode.apply(null, buf));
 								offset += _len11;
