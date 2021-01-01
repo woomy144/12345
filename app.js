@@ -70,7 +70,7 @@ var app =
 
 	var spaceBallSpriteInfo = {
 		url: 'img/space_ball-071bc4b90d.png',
-		width: 93,
+		width: 99,
 		height: 100,
 		frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 	};
