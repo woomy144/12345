@@ -2294,7 +2294,7 @@
                 });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 75),
-                    (b.message = `Loading... ${10 * S.length}%`);
+                    (b.message = `Syncing clocks, please do no tab away. ${10 * S.length}%`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
