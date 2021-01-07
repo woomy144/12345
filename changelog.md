@@ -2,28 +2,28 @@
 
 -PATCH-02/01/2021
 -Added SPAWN DOMS IN DOMINATOR MOD
-
--UPDATE-21/12/2020
+------------------------------------
+-PATCH-21/12/2020
 -added twinlilfactory
 -added ultra trapper
 -added awp-deagle
 -added fallen minigun
 -added red factory
 -----------------------------------
--UPDATE-17/12/2020
+-PATCH-17/12/2020
 -added twintion
 -added vulcanire
 -added blacker
 -added Mragrixe
 -added sidgig
 --------------------------------
--UPDATE-13/12/2020
+-PATCH-13/12/2020
 -added awp-hyper
 -added snakles
 -added nailer
 -added froblem
 ---------------------------------
--UPDATE-05/12/2020
+-PATCH-05/12/2020
 -added triple dual tank
 -added auto 4 tank
 -added eo dual tank
@@ -35,7 +35,7 @@
 -added equnometer boss
 -added awp-log awp-boss
 ---------------------------------
--UPDATE-27/11/2020
+-PATCH-27/11/2020
 -added-auto gunner tank
 -added-auto streamliner tnks
 -added-swarm gunner tank
@@ -47,55 +47,55 @@
 -added-auto 9 tank
 -added-destroy sniper tank
 --------------------------------------
--UPDATE-22/11/2020 MORE
+-PATCH-22/11/2020 MORE
 -added twin laucher tank
 -added ayto sniper tank
 -added controller tank
 -added fallen skimmer boss
 ------------------------------------
--UPDATE-21/11/2020 SMAL update
+-PATCH-21/11/2020 SMAL update
 -added molot boss
 -added awp-1 boss
 -reformed class bots
 -event bots developer 3days
 -------------------------------------
--UPDATE-16/11/2020 More bosses
+-PATCH-16/11/2020 More bosses
 -Added extra sprayer boss
 -coming soon
 -coming soon
 -coming soon
 -coming soon
 -------------------------------------
--UPDATE-16.11.2020
+-PATCH-16.11.2020
 -added xhunter
 -added shunter
 -added dual machine
 -added bouble twin machine
 -reformed nest
 ------------------------------------
--UPDATE-14.11.2020
+-PATCH-14.11.2020
 -added doublebuilder tank
 -added bentbuilder tank
 -cooming soon added penta boss
 --------------------------------------
--UPDATE-08.11.2020 Big
+-PATCH-08.11.2020 Big
 -added guardian boss
 -added god of guardians boss
 -bosses spawn
 -added expertengineer tank
 -added dual gunner tank
 --------------------------------------
--UPDATE-03.11.2020
+-PATCH-03.11.2020
 -added new boss awp-ega and awp-ega mk2
 -bosses can spawn
 -added Fallen Booster
 -added Fallen Overlord
 --------------------------------------
--UPGATE-02.11.2020
+-PATCH-02.11.2020
 -added awp-ice
 -added awp-6u9i
 --------------------------------------
--UPGATE-01.11.2020
+-PATCH-01.11.2020
 - add awp-(5/3)
 --------------------------------------
 # Event
