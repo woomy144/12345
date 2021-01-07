@@ -1,8 +1,8 @@
 # Update
 
--UPDATE-02/01/2021
+-PATCH-02/01/2021
 -Added SPAWN DOMS IN DOMINATOR MOD
-------------------------------------------
+
 -UPDATE-21/12/2020
 -added twinlilfactory
 -added ultra trapper
