@@ -4518,7 +4518,8 @@
             buyvm: "BuyVM",
             extravm: "ExtraVM",
             hetzner: "Hetzner",
-            ovh: "OVH"
+            ovh: "OVH",
+            cloud9: "Cloud9"
           },
           {
             unknown: ["Unknown", null],
@@ -4560,7 +4561,7 @@
             visible: 0,
             id: "4",
             type: "4tdm",
-            code: "heroku-la-4",
+            code: "cloud9-la-4",
             at: p.heroku("vazora1"),
             prefer: !0
             // featured: 1, // For Featured Status.
@@ -4587,7 +4588,7 @@
            visible: 0,
             id: "2",
             type: "2TDM",
-            code: "heroku-virginia-2",
+            code: "cloud9-virginia-2",
             at: p.heroku("devservers1"),
             prefer: !0
             // featured: 1, // For Featured Status.
