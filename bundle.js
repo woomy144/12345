@@ -4567,33 +4567,6 @@
             prefer: !0
             // featured: 1, // For Featured Status.
           },
-          {
-            visible: 0,
-            id: "d",
-            type: "4dom",
-            code: "heroku-oregon-d",
-            at: p.heroku("vazora3"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          },
-          {
-            visible: 0,
-            id: "f",
-            type: "ffa",
-            code: "heroku-montreal-f",
-            at: p.heroku("vazora4"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          },
-          {
-           visible: 0,
-            id: "2",
-            type: "2TDM",
-            code: "heroku-virginia-2",
-            at: p.heroku("devservers1"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          }
         ]
           .map((a, e) => ({ data: a, i: e }))
           .sort((a, e) =>
