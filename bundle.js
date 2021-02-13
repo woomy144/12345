@@ -4562,8 +4562,8 @@
             visible: 0,
             id: "6",
             type: "Attack",
-            code: "glitch-la-4",
-            at: p.glitch("brtojec"),
+            code: "heroku-la-6",
+            at: p.heroku("vazora3"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
