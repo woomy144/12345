@@ -4545,7 +4545,8 @@
               { id: "f", to: "FFA" },
               { id: "2", to: "2 Team", end: "2TDM" },
               { id: "3", to: "Defender", end: "Survival Mode" },
-              { id: "4", to: "4 Team", end: "4TDM" }
+              { id: "4", to: "4 Team", end: "4TDM" },
+              { id: "6", to: "Boss attack", end: "Attack" }
             ],
             [
               { id: "d", to: "Domination" },
@@ -4559,10 +4560,10 @@
         servers: [
           {
             visible: 0,
-            id: "4",
-            type: "4tdm",
-            code: "vultr-la-4",
-            at: p.heroku("vazora1"),
+            id: "6",
+            type: "Attack",
+            code: "glitch-la-4",
+            at: p.glitch("brtojec"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
