@@ -4563,7 +4563,7 @@
             id: "6",
             type: "Attack",
             code: "heroku-la-6",
-            at: p.heroku("vazora3"),
+            at: p.heroku("gattt"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
