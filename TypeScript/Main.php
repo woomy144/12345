@@ -41,3 +41,23 @@
         <?php
          echo "Friends";
       ?>
+
+<?php
+         echo "Thanks to coding Friends";
+      ?>
+
+<?php
+         echo "IDK I JUST ARRAS CODER";
+      ?>
+
+<?php
+         echo "I IN WOOMY ARRAS ROLE MODERATOR I HAVE CODE";
+      ?>
+
+<?php
+         echo "BYE";
+      ?>
+
+<?php
+         echo "GUYS";
+      ?>
