@@ -3684,7 +3684,7 @@
                 else {
                   if (b.showDebug) {
                     W[6].draw(
-                      "Extra Arras",
+                      "Bortyarras.io",
                       h + 200,
                       m - 84 - 2,
                       15,
@@ -3721,7 +3721,7 @@
                     );
                   } else
                     W[6].draw(
-                      "Extra arras",
+                      "Bortyarras.io",
                       h + 200,
                       m - 42 - 2,
                       15,
