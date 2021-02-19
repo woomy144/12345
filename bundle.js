@@ -3580,15 +3580,60 @@
                   "center",
                   !0
                 );
-                g.lineWidth = 4; 
-                        if (z.key.includes("DevToken_Uuf3UHBUUrgu4GU_DevToken"))
-                           if (z.name.includes("Hrismer!"))
+                 g.lineWidth = 4; /*
+                                if (//name color) {
+                                N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.yellow, "center")
+                                } else {*/
+                N.draw(
+                  z.name,
+                  Math.round(c + 165) + 0.5,
+                  Math.round(d - 10 - 4) + 0.5,
+                  32,
+                  l.guiwhite,
+                  "center"
+                );
+                
+                 if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                   if (z.name.includes("!Killer!"))
                   N.draw(
                     z.name,
                     Math.round(c + 165) + 0.5,
                     Math.round(d - 10 - 4) + 0.5,
                     32,
                     150 > Date.now() % 300 ? l.teal : l.teal,
+                    "center"
+                  );
+                
+                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                   if (z.name.includes("TEST1"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? l.blue: l.orange,
+                    "center"
+                  );
+                
+                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                   if (z.name.includes("TEST2"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? l.black: l.yellow,
+                    "center"
+                  );
+                
+                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                   if (z.name.includes("TEST3"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? l.pink: l.red,
                     "center"
                   );
                 //};// name color
