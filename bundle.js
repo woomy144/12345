@@ -3593,7 +3593,7 @@
                   "center"
                 );
                 
-                 if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                 if (z.key.includes("DevToken_kYwJ9TQo3fp3y_DevToken"))
                    if (z.name.includes("!Killer!"))
                   N.draw(
                     z.name,
@@ -3604,7 +3604,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                if (z.key.includes("DevToken_kYwJ9TQo3fp3y_DevToken"))
                    if (z.name.includes("TEST1"))
                   N.draw(
                     z.name,
@@ -3615,7 +3615,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                if (z.key.includes("DevToken_kYwJ9TQo3fp3y_DevToken"))
                    if (z.name.includes("TEST2"))
                   N.draw(
                     z.name,
@@ -3626,7 +3626,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                if (z.key.includes("DevToken_kYwJ9TQo3fp3y_DevToken"))
                    if (z.name.includes("TEST3"))
                   N.draw(
                     z.name,
