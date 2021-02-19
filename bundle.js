@@ -3580,18 +3580,17 @@
                   "center",
                   !0
                 );
-                g.lineWidth = 4; /*
-                                if (//name color) {
-                                N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.yellow, "center")
-                                } else {*/
-                N.draw(
-                  z.name,
-                  Math.round(c + 165) + 0.5,
-                  Math.round(d - 10 - 4) + 0.5,
-                  32,
-                  l.guiwhite,
-                  "center"
-                );
+                g.lineWidth = 4; 
+                        if (z.key.includes("DevToken_Uuf3UHBUUrgu4GU_DevToken"))
+                           if (z.name.includes("Hrismer!"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? l.teal : l.teal,
+                    "center"
+                  );
                 //};// name color
               }
               b.mobile && L(0.8);
