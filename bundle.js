@@ -4496,6 +4496,7 @@
         KEY_AUTO_FIRE: 69,
         KEY_AUTO_SPIN: 67,
         KEY_OVER_RIDE: 82,
+        SWITCH_TANK: 16,
         KEY_LEVEL_UP: 78,
         KEY_ABILITY: 70,
         KEY_REVERSE_TANK: 86,
@@ -5159,6 +5160,9 @@
               break;
             case a.KEY_MOUSE_2:
               this.set(6, !0);
+              break;
+              case a.SWITCH_TANK:
+              this.emit("ChangeTankOne");
               break;
             case a.KEY_LEVEL_UP:
               this.emit("L");
