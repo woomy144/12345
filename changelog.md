@@ -1,25 +1,14 @@
 
--PATCH-01/01/2021
-Added F tanks series=(twif, Singlf, trappef, snipef, peltef)
-Added twif upgrade auto2====>twif, twin=>twif
-added Singlf upgrade auto2=>singlf single=>singlf
-added trappef upgrade auto2=>trappef, trapper=>trappef
-added snipef upgrade auto2=>snipef, sniper=> snipef
-added peltef upgrade auto2=>peltef, pelter=>peltef
-added Twin Hunt upgade hunter=> twin hunt, twin=>twin hunt
-added singleon upgrade single=> singleon, spawner=> singleon
-added Annifiller upgrade annihilator=> Annifiller
-----------------------------------------------
 -PATCH-02/01/2021
 -Added SPAWN DOMS IN DOMINATOR MOD
-//------------------------------------
+
 -PATCH-21/12/2020
 -added twinlilfactory
 -added ultra trapper
 -added awp-deagle
 -added fallen minigun
 -added red factory
------------------------------------
+
 -PATCH-17/12/2020
 -added twintion
 -added vulcanire
