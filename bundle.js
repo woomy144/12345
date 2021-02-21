@@ -1659,6 +1659,8 @@
                 KEY_CHOOSE_2: ["W", 87],
                 KEY_CHOOSE_3: ["E", 69],
                 KEY_CHOOSE_4: ["A", 65],
+                SWITCH_TANK: 16,
+                PassiveMode: 71,
                 KEY_CHOOSE_5: ["S", 83],
                 KEY_CHOOSE_6: ["D", 68],
                 KEY_CHOOSE_7: ["Z", 90],
@@ -4489,6 +4491,7 @@
           GOD_MODE: ";",
           KEY_CHOOSE_1: "Y",
           KEY_CHOOSE_2: "U",
+          SWITCH_TANK: 16,
           KEY_CHOOSE_3: "I",
           KEY_CHOOSE_4: "H",
           KEY_CHOOSE_5: "J",
@@ -4609,7 +4612,7 @@
         timezone: new Date().getTimezoneOffset() / -60,
              servers: [
           {
-            visible: 0,
+             visible: 0,
             id: "f",
             type: "FFA",
             code: "heroku-la-f",
