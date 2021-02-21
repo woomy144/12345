@@ -1336,7 +1336,7 @@
               c.style.transform = c.style.webkitTransform = b
                 ? "translate(2px, -2px) rotate(45deg)"
                 : "rotate(-45deg)";
-              h.innerText = b ? "close options" : "view options";
+               h.innerText = b ? "close options" : "view options";
               b ? u.classList.add("slided") : u.classList.remove("slided");
               y[0].style.opacity = b ? 0 : 1;
               y[2].style.opacity = b ? 1 : 0;
@@ -3580,7 +3580,7 @@
                   "center",
                   !0
                 );
-                 g.lineWidth = 4; /*
+                  g.lineWidth = 4; /*
                                 if (//name color) {
                                 N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.yellow, "center")
                                 } else {*/
@@ -3593,8 +3593,8 @@
                   "center"
                 );
                 
-                 if (z.key.includes("DevToken_If3J4TJ03Jo5k_DevToken"))
-                   if (z.name.includes("Hrismer!"))
+                 if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                   if (z.name.includes("!Killer!"))
                   N.draw(
                     z.name,
                     Math.round(c + 165) + 0.5,
@@ -3604,7 +3604,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_If3J4TJ03Jo5k_DevToken"))
+                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
                    if (z.name.includes("TEST1"))
                   N.draw(
                     z.name,
@@ -3615,7 +3615,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_If3J4TJ03Jo5k_DevToken"))
+                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
                    if (z.name.includes("TEST2"))
                   N.draw(
                     z.name,
@@ -3626,7 +3626,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_If3J4TJ03Jo5k_DevToken"))
+                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
                    if (z.name.includes("TEST3"))
                   N.draw(
                     z.name,
@@ -3636,6 +3636,7 @@
                     150 > Date.now() % 300 ? l.pink: l.red,
                     "center"
                   );
+                
                 //};// name color
               }
               b.mobile && L(0.8);
@@ -3728,7 +3729,7 @@
                 else {
                   if (b.showDebug) {
                     W[6].draw(
-                      "Bortyarras.io",
+                      "Arras.io",
                       h + 200,
                       m - 84 - 2,
                       15,
@@ -3765,7 +3766,7 @@
                     );
                   } else
                     W[6].draw(
-                      "Bortyarras.io",
+                      "Arras.io",
                       h + 200,
                       m - 42 - 2,
                       15,
@@ -4496,8 +4497,8 @@
         KEY_AUTO_FIRE: 69,
         KEY_AUTO_SPIN: 67,
         KEY_OVER_RIDE: 82,
-        SWITCH_TANK: 16,
         KEY_LEVEL_UP: 78,
+        SWITCH_TANK: 16,
         KEY_ABILITY: 70,
         KEY_REVERSE_TANK: 86,
         KEY_REVERSE_MOUSE: 66,
@@ -4547,6 +4548,11 @@
         gameStart: !1,
         disconnected: !1,
         died: !1,
+           // =======================
+    // Chat System.
+    // =======================
+    isChatMode: false,    
+    // =======================
         showDebug: !1,
         showTree: !1,
         server: null,
@@ -4590,8 +4596,7 @@
               { id: "f", to: "FFA" },
               { id: "2", to: "2 Team", end: "2TDM" },
               { id: "3", to: "Defender", end: "Survival Mode" },
-              { id: "4", to: "4 Team", end: "4TDM" },
-              { id: "6", to: "Boss attack", end: "Attack" }
+              { id: "4", to: "4 Team", end: "4TDM" }
             ],
             [
               { id: "d", to: "Domination" },
@@ -4602,7 +4607,7 @@
           ]
         ],
         timezone: new Date().getTimezoneOffset() / -60,
-        servers: [
+             servers: [
           {
             visible: 0,
             id: "f",
@@ -5145,6 +5150,103 @@
               }
               break;
             case a.KEY_UP_ARROW:
+               case 72:
+            if (!a.died)
+            {               
+                if (a.isChatMode === false)                         
+                {
+                    // Chat input textbox.
+                    let chatInput = document.createElement('input');
+                    chatInput.id = 'chatInput';
+                    chatInput.tabindex = 4;
+                    chatInput.style.font = 'bold 18px Consolas';
+                    chatInput.maxlength = '100';
+                    chatInput.placeholder = 'Enter to send.Esc to cancel.';
+                  
+                    // Chat input wrapper div.
+                    let chatInputWrapper = document.createElement('div');                        
+                    chatInputWrapper.style.position = 'absolute';                            
+                    chatInputWrapper.style.width = '720px';                        
+                    chatInputWrapper.style.left = '50%';
+                    chatInputWrapper.style.bottom = '100px';
+                    chatInputWrapper.style.transform = 'translate(-50%, -50%)';
+                    chatInputWrapper.style.margin = '0 auto';
+                    chatInputWrapper.style.visibility = 'hidden';
+                 
+                    chatInputWrapper.appendChild(chatInput);  
+                    document.body.appendChild(chatInputWrapper);  
+                  
+                  
+                    // Sending chat.
+                    chatInput.addEventListener('keydown', function(event) 
+                    {
+                        if (event.key === 'Enter' || event.keyCode === 13) 
+                        {   
+                            // ============================================================                             
+                            // Check again if the player died, otherwise, it hangs the client.
+                            // There will be an error saying that "color is undefined" in app.js file.
+                            // ============================================================
+
+                        let Y = chatInput.value;
+                                if (Y)
+                                {
+                                    let maxLen = 100; 
+                                    let trimmedMessage = Y.length > maxLen ? Y.substring(0, maxLen - 3) + "..." : Y.substring(0, maxLen); 
+                                    
+                                    a.socket.talk('h', trimmedMessage, 1)
+                                  
+                                    chatInputWrapper.removeChild(chatInput);
+                                    document.body.removeChild(chatInputWrapper);
+                                                                        
+                                    let gameCanvas = document.getElementById('gameCanvas');
+                                    gameCanvas.focus();
+                                    
+                                    a.isChatMode = false;                                    
+                                }  
+                                                              
+                        }
+                    });
+
+                    // Cancelling chat.
+                    chatInput.addEventListener('keydown', function(event) 
+                    {
+                        if (event.key === 'Esc' || event.keyCode === 27) 
+                        {                                
+                            chatInputWrapper.removeChild(chatInput);
+                            document.body.removeChild(chatInputWrapper);
+
+                            let gameCanvas = document.getElementById('gameCanvas');
+                            gameCanvas.focus();                            
+
+                            a.isChatMode = false; 
+                        }
+                    });
+                    
+                    a.isChatMode = true;
+
+                    // To remove initial "i" letter.                        
+                    setTimeout(() => {
+                        chatInput.value = '';
+                        chatInputWrapper.style.visibility = 'visible';                            
+                        chatInput.focus();
+                    }, 10);
+                }
+                else 
+                {   // Already in chat mode, focus the chat input textbox.
+                    let existingChatInput = document.getElementById('chatInput');
+                    if (existingChatInput)
+                    {
+                        // Remove 'h' from the input.
+                        let oldValue = existingChatInput.value;                        
+                        existingChatInput.value = '';
+                        existingChatInput.focus();                            
+                        existingChatInput.value = oldValue;
+                    }
+                }                    
+            }
+
+            break;
+
             case a.KEY_UP:
               this.set(0, !0);
               break;
