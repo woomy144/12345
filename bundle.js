@@ -4605,10 +4605,18 @@
         servers: [
           {
             visible: 0,
-            id: "6",
-            type: "Attack",
-            code: "heroku-la-6",
+            id: "f",
+            type: "FFA",
+            code: "heroku-la-f",
             at: p.heroku("gattt"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          }, {
+             visible: 0,
+            id: "o",
+            type: "Dev Server",
+            code: "heroku-la-o",
+            at: p.heroku("desvbrg"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
