@@ -1659,8 +1659,6 @@
                 KEY_CHOOSE_2: ["W", 87],
                 KEY_CHOOSE_3: ["E", 69],
                 KEY_CHOOSE_4: ["A", 65],
-                SWITCH_TANK: 16,
-                PassiveMode: 71,
                 KEY_CHOOSE_5: ["S", 83],
                 KEY_CHOOSE_6: ["D", 68],
                 KEY_CHOOSE_7: ["Z", 90],
@@ -4488,10 +4486,11 @@
           KEY_OVER_RIDE: "R",
           KEY_LEVEL_UP: "N",
           KEY_ABILITY: "F",
+          KEY_PassiveMode: "L",
+          PassiveMode: "L",
           GOD_MODE: ";",
           KEY_CHOOSE_1: "Y",
           KEY_CHOOSE_2: "U",
-          SWITCH_TANK: 16,
           KEY_CHOOSE_3: "I",
           KEY_CHOOSE_4: "H",
           KEY_CHOOSE_5: "J",
@@ -4501,7 +4500,6 @@
         KEY_AUTO_SPIN: 67,
         KEY_OVER_RIDE: 82,
         KEY_LEVEL_UP: 78,
-        SWITCH_TANK: 16,
         KEY_ABILITY: 70,
         KEY_REVERSE_TANK: 86,
         KEY_REVERSE_MOUSE: 66,
@@ -4543,6 +4541,8 @@
         KEY_MOUSE_1: 9,
         KEY_MOUSE_2: 16,
         KEY_FUCK_YOU: 192,
+        SWITCH_TANK: 16,
+        PassiveMode: 71,
         KEY_KILL_YOURSELF: 79,
         screenWidth: window.innerWidth,
         screenHeight: window.innerHeight,
@@ -5274,9 +5274,6 @@
             case a.KEY_MOUSE_2:
               this.set(6, !0);
               break;
-              case a.SWITCH_TANK:
-              this.emit("ChangeTankOne");
-              break;
             case a.KEY_LEVEL_UP:
               this.emit("L");
               break;
@@ -5343,6 +5340,9 @@
                 case a.KEY_FUCK_YOU:
                   this.emit("0");
                   break;
+              case a.SWITCH_TANK:
+              this.emit("ChangeTankOne");
+              break;
                 case a.KEY_KILL_YOURSELF:
                   this.emit("K");
                   break;
