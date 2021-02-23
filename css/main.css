@@ -15,7 +15,7 @@ html, body {
   overflow: hidden;
   height: 100%;
   position: fixed;
-  color: black;
+  color: white;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
   -moz-user-select: none;
