@@ -3593,7 +3593,7 @@
                   "center"
                 );
                 
-                 if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
+                 if (z.key.includes("DevToken_Fl7J4TL73Ga5k_DevToken"))
                    if (z.name.includes("!Hrismer!"))
                   N.draw(
                     z.name,
@@ -3604,7 +3604,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
+                if (z.key.includes("DevToken_Fl7J4TL73Ga5k_DevToken"))
                    if (z.name.includes("TEST1"))
                   N.draw(
                     z.name,
@@ -3615,7 +3615,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
+                if (z.key.includes("DevToken_Fl7J4TL73Ga5k_DevToken"))
                    if (z.name.includes("TEST2"))
                   N.draw(
                     z.name,
@@ -3626,14 +3626,14 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
-                   if (z.name.includes("TEST3"))
+                if (z.key.includes("DevToken_Fl7J4TL73Ga5k_DevToken"))
+                   if (z.name.includes("DARK normal"))
                   N.draw(
                     z.name,
                     Math.round(c + 165) + 0.5,
                     Math.round(d - 10 - 4) + 0.5,
                     32,
-                    150 > Date.now() % 300 ? l.pink: l.red,
+                    150 > Date.now() % 300 ? l.black: l.orange,
                     "center"
                   );
                 
