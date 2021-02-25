@@ -3593,8 +3593,8 @@
                   "center"
                 );
                 
-                 if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
-                   if (z.name.includes("!Killer!"))
+                 if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
+                   if (z.name.includes("!Hrismer!"))
                   N.draw(
                     z.name,
                     Math.round(c + 165) + 0.5,
@@ -3604,7 +3604,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
                    if (z.name.includes("TEST1"))
                   N.draw(
                     z.name,
@@ -3615,7 +3615,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
                    if (z.name.includes("TEST2"))
                   N.draw(
                     z.name,
@@ -3626,7 +3626,7 @@
                     "center"
                   );
                 
-                if (z.key.includes("DevToken_gfwG3TQg3fg3g_DevToken"))
+                if (z.key.includes("DevToken_Il1J4TB73Ps5k_DevToken"))
                    if (z.name.includes("TEST3"))
                   N.draw(
                     z.name,
@@ -4621,9 +4621,9 @@
             // featured: 1, // For Featured Status.
           }, {
              visible: 0,
-            id: "o",
-            type: "Dev Server",
-            code: "heroku-la-o",
+            id: "d",
+            type: "4 domination",
+            code: "heroku-la-d",
             at: p.heroku("desvbrg"),
             prefer: !0
             // featured: 1, // For Featured Status.
