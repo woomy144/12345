@@ -4620,25 +4620,25 @@
             prefer: !0
             // featured: 1, // For Featured Status.
           }, {
-              visible: 0,
+             visible: 0,
             id: "be",
-            type: "Boss",
-            code: "heroku-la-be",
+            type: "FFA",
+            code: "heroku-sv-be",
             at: p.heroku("bosdse"),
             prefer: !0
             // featured: 1, // For Featured Status.
           }, {
-               visible: 0,
+             visible: 0,
             id: "a",
             type: "def",
-            code: "heroku-la-a",
+            code: "wsi-sv-a",
             at: p.heroku("hrh4"),
             prefer: !0
             // featured: 1, // For Featured Status.
           }, {
              visible: 0,
             id: "d",
-            type: "4 domination",
+            type: "4 dom",
             code: "heroku-la-d",
             at: p.heroku("desvbrg"),
             prefer: !0
