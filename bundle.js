@@ -4621,18 +4621,10 @@
             // featured: 1, // For Featured Status.
           }, {
              visible: 0,
-            id: "be",
+            id: "3",
             type: "FFA",
-            code: "heroku-sv-be",
+            code: "heroku-sv-3",
             at: p.heroku("bosdse"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
-          }, {
-             visible: 0,
-            id: "a",
-            type: "def",
-            code: "ovh-sv-a",
-            at: p.heroku("hrh4"),
             prefer: !0
             // featured: 1, // For Featured Status.
           }, {
