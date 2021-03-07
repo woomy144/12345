@@ -5286,7 +5286,7 @@
                 this.emit("L");
                 break;
                 case a.PassiveMode:
-                this.emit("PassiveMode");
+                this.emit("K");
                 break;
               case a.KEY_ABILITY:
                 this.emit("A");
