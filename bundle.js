@@ -4620,16 +4620,16 @@
             }, {
                visible: 0,
               id: "3",
-              type: "FFA",
+              type: "Fight",
               code: "heroku-sv-3",
               at: p.heroku("bosdse"),
               prefer: !0
               // featured: 1, // For Featured Status.
             }, {
                visible: 0,
-              id: "d",
-              type: "4 dom",
-              code: "heroku-la-d",
+              id: "4",
+              type: "4tdm",
+              code: "heroku-la-4",
               at: p.heroku("desvbrg"),
               prefer: !0
               // featured: 1, // For Featured Status.
