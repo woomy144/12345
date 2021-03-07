@@ -4486,8 +4486,6 @@
             KEY_OVER_RIDE: "R",
             KEY_LEVEL_UP: "N",
             KEY_ABILITY: "F",
-            KEY_PassiveMode: "L",
-            PassiveMode: "L",
             GOD_MODE: ";",
             KEY_CHOOSE_1: "Y",
             KEY_CHOOSE_2: "U",
@@ -5286,7 +5284,7 @@
                 this.emit("L");
                 break;
                 case a.PassiveMode:
-                this.emit("K");
+                this.emit("PassiveMode");
                 break;
               case a.KEY_ABILITY:
                 this.emit("A");
