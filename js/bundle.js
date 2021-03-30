@@ -897,7 +897,7 @@
           })();
           return {
             stat: b(10),
-            upgrade: b(15),
+            upgrade: b(25),
             hover: b(1),
             skipUpgrades: b(1)
           };
