@@ -4611,26 +4611,10 @@
                servers: [
             {
                visible: 0,
-              id: "f",
-              type: "FFA",
-              code: "heroku-sv-f",
-              at: p.heroku("gattt"),
-              prefer: !0
-              // featured: 1, // For Featured Status.
-            }, {
-               visible: 0,
-              id: "3",
-              type: "Fight",
-              code: "heroku-sv-3",
-              at: p.heroku("bosdse"),
-              prefer: !0
-              // featured: 1, // For Featured Status.
-            }, {
-               visible: 0,
               id: "4",
-              type: "4tdm",
-              code: "heroku-la-4",
-              at: p.heroku("desvbrg"),
+              type: "4TDM",
+              code: "heroku-sv-4",
+              at: p.heroku("serferborty"),
               prefer: !0
               // featured: 1, // For Featured Status.
             },
