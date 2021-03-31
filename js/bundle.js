@@ -4714,6 +4714,7 @@
               dvi: "DVI",
               glitch: "Glitch",
               os: "OpenShift",
+              wsi: "wsi",
               heroku: "Heroku",
               linode: "Linode",
               vultr: "Vultr",
@@ -4761,9 +4762,9 @@
                servers: [
             {
                visible: 0,
-              id: "4",
-              type: "4TDM",
-              code: "heroku-sv-4",
+              id: "f",
+              type: "FFA",
+              code: "heroku-wsi-f",
               at: p.heroku("serferborty"),
               prefer: !0
               // featured: 1, // For Featured Status.
