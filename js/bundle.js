@@ -3580,11 +3580,73 @@
                     "center",
                     !0
                   );
-                    g.lineWidth = 4; /*
+                                  g.lineWidth = 4; /*
+                                if (//name color) {
+                                N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.yellow, "center")
+                                } else {*/
+                
+                N.draw(
+                  z.name,
+                  Math.round(c + 165) + 0.5,
+                  Math.round(d - 10 - 4) + 0.5,
+                  32,
+                  l.guiwhite,
+                  "center"
+                );
+                
+              
+                   if (z.name.includes("ĞõðŴôłf"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? l.goo : l.goo, //this one is yours
+                    "center"
+                  );
+                     if (z.name.includes("[RP]Abstrakt"))
+                  N.draw(
+                    z.name,
+                    Math.round(c + 165) + 0.5,
+                    Math.round(d - 10 - 4) + 0.5,
+                    32,
+                    150 > Date.now() % 300 ? l.blue : l.red,
+                    "center"
+                  );
+                //};// name color
+              }
+                            b.mobile && L(.8); {
+                                let c = 200 / b.gameWidth * b.gameHeight,
+                                    h = b.screenWidth - 20,
+                                    n = b.screenHeight - 20,
+                                    q = (a, c, d, f, h) => {
+                                        if (!b.radial) {
+                                            let b = Z[0].length,
+                                                e = Z.length,
+                                                h = d / b,
+                                                k = f / e;
+                                            for (let d = 0; d < e; d++) {
+                                                let f = Z[d];
+                                                for (let e = 0; e < b; e++) g.globalAlpha = .6, g.fillStyle = x(f[e]), G(a + e * h, c + d * k, h, k)
+                                            }
+                                        }
+                                        g.globalAlpha = .3;
+                                        g.fillStyle = T(l.grey, l.vlgrey);
+                                        b.radial ? G(a + d / 2, c + f / 2, d / 2) : G(a, c, d, f);
+                                        for (let f of Ea.get()) g.fillStyle = T(e(f.color),
+                                            l.black, .3), g.globalAlpha = f.alpha, 2 === f.type ? G(a + (f.x - f.size) / b.gameWidth * d - .4, c + (f.y - f.size) / b.gameWidth * d - 1, 2 * f.size / b.gameWidth * d + .2, 2 * f.size / b.gameWidth * d + .2) : 1 === f.type ? ja(a + f.x / b.gameWidth * d, c + f.y / b.gameWidth * d, f.size / b.gameWidth * d + .2) : f.id !== A.playerid && ja(a + f.x / b.gameWidth * d, c + f.y / b.gameWidth * d, h);
+                                        g.fillStyle = l.black;
+                                        g.globalAlpha = 1;
+                                        ja(a + z.cx / b.gameWidth * d, c + z.cy / b.gameWidth * d, h);
+                                        g.strokeStyle = l.black;
+                                        g.lineWidth = 3;
+                                        b.radial ? ja(a + d / 2, c + f / 2, d / 2, !0) : G(a, c, d, f, !0)
+                                    };
+          /*          g.lineWidth = 4; /*
                                   if (//name color) {
                                   N.draw(z.name, Math.round(c + 165) + .5, Math.round(d - 10 - 4) + .5, 32, l.yellow, "center")
                                   } else {*/
-                  N.draw(
+            /*      N.draw(
                     z.name,
                     Math.round(c + 165) + 0.5,
                     Math.round(d - 10 - 4) + 0.5,
@@ -3695,7 +3757,7 @@
                       b.radial
                         ? ja(a + d / 2, c + f / 2, d / 2, !0)
                         : G(a, c, d, f, !0);
-                    };
+                    };*/
                   if (b.mobile) {
                     h -= 200;
                     let d =
@@ -3815,7 +3877,95 @@
                       (b.canUpgrade && 40 + 114 * A.upgrades.length > 1.4 * c
                         ? (100 / 1.4) * k.get()
                         : 0));
-                  0 < O.data.length &&
+                     0 < O.data.length && V.draw("Leaderboard", Math.round(c + 100) + .5, Math.round(d - 10) + .5, 18,
+                                    l.guiwhite, "center");
+                                for (let a = 0; a < O.data.length && (!b.mobile || 6 > a); a++) {
+                                    let b = O.data[a];
+                                    K(c, c + 200, d + 7, 11 + B.graphical.barChunk, l.black);
+                                    K(c, c + 200, d + 7, 11, l.grey);
+                                    K(c, c + 200 * Math.min(1, b.score / na), d + 7, 10.5, b.barColor);
+                                    ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
+                     if (b.label.includes("[RP]Abstrakt"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      150 > Date.now() % 300 ? l.blue : l.red,
+                      "center",
+                      !0
+                    );
+                                  if (b.label.includes("ĞõðŴôłf"))
+                    ca[a].draw(
+                      b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
+                      c + 100,
+                      d + 7,
+                      9,
+                      l.goo,
+                      "center",
+                      !0
+                    );
+
+                 
+                                    let f = 14 / b.position.axis;
+                                    ba(c - 21 - f * b.position.middle.x * .707, d + 7 + f * b.position.middle.x * .707, b.image, 1 / f, 1, f * f / b.image.size, -Math.PI / 4, !0);
+                                    d += 18
+                                }
+                            }
+                            b.mobile && L(1 / 1.4); {
+                                b.canUpgrade = 0 < A.upgrades.length &&
+                                    !(b.mobile && b.died);
+                                k.set(+b.canUpgrade);
+                                let a = k.get();
+                                b.clickables.upgrade.hide();
+                                if (b.canUpgrade) {
+                                    let c = 40 * a - 20,
+                                        d = 20,
+                                        f = c,
+                                        h = 0,
+                                        k = d,
+                                        x = 0;
+                                    la += .01;
+                                    let u = 0,
+                                        q = 0;
+                                    A.upgrades.forEach(m => {
+                                        d > k && (k = d);
+                                        h = c;
+                                        b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
+                                        g.globalAlpha = .5;
+                                        g.fillStyle = e(u + 10);
+                                        G(c, d, 100, 100);
+                                        g.globalAlpha = .1;
+                                        g.fillStyle = e(u);
+                                        u++;
+                                        G(c, d, 100, 60);
+                                        g.fillStyle = l.black;
+                                        G(c, d + 60, 100, 40);
+                                        g.globalAlpha = 1;
+                                        let t = D(m, A.color);
+                                        m = M[m].position;
+                                        let v = 60 / m.axis;
+                                        ba(c + 50 - v * m.middle.x * Math.cos(la), d + 50 - v * m.middle.x *
+                                            Math.sin(la), t, 1, 1, v / t.size, la, !0);
+                                        m = (b.help[`KEY_CHOOSE_${x+1}`] || "").toLowerCase().trim();
+                                        !b.mobile && m ? (aa[q - 1].draw(t.name, c + 45, d + 100 - 6, 9.5, l.guiwhite, "center"), ea[q - 1].draw("[" + m + "]", c + 100 - 4, d + 100 - 6, 9.5, l.guiwhite, "right")) : aa[q - 1].draw(t.name, c + 50, d + 100 - 6, 9.5, l.guiwhite, "center");
+                                        g.strokeStyle = l.black;
+                                        g.globalAlpha = 1;
+                                        g.lineWidth = 3;
+                                        G(c, d, 100, 100, !0);
+                                        0 !== ++x % 5 || b.mobile ? c += 114 * a : (c = f, d += 114)
+                                    });
+                                    let m = ta("Don't Upgrade", 11) + 10,
+                                        t = (h + 100 + 14 + f - 15) / 2,
+                                        v = k + 100 + 14;
+                                    K(t - m / 2, t + m / 2, v + 7, 14 + B.graphical.barChunk,
+                                        l.black);
+                                    K(t - m / 2, t + m / 2, v + 7, 14, l.white);
+                                    fa.draw("Don't Upgrade", t, v + 7, 12, l.guiwhite, "center", !0);
+                                    b.clickables.skipUpgrades.place(0, (t - m / 2) * n, v * n, m * n, 14 * n)
+                                } else b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide()
+                            }
+              /*    0 < O.data.length &&
                     V.draw(
                       "Leaderboard",
                       Math.round(c + 100) + 0.5,
@@ -3976,7 +4126,7 @@
                     );
                   } else
                     b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide();
-                }
+                }*/
                 if (b.mobile) {
                   b.canSkill =
                     0 < A.points &&
@@ -5825,6 +5975,7 @@
             black: "#484848",
             blue: "#3CA4CB",
             green: "#8ABC3F",
+            goo: "#E03E41",
             red: "#E03E41",
             gold: "#EFC74B",
             purple: "#8D6ADF",
