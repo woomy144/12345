@@ -49,57 +49,57 @@
 -added-elite trapper sentry
 -added-auto 9 tank
 -added-destroy sniper tank
-..............................................................................................................................
+
 #PATCH-22/11/2020 MORE
 -added twin laucher tank
 -added ayto sniper tank
 -added controller tank
 -added fallen skimmer boss
-..............................................................................................................................
+
 #PATCH-21/11/2020 SMAL update
 -added molot boss
 -added awp-1 boss
 -reformed class bots
 -event bots developer 3days
-..............................................................................................................................
+
 #PATCH-16/11/2020 More bosses
 -Added extra sprayer boss
 -coming soon
 -coming soon
 -coming soon
 -coming soon
-..............................................................................................................................
+
 #PATCH-16.11.2020
 -added xhunter
 -added shunter
 -added dual machine
 -added bouble twin machine
 -reformed nest
-..............................................................................................................................
+
 #PATCH-14.11.2020
 -added doublebuilder tank
 -added bentbuilder tank
 -cooming soon added penta boss
-..............................................................................................................................
+
 #PATCH-08.11.2020 Big
 -added guardian boss
 -added god of guardians boss
 -bosses spawn
 -added expertengineer tank
 -added dual gunner tank
-..............................................................................................................................
+
 #PATCH-03.11.2020
 -added new boss awp-ega and awp-ega mk2
 -bosses can spawn
 -added Fallen Booster
 -added Fallen Overlord
-..............................................................................................................................
+
 #PATCH-02.11.2020
 -added awp-ice
 -added awp-6u9i
-..............................................................................................................................
+
 #PATCH-01.11.2020
 - add awp-(5/3)
-..............................................................................................................................
+
 # Event
 - free testbed ended
