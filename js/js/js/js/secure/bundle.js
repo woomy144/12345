@@ -311,6 +311,7 @@
             case "mbc0":
               return l.yellow;
             case "port":
+            case "btsp":
               return (g.globalAlpha = 1), l.black;
             case "edge":
               return T(l.white, l.guiblack, 1 / 3);
