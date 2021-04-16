@@ -1,0 +1,68 @@
+
+(function() {    
+    var resourceCache = {};    
+    var numImages = 0;
+    var readyCallbacks = [];
+
+    /**
+    * Loader function that helps to trigger a callback when multiple images has been loaded. Besides
+    * indicates which images were correctly/wrong loaded.
+    * 
+    */
+    // https://ourcodeworld.com/articles/read/571/how-to-verify-when-multiple-images-have-been-loaded-in-javascript
+    function load(imgURLs, progressCallback, loadedCallback){
+        // Keep the count of the verified images
+        var numLoadedImages = 0;
+
+        // The object that will be returned in the callback
+        var _log = {
+            success: [],
+            error: []
+        };
+
+        // Executed everytime an img is successfully or wrong loaded
+        var verifier = function(){
+            numLoadedImages++;
+
+            // triggers the end callback when all images has been tested
+            if(numLoadedImages == imgURLs.length){
+                loadedCallback.call(undefined, _log);
+            }else {
+                let percentage = ((_log.success.length + _log.error.length) / imgURLs.length) * 100.0;
+                progressCallback.call(undefined, percentage);
+            }
+        };
+
+        // Loop through all the images URLs
+        for (var index = 0; index < imgURLs.length; index++) {
+            // Prevent that index has the same value by wrapping it inside an anonymous fn
+            (function(i){
+                // Image path providen in the array e.g image.png
+                var imgSource = imgURLs[i];
+                var img = new Image();
+                
+                img.addEventListener("load", function(){
+                    _log.success.push(imgSource);
+                    resourceCache[imgSource] = img;
+                    verifier();
+                }, false); 
+                
+                img.addEventListener("error", function(){
+                    _log.error.push(imgSource);
+                    verifier();
+                }, false); 
+            
+                img.src = imgSource;
+            })(index);
+        }
+    }
+
+    function get(url) {
+        return resourceCache[url];
+    }
+
+    window.resources = { 
+        load: load,
+        get: get        
+    };
+})();
