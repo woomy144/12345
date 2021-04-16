@@ -7,7 +7,7 @@ namespace Example
         static void Main()
         {
             Console.WriteLine("Hello World!"); // Вывод заданного текста в консоль
-            Console.ReadKey(R); // Ожидание нажатия клавиши пользователем
+            Console.ReadKey(); // Ожидание нажатия клавиши пользователем
         }
     }
 }
