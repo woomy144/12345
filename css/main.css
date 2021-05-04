@@ -644,6 +644,8 @@ margin: 0;
 
     background:  linear-gradient(-45deg, #fa8e00, #ce067b, #6f01ff);
     animation: Fww 10s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes Fww {
