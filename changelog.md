@@ -1,2 +1,4 @@
--Changelogs Move to link
--<http://arras.io/#host=arras-template.glitch.me&mode=f>
+-Changelogs Move Reason Owner use scss and
+-just can't enter this place
+-check buttons and find changelogs
+-button (Beta test)
