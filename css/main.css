@@ -801,4 +801,10 @@ i.cross::after {
   margin-top: -7px;
 }
 
+.box {
+Color: black;
+  width: 44;
+  height: 2px;
+}
+
 
