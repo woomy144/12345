@@ -800,3 +800,16 @@ i.cross::after {
   height: 12px;
   margin-top: -7px;
 }
+
+.nk-contacts-top {
+    position: relative;
+    padding: 15px 0;
+    font-size: .8rem;
+    z-index: 1001
+}
+
+.nk-contacts-top::after {
+    content: "";
+    display: table;
+    clear: both
+}
