@@ -813,3 +813,15 @@ i.cross::after {
     display: table;
     clear: both
 }
+
+.nk-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000
+}
+
+.nk-header.nk-header-opaque {
+    position: relative
+}
