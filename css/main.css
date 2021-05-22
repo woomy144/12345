@@ -581,9 +581,22 @@ body.mobile .icon {
   -moz-transition: top 1s;
   -o-transition: top 1s;
   transition: top 1s;
+  animation: aniq 0s ease ;
   position: relative;
   overflow: hidden;
   top: 0px;
+}
+
+@keyframes aniq {
+  0% {
+      background-position: 0 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0 50%;
+  }
 }
 
 .nopadding {
