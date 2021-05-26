@@ -826,9 +826,9 @@ i.cross::after {
 }
 
 #box {
-background-Color: black;
-  width: 44;
-  height: 2px;
+background-Color: rgb(236, 229, 229);
+max-width: 1150px;
+max-height: 390px;
 top: 0px;
 }
 
