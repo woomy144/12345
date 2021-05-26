@@ -587,6 +587,17 @@ body.mobile .icon {
   top: 50px;
 }
 
+#startMenuWrapper:hover {
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
+  animation: aniq 0s ease ;
+  position: relative;
+  overflow: hidden;
+  top: 0px;
+}
+
 @keyframes aniq {
   0% {
       background-position: 0 50%;
