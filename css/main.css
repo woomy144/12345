@@ -826,9 +826,10 @@ i.cross::after {
 }
 
 #box {
-Color: black;
+background-Color: black;
   width: 44;
   height: 2px;
+top: 0px;
 }
 
 
