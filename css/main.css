@@ -842,20 +842,4 @@ justify-content: center;
 background-color:#DDE6EB;
 }
 
-li {
-    display: block;
-    padding: 0 20px;
-    color: #fff;
-    font-size: 25px;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    transition: .5s;
-}
-
-li a {
-    text-decoration: none;
-    color: #fff;
-    transition: .5s;
-    padding: 10px;
-}
 
