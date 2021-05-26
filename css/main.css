@@ -825,11 +825,37 @@ i.cross::after {
   margin-top: -7px;
 }
 
-#box {
-background-Color: rgb(236, 229, 229);
-max-width: 1150px;
-max-height: 390px;
-top: 0px;
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.box {
+width: 50000px;
+height: 50px;
+top: 50px;
+justify-content: center;
+    align-items: center;
+background-color:black;
+}
+
+li {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+    padding: 10px;
+}
 
