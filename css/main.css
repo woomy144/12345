@@ -852,9 +852,8 @@ Color: white;
 }
 
 .menu-btn-select {
-    font-family: Roboto-Regular;
-    font-size: 16px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 50px;
     position: relative;
     top: 0px;
     display: inline-block;
