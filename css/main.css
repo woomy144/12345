@@ -590,7 +590,7 @@ body.mobile .icon {
 }
 
 @keyframes aniq {
- from { left: 1400; }
+ from { right: 1400; }
  to { left: 0px; }
 }
 }
