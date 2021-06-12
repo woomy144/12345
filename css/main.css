@@ -847,7 +847,7 @@ Color: white;
     padding-right: 12px;
     padding-left: 12px;
     color: rgb(255, 255, 255);
-
+}
   .menu-btn-select:hover {
     font-size: 30px;
     line-height: 50px;
@@ -859,3 +859,4 @@ Color: white;
     padding-right: 12px;
     padding-left: 12px;
     color: rgb(230 230 225);
+}
