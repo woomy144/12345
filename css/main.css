@@ -587,11 +587,11 @@ body.mobile .icon {
   Right: 0px;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  top: 650px;
+  top: 900px;
 }
 
 @keyframes aniq {
- from { top: 650px; }
+ from { top: 900px; }
  to { top: 0px; }
 }
 }
