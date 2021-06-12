@@ -584,14 +584,14 @@ body.mobile .icon {
   animation: aniq 1s ease-in-out ;
   position: relative;
   overflow: hidden;
-  Right: 0px;
+  Right: 1400px;
   animation-iteration-count: 1;
   top: 0px;
 }
 
 @keyframes aniq {
  from { left: 0; }
- to { left: 300px; }
+ to { left: 1400px; }
 }
 }
 
