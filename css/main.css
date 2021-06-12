@@ -584,6 +584,7 @@ body.mobile .icon {
   animation: aniq 0s ease ;
   position: relative;
   overflow: hidden;
+  animation-iteration-count: 1;
   top: 50px;
 }
 
