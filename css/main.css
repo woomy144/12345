@@ -581,7 +581,7 @@ body.mobile .icon {
   -moz-transition: top 1s;
   -o-transition: top 1s;
   transition: top 1s;
-  animation: aniq 4s ease-in-out ;
+  animation: aniq 3s ease-in-out ;
   position: relative;
   overflow: visible;
   Right: 0px;
