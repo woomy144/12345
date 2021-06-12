@@ -15,7 +15,6 @@ html, body {
   overflow: hidden;
   height: 100%;
   position: fixed;
-  color: black;
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -848,5 +847,3 @@ Color: white;
     padding-right: 12px;
     padding-left: 12px;
     color: rgb(255, 255, 255);
-    border-bottom: 2px solid transparent;
-    transition: all 0.1s ease-in-out 0s;
