@@ -902,10 +902,10 @@ padding-left: 35px;
     font-size: 28px;
     line-height: 40px;
     position: relative;
-  transition: top 0.5s;
+    transition: top 0.5s;
     top: 8px;
     display: inline-block;
-    width: 150px;
+    width: 180px;
     height: 45px;
     left: 35px;
     Background-color: #A9D86D;
@@ -917,10 +917,10 @@ padding-left: 35px;
 }
 
 .eq1 {
-Color: Red;
-left: 0px;
-padding-left: 35px;
-  font-size: 28px;
+    Color: #a8f7b5;
+    left: 0px;
+    padding-left: 0px;
+    font-size: 18px;
 }
 
 .menu-btn-select:hover {
@@ -968,6 +968,24 @@ padding-left: 35px;
     top: 4px;
     display: inline-block;
     width: 150px;
+    height: 45px;
+    left: 35px;
+    Background-color: #A9D86D;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: White;
+    border-radius: 6%;
+    text-decoration: none;
+}
+
+.menu-btn-select3:hover {
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+    transition: top 0.5s;
+    top: 5px;
+    display: inline-block;
+    width: 180px;
     height: 45px;
     left: 35px;
     Background-color: #A9D86D;
