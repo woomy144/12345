@@ -121,6 +121,7 @@ h3 {
 }
 a:link, a:visited {
   color: White;
+      text-decoration: none;
 }
 a:hover {
   color: #B5B5B9;
@@ -842,11 +843,12 @@ Color: white;
     position: relative;
     top: 0px;
     display: inline-block;
-    width: 50000px;
+    width: 150px;
     height: 50px;
+    Background-color: #A9D86D; 
     padding-right: 12px;
     padding-left: 12px;
-    color: rgb(255, 255, 255);
+    color: White;
   text-decoration: none;
 }
  
