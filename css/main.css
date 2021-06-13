@@ -839,17 +839,18 @@ Color: white;
 
 .menu-btn-select {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 40px;
     position: relative;
     top: 8px;
     display: inline-block;
     width: 150px;
     height: 45px;
-    Background-color: #A9D86D; 
+    left: 5px;
+    Background-color: #A9D86D;
     padding-right: 12px;
     padding-left: 12px;
     color: White;
-  border-radius: 30%;
-  text-decoration: none;
+    border-radius: 6%;
+    text-decoration: none;
 }
  
