@@ -2493,7 +2493,7 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
                     latency: d
                   });
                   if (1 > S.length)
-                    setTimeout(() => g.talk("S", Date.now() - P - Q), 10),
+                    setTimeout(() => g.talk("S", Date.now() - P - Q), 60),
                       (b.message = `Syncing clocks, please do no tab away. ${100 * S.length}%`);
                   else {
                     S.sort((b, a) => b.latency - a.latency);
