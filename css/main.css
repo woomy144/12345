@@ -858,7 +858,7 @@ Color: white;
     text-decoration: none;
 }
 
-.menu-btn-select1 {
+#menu-btn-select1 {
     font-size: 28px;
     line-height: 40px;
   -webkit-transition: top 1s;
@@ -879,7 +879,7 @@ Color: white;
     text-decoration: none;
 }
 
-.menu-btn-select2 {
+#menu-btn-select2 {
     font-size: 28px;
     line-height: 40px;
   -webkit-transition: top 1s;
@@ -907,7 +907,7 @@ padding-left: 35px;
   font-size: 28px;
 }
  
-.menu-btn-select3 {
+#menu-btn-select3 {
     font-size: 28px;
     line-height: 40px;
     position: relative;
@@ -928,7 +928,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select4 {
+#menu-btn-select4 {
     font-size: 28px;
     line-height: 40px;
   -webkit-transition: top 1s;
@@ -949,7 +949,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select5 {
+#menu-btn-select5 {
     font-size: 28px;
   -webkit-transition: top 1s;
   -moz-transition: top 1s;
@@ -970,7 +970,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select6 {
+#menu-btn-select6 {
     font-size: 28px;
   -webkit-transition: top 1s;
   -moz-transition: top 1s;
@@ -1041,7 +1041,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select1:hover {
+#menu-btn-select1:hover {
     font-size: 28px;
     line-height: 40px;
     position: relative;
@@ -1060,7 +1060,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select2:hover {
+#menu-btn-select2:hover {
     font-size: 28px;
     line-height: 40px;
     position: relative;
@@ -1078,7 +1078,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select3:hover {
+#menu-btn-select3:hover {
     font-size: 28px;
     line-height: 40px;
     position: relative;
@@ -1096,7 +1096,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select4:hover {
+#menu-btn-select4:hover {
     font-size: 28px;
     line-height: 40px;
     position: relative;
@@ -1114,7 +1114,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select5:hover {
+#menu-btn-select5:hover {
     font-size: 28px;
     line-height: 40px;
     position: relative;
@@ -1132,7 +1132,7 @@ padding-left: 35px;
     text-decoration: none;
 }
 
-.menu-btn-select6:hover {
+#menu-btn-select6:hover {
     font-size: 28px;
     line-height: 40px;
     position: relative;
