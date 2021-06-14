@@ -92,7 +92,7 @@ h3 {
   border-radius: 5px;
 }
 .serverSelector tr.featured {
-  color: #e8ae00;
+  color: Red;
   text-shadow: white 0 0 4px, white 0 0 6px;
 }
 .serverSelector tr.testing {
