@@ -4915,6 +4915,7 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
               glitch: "Glitch",
               os: "OpenShift",
               wsi: "wsi",
+		    SERv: "Server:5566",
               heroku: "Heroku",
               linode: "Linode",
               vultr: "Vultr",
@@ -4964,7 +4965,7 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
                visible: 0,
               id: "f",
               type: "FFA",
-              code: "wsi-sv-f",
+              code: "SERv-sv-f",
               at: p.heroku("serferborty"),
               prefer: !0
               // featured: 1, // For Featured Status.
