@@ -816,6 +816,13 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
             b.screenWidth = window.innerWidth;
             b.screenHeight = window.innerHeight;
             document.getElementById("startMenuWrapper").style.top = "-600px";
+			document.getElementById("menu-btn-select").style.top = "-600px";
+			document.getElementById("menu-btn-select1").style.top = "-600px";
+			document.getElementById("menu-btn-select2").style.top = "-600px";
+			document.getElementById("menu-btn-select3").style.top = "-600px";
+			document.getElementById("menu-btn-select4").style.top = "-600px";
+			document.getElementById("menu-btn-select5").style.top = "-600px";
+			document.getElementById("menu-btn-select6").style.top = "-600px";
             document.getElementById("gameAreaWrapper").style.opacity = 1;
             if (!b.socket) {
               d = "https:" === location.protocol ? 1 : -1;
