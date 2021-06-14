@@ -837,7 +837,7 @@ font-family: Ubuntu;
 Color: white;
 }
 
-.menu-btn-select {
+#menu-btn-select {
     font-size: 28px;
     line-height: 40px;
     position: relative;
@@ -1023,7 +1023,7 @@ padding-left: 35px;
 }
 
 
-.menu-btn-select:hover {
+#menu-btn-select:hover {
     font-size: 28px;
     line-height: 40px;
     position: relative;
