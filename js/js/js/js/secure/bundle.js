@@ -550,7 +550,6 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
             shape: c.shape,
             name: c.name,
             score: 0,
-			Kills: 0,
             tiggle: 0,
             layer: c.layer,
             guns: {
