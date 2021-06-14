@@ -2493,8 +2493,8 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
                     latency: d
                   });
                   if (100 > S.length)
-                    setTimeout(() => g.talk("S", Date.now() - P - Q), 50),
-                      (b.message = `Syncing clocks, please do no tab away. ${10 * S.length}%`);
+                    setTimeout(() => g.talk("S", Date.now() - P - Q), 20),
+                      (b.message = `Loading Assets pls wait. ${1 * S.length}%`);
                   else {
                     S.sort((b, a) => b.latency - a.latency);
                     let a = S[Math.floor(S.length / 2)].latency,
