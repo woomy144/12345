@@ -838,6 +838,9 @@ Color: white;
     font-size: 28px;
     line-height: 40px;
     position: relative;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
   transition: top 0.5s;
     top: 8px;
     display: inline-block;
@@ -855,6 +858,9 @@ Color: white;
 .menu-btn-select1 {
     font-size: 28px;
     line-height: 40px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
     position: relative;
   transition: top 0.5s;
     top: 8px;
@@ -873,6 +879,9 @@ Color: white;
 .menu-btn-select2 {
     font-size: 28px;
     line-height: 40px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
     position: relative;
   transition: top 0.5s;
     top: 8px;
@@ -900,6 +909,9 @@ padding-left: 35px;
     line-height: 40px;
     position: relative;
     transition: top 0.5s;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
     top: 8px;
     display: inline-block;
     width: 180px;
@@ -916,6 +928,9 @@ padding-left: 35px;
 .menu-btn-select4 {
     font-size: 28px;
     line-height: 40px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
     position: relative;
   transition: top 0.5s;
     top: 8px;
@@ -933,6 +948,9 @@ padding-left: 35px;
 
 .menu-btn-select5 {
     font-size: 28px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
     line-height: 40px;
     position: relative;
   transition: top 0.5s;
@@ -951,6 +969,9 @@ padding-left: 35px;
 
 .menu-btn-select6 {
     font-size: 28px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
     line-height: 40px;
     position: relative;
   transition: top 0.5s;
