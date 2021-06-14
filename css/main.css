@@ -941,6 +941,13 @@ padding-left: 35px;
     font-size: 18px;
 }
 
+.eq2 {
+    Color: White;
+    left: 0px;
+    padding-left: 0px;
+    font-size: 18px;
+}
+
 .menu-btn-select:hover {
     font-size: 28px;
     line-height: 40px;
