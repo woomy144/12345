@@ -952,6 +952,24 @@ padding-left: 35px;
     text-decoration: none;
 }
 
+.menu-btn-select6 {
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+  transition: top 0.5s;
+    top: 8px;
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    left: 65px;
+    Background-color: #A9D86D;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: White;
+    border-radius: 6%;
+    text-decoration: none;
+}
+
 .eq1 {
     Color: #a8f7b5;
     left: 0px;
@@ -972,6 +990,18 @@ padding-left: 35px;
     padding-left: 20px;
     font-size: 28px;
 }
+
+.eq4 {
+    Color: White;
+    left: 0px;
+    padding-left: 20px;
+    font-size: 28px;
+}
+
+.eqcl {
+    Color: White;
+}
+
 
 .menu-btn-select:hover {
     font-size: 28px;
@@ -1074,6 +1104,24 @@ padding-left: 35px;
     width: 150px;
     height: 45px;
     left: 50px;
+    Background-color: #A9D86D;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: White;
+    border-radius: 6%;
+    text-decoration: none;
+}
+
+.menu-btn-select6:hover {
+    font-size: 28px;
+    line-height: 40px;
+    position: relative;
+  transition: top 0.5s;
+    top: 4px;
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    left: 65px;
     Background-color: #A9D86D;
     padding-right: 12px;
     padding-left: 12px;
