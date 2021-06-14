@@ -819,6 +819,9 @@ ul {
 .box {
 width: 50000px;
 height: 60px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
 top: 50px;
 justify-content: center;
     align-items: center;
@@ -974,7 +977,6 @@ padding-left: 35px;
   -o-transition: top 1s;
     line-height: 40px;
     position: relative;
-  transition: top 0.5s;
     top: 8px;
     display: inline-block;
     width: 150px;
@@ -1134,7 +1136,9 @@ padding-left: 35px;
     font-size: 28px;
     line-height: 40px;
     position: relative;
-  transition: top 0.5s;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
     top: 4px;
     display: inline-block;
     width: 150px;
