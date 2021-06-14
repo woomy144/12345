@@ -584,7 +584,7 @@ body.mobile .icon {
   position: relative;
   overflow: hidden;
   Right: 0px;
-  top: 900px;
+  top: 0px;
 }
 
 @keyframes aniq {
