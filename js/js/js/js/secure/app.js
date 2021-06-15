@@ -3991,7 +3991,7 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
                   else {
                     if (b.showDebug) {
                       W[6].draw(
-                        "Arras.io",
+                         "Tek-arras.cc",
                         h + 200,
                         m - 84 - 2,
                         15,
@@ -4028,7 +4028,7 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
                       );
                     } else
                       W[6].draw(
-                        "Arras.io",
+                        "Tek-arras.cc",
                         h + 200,
                         m - 42 - 2,
                         15,
@@ -4966,7 +4966,7 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
               id: "f",
               type: "FFA",
               code: "SERv-sv-f",
-              at: p.heroku("serferborty"),
+              at: p.heroku("voidsarrasmahick"),
               prefer: !0
               // featured: 1, // For Featured Status.
             },
