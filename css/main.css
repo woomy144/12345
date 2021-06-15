@@ -442,6 +442,15 @@ body.mobile #startMenuSlidingContent {
 
 .icon {
   display: block;
+    transition: 1s;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+.icon:hover {
+  display: block;
+  transform: rotate(360deg);
+    transition: 1s;
   width: 96px;
   height: 96px;
   border-radius: 50%;
