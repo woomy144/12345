@@ -4934,7 +4934,7 @@ let spaceBallSpriteInfo = {
               glitch: "Glitch",
               os: "OpenShift",
               wsi: "wsi",
-		    SERv: "Server:5566",
+		    Host: "Server:5566",
               heroku: "Heroku",
               linode: "Linode",
               vultr: "Vultr",
@@ -4984,7 +4984,7 @@ let spaceBallSpriteInfo = {
                visible: 0,
               id: "f",
               type: "FFA",
-              code: "SERv-sv-f",
+              code: "SERv-local-4",
               at: p.heroku("serferborty"),
               prefer: !0
               // featured: 1, // For Featured Status.
