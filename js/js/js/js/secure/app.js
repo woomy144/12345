@@ -1980,6 +1980,58 @@ V¬°);h.±뀶ڢn램"²ܥx",¶¬._¢b¢{.m¨­Jܥx);¶¬._½ª.m¨­À.v.�
               h.classList.add("x");
             }
           };
+
+// ==============================================================================
+// Spaceball Shooter.
+// ==============================================================================
+resources.load([    
+    'img/space_ball.png',    
+]);
+
+let spaceBallSpriteInfo = {
+        url: 'img/space_ball.png', 
+        width: 93,
+        height: 100,        
+        frames: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+    };
+// ==============================================================================
+
+// ===========================================================================
+        // Spaceball Shooter bullet.
+        // ===========================================================================
+        if (instance.layer === 20)
+        {           
+            if (!instance.spaceBallSprite)
+            {
+                let animationInfo = spaceBallSpriteInfo;
+                let destWidth = scale * ratio * animationInfo.width;
+                let destHeight = scale * ratio * animationInfo.height;
+
+                instance.spaceBallSprite = new Sprite(animationInfo.url, 
+                                            [0, 0], // Position
+                                            [animationInfo.width, animationInfo.height], // Source size 
+                                            [destWidth, destHeight], // Destination size
+                                            24, // Animation speed
+                                            animationInfo.frames, // Frames
+                                            null, // Direction (default is horizontal)
+                                            false); // Play once                   
+            }
+           
+            var now = getNow();
+            var dt = instance.spaceBallTime ? (now - instance.spaceBallTime) / 1000.0 : 0;
+            
+            // Add 90 degrees to align with the rotation of the bullet.
+            let rotation = rot + 180 * (Math.PI / 180);
+            let alpha = instance.render.status.getFade();
+            
+            // dt, destX, destY, destXOffset, destYOffset,  rotation, alpha
+            instance.spaceBallSprite.update(dt, x, y, 0,0, rotation, alpha);
+            instance.spaceBallSprite.render(ctx);   
+
+            instance.spaceBallTime = now;                           
+        }
+        // ===========================================================================
+
           document.onkeydown = a => {
             if (!(b.gameStart || a.shiftKey || a.ctrlKey || a.altKey)) {
               var c = a.which || a.keyCode;
