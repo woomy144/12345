@@ -4984,7 +4984,7 @@ let spaceBallSpriteInfo = {
                visible: 0,
               id: "f",
               type: "FFA",
-              code: "SERv-local-4",
+              code: "Host-local-4",
               at: p.heroku("serferborty"),
               prefer: !0
               // featured: 1, // For Featured Status.
