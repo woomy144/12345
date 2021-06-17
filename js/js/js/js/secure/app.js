@@ -3862,27 +3862,7 @@ let spaceBallSpriteInfo = {
                                         b.radial ? ja(a + d / 2, c + f / 2, d / 2, !0) : G(a, c, d, f, !0)
                                     };
 				    
-				    else if (sides === 108) {
-				// Tri-Blade
-				for (var _i15 = 0; _i15 < 12; _i15++) {
-					var _theta7 = _i15 / 12 * 2 * Math.PI,
-					    _x19 = centerX + radius * Math.cos(_theta7 + (angle - .025)),
-					    _y = centerY + radius * Math.sin(_theta7 + (angle - .025));
-					if (_i15 === 2 || _i15 === 10 || _i15 === 6) {
-						_x19 = centerX + radius / 2 * Math.cos(_theta7 + (angle - .025));
-						_y = centerY + radius / 2 * Math.sin(_theta7 + (angle - .025));
-					}
-					if (_i15 === 0 || _i15 === 4 || _i15 === 8) {
-						_x19 = centerX + radius * 1.25 * Math.cos(_theta7 + (angle - .025));
-						_y = centerY + radius * 1.25 * Math.sin(_theta7 + (angle - .025));
-					}
-					context.lineTo(_x19, _y);
-					context.closePath();
-			context.stroke();
-			if (fill) {
-				context.fill();
-				}
-			} 
+				 
 				    
           /*          g.lineWidth = 4; /*
                                   if (//name color) {
