@@ -476,6 +476,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
           switch (b) {
             case "bas1":
             case "bap1":
+            case "boss1":
             case "dom1":
             case "dbc1":
             case "mbc1":
@@ -483,17 +484,20 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
             case "bas2":
             case "bap2":
             case "dom2":
+            case "boss2":
             case "dbc2":
             case "mbc2":
               return l.green;
             case "bas3":
             case "bap3":
             case "dom3":
+            case "boss3":
             case "dbc3":
             case "mbc3":
               return l.red;
             case "bas4":
             case "bap4":
+            case "boss4":
             case "dom4":
             case "dbc4":
             case "mbc4":
