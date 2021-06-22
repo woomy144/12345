@@ -1,4 +1,2 @@
--Changelogs Move Reason Owner use scss and
--just can't enter this place
--check buttons and find changelogs
--button (Beta test)
+PATCH 6/22/2021
+-Game has start
