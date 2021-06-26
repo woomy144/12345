@@ -4990,10 +4990,18 @@ let spaceBallSpriteInfo = {
                servers: [
             {
                visible: 0,
-              id: "f",
-              type: "FFA",
+              id: "4",
+              type: "4TDM",
               code: "Host-local-4",
               at: p.heroku("voidsarrasmahick"),
+              prefer: !0
+              // featured: 1, // For Featured Status.
+            }, {
+		     visible: 0,
+              id: "D",
+              type: "4DOM",
+              code: "Host-local-D",
+              at: p.heroku("bosdse"),
               prefer: !0
               // featured: 1, // For Featured Status.
             },
