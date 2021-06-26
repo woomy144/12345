@@ -4998,9 +4998,9 @@ let spaceBallSpriteInfo = {
               // featured: 1, // For Featured Status.
             }, {
 		     visible: 0,
-              id: "D",
+              id: "d",
               type: "4DOM",
-              code: "Host-local-D",
+              code: "Host-local-d",
               at: p.heroku("bosdse"),
               prefer: !0
               // featured: 1, // For Featured Status.
