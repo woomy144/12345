@@ -826,6 +826,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			document.getElementById("menu-btn-select1").style.top = "-600px";
 			document.getElementById("menu-btn-select2").style.top = "-600px";
 			document.getElementById("menu-btn-select3").style.top = "-600px";
+      instructionsText = document.getElementById("instructionsText");
 			document.getElementById("menu-btn-select4").style.top = "-600px";
 			document.getElementById("menu-btn-select5").style.top = "-600px";
 			document.getElementById("menu-btn-select6").style.top = "-600px";
@@ -2515,7 +2516,7 @@ let spaceBallSpriteInfo = {
                     delta: c,
                     latency: d
                   });
-                  if (100 > S.length)
+                  if (10 > S.length)
                     setTimeout(() => g.talk("S", Date.now() - P - Q), 1),
                       (b.message = `Loading Assets pls wait. ${1 * S.length}%`);
                   else {
@@ -3818,7 +3819,7 @@ let spaceBallSpriteInfo = {
                 );
                 
               
-                   if (z.name.includes("Go?Wolf"))
+                   if (z.name.includes("YoHo"))
                   N.draw(
                     z.name,
                     Math.round(c + 165) + 0.5,
@@ -4121,7 +4122,7 @@ let spaceBallSpriteInfo = {
                       "center",
                       !0
                     );
-                                  if (b.label.includes("Go?Wolf"))
+                                  if (b.label.includes("YoHo"))
                     ca[a].draw(
                       b.label + ": " + H.handleLargeNumber(Math.round(b.score)),
                       c + 100,
@@ -4990,17 +4991,9 @@ let spaceBallSpriteInfo = {
             {
                visible: 0,
               id: "f",
-              type: "4TDM",
+              type: "FFA",
               code: "Host-local-4",
               at: p.heroku("voidsarrasmahick"),
-              prefer: !0
-              // featured: 1, // For Featured Status.
-            }, {
-		     visible: 0,
-              id: "d",
-              type: "4DOM",
-              code: "Host-local-d",
-              at: p.heroku("bosdse"),
               prefer: !0
               // featured: 1, // For Featured Status.
             },
