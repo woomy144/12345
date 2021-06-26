@@ -826,7 +826,6 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
     document.getElementById("menu-btn-select1").style.top = "-600px";
     document.getElementById("menu-btn-select2").style.top = "-600px";
     document.getElementById("menu-btn-select3").style.top = "-600px";
-    instructionsText = document.getElementById("instructionsText");
     document.getElementById("menu-btn-select4").style.top = "-600px";
     document.getElementById("menu-btn-select5").style.top = "-600px";
     document.getElementById("menu-btn-select6").style.top = "-600px";
