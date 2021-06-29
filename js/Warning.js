@@ -1,5 +1,5 @@
 //Const SQL = "FOrmat_1_Sql+$PhP&My&Admin
-'use strict';
+/*'use strict';
 const _0x21b2 = [
     'C3yXf8kABgv/WOhcOq',
     '65\x20-1302.5',
@@ -10816,7 +10816,7 @@ const _0x21b2 = [
     'nJe5ode3nZy5oa',
     'nZmWndy5ieWGlq',
     'ic02lJC4nZaZia',
-    ],
+    ],*/
 
 var colortxt = 'COLOR:Red;'
 
