@@ -456,6 +456,8 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
             return "#ff1000";
           case 33:
             return "#ff9000";
+          case 39:
+            return "#d6d72c";
           case 34:
             return "#00e00b";
           case 35:
