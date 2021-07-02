@@ -1098,7 +1098,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
         })();
         return {
           stat: b(10),
-          upgrade: b(25),
+          upgrade: b(16),
           hover: b(1),
           skipUpgrades: b(1)
         };
