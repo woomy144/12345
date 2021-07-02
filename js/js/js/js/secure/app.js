@@ -4197,7 +4197,7 @@ let spaceBallSpriteInfo = {
                                       0 !== ++x % 5 || b.mobile ? c += 114 * a : (c = f, d += 114)
                                   });
                                   let m = ta("Don't Upgrade", 11) + 10,
-                                      t = (h + 100 + 14 + f - 15) / 2,
+                                      t = (h + 100 + 14 + f - 16) / 2,
                                       v = k + 100 + 14;
                                   K(t - m / 2, t + m / 2, v + 7, 14 + B.graphical.barChunk,
                                       l.black);
@@ -6554,5 +6554,6 @@ let spaceBallSpriteInfo = {
     }
   ]);
 }.call(this);
+
 
 
