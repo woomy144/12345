@@ -4339,7 +4339,7 @@ let spaceBallSpriteInfo = {
                       : ((c = f), (d += 114));
                   });
                   let m = ta("Don't Upgrade", 11) + 10,
-                    t = (h + 100 + 14 + f - 15) / 2,
+                    t = (h + 100 + 14 + f - 16) / 2,
                     v = k + 100 + 14;
                   K(
                     t - m / 2,
@@ -6554,6 +6554,5 @@ let spaceBallSpriteInfo = {
     }
   ]);
 }.call(this);
-
 
 
