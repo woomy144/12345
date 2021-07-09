@@ -2510,9 +2510,9 @@ let spaceBallSpriteInfo = {
                   delta: c,
                   latency: d
                 });
-                if (100 > S.length)
+                if (1 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 1),
-                    (b.message = `Loading Assets pls wait. ${1 * S.length}%`);
+                    (b.message = `Loading Socket If loading not start restart game page. ${1 * S.length}%`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
                   let a = S[Math.floor(S.length / 2)].latency,
