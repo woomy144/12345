@@ -208,6 +208,26 @@ let spaceBallSpriteInfo = {
     };
 // ==============================================================================
 
+
+  
+  var I = I || {};
+  I.scope = {};
+  I.checkStringArgs = function(r, p, w) {
+    if (null == r)
+      throw new TypeError(
+        "The 'this' value for String.prototype." +
+          w +
+          " must not be null or undefined"
+      );
+    if (p instanceof RegExp)
+      throw new TypeError(
+        "First argument to String.prototype." +
+          w +
+          " must not be a regular expression"
+      );
+    return r + "";
+  };
+
  // ===========================================================================
         // Spaceball Shooter bullet.
         // ===========================================================================
@@ -244,24 +264,6 @@ let spaceBallSpriteInfo = {
         }
         // ===========================================================================
 
-  
-  var I = I || {};
-  I.scope = {};
-  I.checkStringArgs = function(r, p, w) {
-    if (null == r)
-      throw new TypeError(
-        "The 'this' value for String.prototype." +
-          w +
-          " must not be null or undefined"
-      );
-    if (p instanceof RegExp)
-      throw new TypeError(
-        "First argument to String.prototype." +
-          w +
-          " must not be a regular expression"
-      );
-    return r + "";
-  };
   I.ASSUME_ES5 = !1;
   I.ASSUME_NO_NATIVE_MAP = !1;
   I.ASSUME_NO_NATIVE_SET = !1;
