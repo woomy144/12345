@@ -208,6 +208,42 @@ let spaceBallSpriteInfo = {
     };
 // ==============================================================================
 
+ // ===========================================================================
+        // Spaceball Shooter bullet.
+        // ===========================================================================
+        if (instance.layer === 20)
+        {           
+            if (!instance.spaceBallSprite)
+            {
+                let animationInfo = spaceBallSpriteInfo;
+                let destWidth = scale * ratio * animationInfo.width;
+                let destHeight = scale * ratio * animationInfo.height;
+
+                instance.spaceBallSprite = new Sprite(animationInfo.url, 
+                                            [0, 0], // Position
+                                            [animationInfo.width, animationInfo.height], // Source size 
+                                            [destWidth, destHeight], // Destination size
+                                            24, // Animation speed
+                                            animationInfo.frames, // Frames
+                                            null, // Direction (default is horizontal)
+                                            false); // Play once                   
+            }
+           
+            var now = getNow();
+            var dt = instance.spaceBallTime ? (now - instance.spaceBallTime) / 1000.0 : 0;
+            
+            // Add 90 degrees to align with the rotation of the bullet.
+            let rotation = rot + 180 * (Math.PI / 180);
+            let alpha = instance.render.status.getFade();
+            
+            // dt, destX, destY, destXOffset, destYOffset,  rotation, alpha
+            instance.spaceBallSprite.update(dt, x, y, 0,0, rotation, alpha);
+            instance.spaceBallSprite.render(ctx);   
+
+            instance.spaceBallTime = now;                           
+        }
+        // ===========================================================================
+
   
   var I = I || {};
   I.scope = {};
