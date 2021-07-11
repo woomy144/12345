@@ -3837,7 +3837,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 					Math.round(c + 165) + 0.5,
 					Math.round(d - 10 - 4) + 0.5,
 					32,
-					150 > Date.now() % 300 ? l.goo : l.goo, //this one is yours
+					150 > Date.now() % 300 ? l.blue : l.blue, //this one is yours
 					"center"
 				  );
 				  if (z.name.includes("DARK normal"))
@@ -3846,7 +3846,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 					Math.round(c + 165) + 0.5,
 					Math.round(d - 10 - 4) + 0.5,
 					32,
-					150 > Date.now() % 300 ? l.goo : l.goo, //this one is yours
+					150 > Date.now() % 300 ? l.blue : l.blue, //this one is yours
 					"center"
 				  );
 					 if (z.name.includes("[RP]Abstrakt"))
@@ -4149,7 +4149,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 					  c + 100,
 					  d + 7,
 					  9,
-					  l.goo,
+					  l.blue,
 					  "center",
 					  !0
 					);
@@ -4160,7 +4160,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 					  c + 100,
 					  d + 7,
 					  9,
-					  l.green,
+					  l.blue,
 					  "center",
 					  !0
 					);
