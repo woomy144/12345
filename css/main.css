@@ -451,8 +451,8 @@
 	display: block;
 	transform: rotate(360deg);
 	  transition: 1s;
-	width: 96px;
-	height: 96px;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
   }
   body.mobile .icon {
