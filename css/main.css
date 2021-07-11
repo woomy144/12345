@@ -1169,4 +1169,22 @@
     height: 15px;
     width: 15px;
 }
+
+.status1 {
+    border-radius: 100%;
+    background-color: green;
+    top: 17px;
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
+
+.status2 {
+    border-radius: 100%;
+    background-color: green;
+    top: 17px;
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
   
