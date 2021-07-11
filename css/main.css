@@ -1162,9 +1162,11 @@
   }
 
 .status {
-    border-radius: 0%;
-    color: green;
-    height: 5px;
-    width: 5px;
-      }
+    border-radius: 100%;
+    background-color: green;
+    top: 17px;
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
   
