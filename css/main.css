@@ -88,7 +88,7 @@
   .serverSelector tr {
 	cursor: pointer;
 	width: 100px;
-	border: 5px solid black;
+	border: 5px solid #828282;
 	border-radius: 5px;
   }
   .serverSelector tr.featured {
