@@ -1160,4 +1160,11 @@
 	  border-radius: 6%;
 	  text-decoration: none;
   }
+
+.status {
+    border-radius: 0%;
+    background-color: green;
+    height: 5px;
+    width: 5px;
+      }
   
