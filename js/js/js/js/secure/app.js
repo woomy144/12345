@@ -4974,7 +4974,7 @@ let spaceBallSpriteInfo = {
             glitch: "Glitch",
             os: "OpenShift",
             wsi: "wsi",
-      Host: "Server:5566",
+      Host: "Clody:3000",
             heroku: "Heroku",
             linode: "Linode",
             vultr: "Vultr",
@@ -4987,6 +4987,7 @@ let spaceBallSpriteInfo = {
           {
             unknown: ["Unknown", null],
             local: ["Local", null],
+               localc: ["Clody", null],
             worldwide: ["Worldwide", null],
             virginia: ["US East", -4],
             montreal: ["US East", -4],
@@ -5024,7 +5025,7 @@ let spaceBallSpriteInfo = {
              visible: 0,
             id: "4",
             type: "4TDM",
-            code: "Host-local-4",
+            code: "Host-oregon-4",
             at: p.heroku("voidsarrasmahick"),
             prefer: !0
             // featured: 1, // For Featured Status.
@@ -5032,8 +5033,16 @@ let spaceBallSpriteInfo = {
        visible: 0,
             id: "d",
             type: "4DOM",
-            code: "Host-local-d",
+            code: "Host-oregon-d",
             at: p.heroku("bosdse"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
+          },{
+             visible: 0,
+            id: "o",
+            type: "DEV",
+            code: "Host-localc-o",
+            at: p.heroku("desvbrg"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
