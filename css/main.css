@@ -139,7 +139,7 @@ input {
   margin-top: 5px;
   margin-bottom: 5px;
   outline: none;
-  font-family: Ubuntu;
+  font-family: Roboto;
 
   transition: border 0.3s, background 0.3s, color 0.3s;
 }
@@ -251,7 +251,7 @@ body.mobile .startMenuHolder.shrinkable {
 
 .changelogSelectorContainer {
   height: 15px;
-  font: bold 12px Ubuntu;
+  font: bold 12px Roboto;
   text-align: center;
   padding: 0 15px 5px 0;
   overflow: auto hidden;
@@ -532,7 +532,7 @@ body.mobile .icon {
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  font: 16px Ubuntu;
+  font: 16px Roboto;
 }
 #startButton:hover {
   margin-top: 1px;
@@ -735,7 +735,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: Ubuntu;
+  font-family: Roboto;
   padding: 2px 28px 2px 8px;
   margin-left: 3px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAICAYAAAD0g6+qAAAAvklEQVQoU42QMQ7CMAxF7ajZEQsj3AAGdmBNOpQTMHIcOEJXtk7p2iOUjVMgmBvyUZCKQmihHr/t5//NSqmFEOKQJMm2KIobdZTWOgdQGWPyrr7XOE3TiohWAGop5SaGeQgz7wDcpZSzvmOcZdnIWuth8xgWQgCsjTF1ryPf6II1TXNsnfyDvKK1F0KYc+4qhBj7OEMgH6DA2YWIJgAeAJa/4oQx345aUSk1Zeazc25fluWp7yex/gUauhjPPQHa73gJMQEZ+AAAAABJRU5ErkJggg==) 100% no-repeat #eee;
@@ -842,7 +842,7 @@ position: relative;
   line-height: 1.4;
 font-size: 35px;
 width: 195px;
-font-family: Ubuntu;
+font-family: Roboto;
 Color: white;
 }
 
