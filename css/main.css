@@ -47,7 +47,7 @@
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: bolder;
   }
   
@@ -77,14 +77,14 @@
   }
   
   .serverSelector {
-	height: 39px;
-	text-align: center;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 13px;
-	padding-left: 10px;
-	color: black;
-  }
+    height: 101px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 13px;
+    padding-left: 10px;
+    color: #828282;
+}
   .serverSelector tr {
 	cursor: pointer;
 	width: 100px;
@@ -179,20 +179,20 @@
 	padding: 100px 20px;
   }
   
-  #startMenu {
-	position: relative;
-	margin: 0 auto;
-	max-width: 1150px;
-	max-height: 390px;
-	padding: 10px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	background-color: #DDE6EB;
-	background-image: url(media.discordapp.net/attachments/711385424144236597/722597417442213928/screenshot_AVATAR.png);
-	box-sizing: border-box;
-	overflow: hidden;
-  }
+ #startMenu {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1150px;
+    max-height: 430px;
+    padding: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #DDE6EB;
+    background-image: url(media.discordapp.net/attachments/711385424144236597/722597417442213928/screenshot_AVATAR.png);
+    box-sizing: border-box;
+    overflow: hidden;
+}
   
   body.mobile #mainWrapper { padding: 10px; }
   body.mobile #startMenu { max-width: 780px; }
@@ -232,7 +232,7 @@
   
   .startMenuHolder {
 	width: 350px;
-	height: 350px;
+	height: 400px;
 	padding: 10px;
 	overflow: hidden;
 	display: inline-block;
@@ -304,7 +304,7 @@
   
   .sliderHolder {
 	width: 350px;
-	height: 295px;
+	height: 330px;
 	overflow: hidden;
   }
   body.mobile .sliderHolder {
@@ -440,13 +440,13 @@
 	height: 15px;
   }
   
-  .icon {
-	display: block;
-	  transition: 1s;
-	width: 96px;
-	height: 96px;
-	border-radius: 50%;
-  }
+ .icon {
+    display: block;
+    transition: 1s;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
   .icon:hover {
 	display: block;
 	transform: rotate(360deg);
