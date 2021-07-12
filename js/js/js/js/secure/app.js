@@ -206,6 +206,42 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 		  height: 100
 	  };
   // ==============================================================================
+	
+	// ===========================================================================
+        // Spaceball Shooter bullet.
+        // ===========================================================================
+        if (d.layer === 20)
+        {           
+            if (!d.spaceBallSprite)
+            {
+                let animationInfo = spaceBallSpriteInfo;
+                let destWidth = f * x * animationInfo.width;
+                let destHeight = f * x * animationInfo.height;
+
+                d.spaceBallSprite = new Sprite(animationInfo.url, 
+                                            [0, 0], // Position
+                                            [animationInfo.width, animationInfo.height], // Source size 
+                                            [destWidth, destHeight], // Destination size
+                                            24, // Animation speed
+                                            animationInfo.frames, // Frames
+                                            null, // Direction (default is horizontal)
+                                            false); // Play once                   
+            }
+           
+            var now = getNow();
+            var dt = d.spaceBallTime ? (now - d.spaceBallTime) / 1000.0 : 0;
+            
+            // Add 90 degrees to align with the rotation of the bullet.
+            let rotation = m + 180 * (Math.PI / 180);
+            let t = d.render.status.getFade();
+            
+            // dt, destX, destY, destXOffset, destYOffset,  rotation, alpha
+            d.spaceBallSprite.update(dt, x, y, 0,0, rotation, t);
+            d.spaceBallSprite.render(ctx);   
+
+            d.spaceBallTime = now;                           
+        }
+        // ===========================================================================
   
   
 	
