@@ -1565,15 +1565,6 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
-              k = () => {
-				v.style.transform = v.style.webkitTransform = b
-				  ? "translate(2px, -2px) rotate(45deg)"
-				  : "rotate(-45deg)";
-				 h.innerText = b ? "close" : "Sandbox";
-				b ? q.classList.add("slided") : q.classList.remove("slided");
-				Q[0].style.opacity = b ? 0 : 1;
-				Q[2].style.opacity = b ? 1 : 0;
-			  };
 			a.onclick = () => {
 			  b = !b;
 			  f();
