@@ -610,6 +610,17 @@
 	Right: 0px;
 	top: 0px;
   }
+
+ #startMenuWrapperhoe {
+	-webkit-transition: top 1s;
+	-moz-transition: top 1s;
+	-o-transition: top 1s;
+	transition: top 1s;
+	position: relative;
+	overflow: hidden;
+	Right: 0px;
+	top: 600px;
+  }
   
   @keyframes aniq {
    from { top: 900px; }
