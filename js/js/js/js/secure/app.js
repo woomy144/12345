@@ -1562,8 +1562,8 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close options" : "view options";
 				b ? u.classList.add("slided") : u.classList.remove("slided");
-				y[0].style.opacity = b ? 0 : 1;
-				y[2].style.opacity = b ? 1 : 0;
+				q[0].style.opacity = b ? 0 : 1;
+				q[2].style.opacity = b ? 1 : 0;
 			  };
               k = () => {
 				v.style.transform = v.style.webkitTransform = b
@@ -1571,8 +1571,8 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close" : "Sandbox";
 				b ? q.classList.add("slided") : q.classList.remove("slided");
-				y[0].style.opacity = b ? 0 : 1;
-				y[2].style.opacity = b ? 1 : 0;
+				q[0].style.opacity = b ? 0 : 1;
+				q[2].style.opacity = b ? 1 : 0;
 			  };
 			a.onclick = () => {
 			  b = !b;
