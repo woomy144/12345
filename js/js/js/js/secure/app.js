@@ -1552,6 +1552,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
+              me = document.getElementById("startMenuWrapper"),
               k = document.getElementById("viewOptionText1"),
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
@@ -1564,6 +1565,13 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				b ? u.classList.add("slided") : u.classList.remove("slided");
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
+			  };
+               p = () => {
+				c.style.transform = c.style.webkitTransform = b
+				  ? "translate(2px, -2px) rotate(45deg)"
+				  : "rotate(-45deg)";
+				 h.innerText = b ? "close Options" : "Sandbox Options";
+				b ? u.classList.add("startMenuWrapperhoe") : u.classList.remove("startMenuWrapperhoe");
 			  };
 			a.onclick = () => {
 			  b = !b;
