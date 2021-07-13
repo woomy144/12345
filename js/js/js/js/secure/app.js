@@ -1550,6 +1550,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  a = document.getElementById("startMenuSlidingTrigger"),
 			  c = document.getElementById("optionArrow"),
 			  h = document.getElementById("viewOptionText"),
+              k = document.getElementById("viewOptionText1"),
 			  u = document.getElementsByClassName("sliderHolder")[0],
 			  y = document.getElementsByClassName("slider"),
 			  f = () => {
@@ -1557,6 +1558,15 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close options" : "view options";
+				b ? u.classList.add("slided") : u.classList.remove("slided");
+				y[0].style.opacity = b ? 0 : 1;
+				y[2].style.opacity = b ? 1 : 0;
+			  };
+              k = () => {
+				c.style.transform = c.style.webkitTransform = b
+				  ? "translate(2px, -2px) rotate(45deg)"
+				  : "rotate(-45deg)";
+				 h.innerText = b ? "close" : "Sandbox";
 				b ? u.classList.add("slided") : u.classList.remove("slided");
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
