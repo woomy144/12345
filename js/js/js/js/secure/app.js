@@ -1550,6 +1550,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  a = document.getElementById("startMenuSlidingTrigger"),
                j = document.getElementById("startMenuSlidingTrigger"),
 			  c = document.getElementById("optionArrow"),
+              v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
               k = document.getElementById("viewOptionText1"),
 			  u = document.getElementsByClassName("sliderHolder")[0],
@@ -1564,7 +1565,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				y[2].style.opacity = b ? 1 : 0;
 			  };
               k = () => {
-				c.style.transform = c.style.webkitTransform = b
+				v.style.transform = v.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close" : "Sandbox";
