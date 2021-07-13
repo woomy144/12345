@@ -421,7 +421,22 @@
 	-o-transition: top 500ms, opacity 500ms;
 	transition: top 500ms, opacity 500ms;
   }
+
+ .slider1 {
+	position: relative;
+	top: 0px;
+	opacity: 1;
+	width: 100%;
+	-webkit-transition: top 500ms, opacity 500ms;
+	-moz-transition: top 500ms, opacity 500ms;
+	-o-transition: top 500ms, opacity 500ms;
+	transition: top 500ms, opacity 500ms;
+  }
+
   .slided .slider {
+	top: -275px;
+  }
+  .slided1 .slider1 {
 	top: -275px;
   }
   body.mobile .slided .slider {
