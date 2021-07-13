@@ -1548,7 +1548,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 		let bb = (() => {
 			let b = !1,
 			  a = document.getElementById("startMenuSlidingTrigger"),
-               j = document.getElementById("startMenuSlidingTrigger"),
+               j = document.getElementById("startMenuSlidingTrigger1"),
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
