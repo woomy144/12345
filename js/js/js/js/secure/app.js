@@ -1557,20 +1557,20 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
                Q = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
 			  f = () => {
-				v.style.transform = v.style.webkitTransform = b
+				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close options" : "view options";
-				b ? Q.classList.add("slided") : Q.classList.remove("slided");
+				b ? u.classList.add("slided0") : u.classList.remove("slided0");
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
               k = () => {
-				c.style.transform = c.style.webkitTransform = b
+				v.style.transform = v.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close" : "Sandbox";
-				b ? u.classList.add("slided") : u.classList.remove("slided");
+				b ? u.classList.add("slided1") : u.classList.remove("slided1");
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
