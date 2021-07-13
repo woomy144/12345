@@ -1570,7 +1570,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
-				 h.innerText = b ? "close Options" : "Sandbox Options";
+				 me.innerText = b ? "close Options" : "Sandbox Options";
 				b ? u.classList.add("startMenuWrapperhoe") : u.classList.remove("startMenuWrapperhoe");
 			  };
 			Q.onclick = () => {
