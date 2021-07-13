@@ -1573,7 +1573,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				 h.innerText = b ? "close Options" : "Sandbox Options";
 				b ? u.classList.add("startMenuWrapperhoe") : u.classList.remove("startMenuWrapperhoe");
 			  };
-			a.onclick = () => {
+			Q.onclick = () => {
 			  b = !b;
 			  f();
 			};
