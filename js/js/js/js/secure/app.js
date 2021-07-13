@@ -1548,6 +1548,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 		let bb = (() => {
 			let b = !1,
 			  a = document.getElementById("startMenuSlidingTrigger"),
+               j = document.getElementById("startMenuSlidingTrigger"),
 			  c = document.getElementById("optionArrow"),
 			  h = document.getElementById("viewOptionText"),
               k = document.getElementById("viewOptionText1"),
@@ -1572,6 +1573,10 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				y[2].style.opacity = b ? 1 : 0;
 			  };
 			a.onclick = () => {
+			  b = !b;
+			  f();
+			};
+            	j.onclick = () => {
 			  b = !b;
 			  f();
 			};
