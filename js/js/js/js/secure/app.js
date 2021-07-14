@@ -1566,18 +1566,18 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
-               o = () => {
-				v.style.transform = v.style.webkitTransform = b
+               C = () => {
+				v.style.transform = v.style.webkitTransform = r
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close" : "Sandbox";
-				b ? u.classList.add("sandhow") : u.classList.remove("sandhow");
-				m[0].style.opacity = b ? 0 : 1;
-				m[2].style.opacity = b ? 1 : 0;
+				r ? u.classList.add("sandhow") : u.classList.remove("sandhow");
+				m[0].style.opacity = r ? 0 : 1;
+				m[2].style.opacity = r ? 1 : 0;
 			  };
 			j.onclick = () => {
-			  b = !b;
-			  o();
+			  r = !r;
+			  C();
 			};
 				a.onclick = () => {
 			  b = !b;
