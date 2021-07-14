@@ -1610,13 +1610,6 @@ var UTILS = {
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
-			    C = () => {
-				c.style.transform = c.style.webkitTransform = r
-				  ? "translate(2px, -2px) rotate(45deg)"
-				  : "rotate(-45deg)";
-				k[0].style.opacity = r ? 1 : 0;
-				k[2].style.opacity = r ? 0 : 1;
-			  };
 			    instructionsText = () => {
 				Ins1();
 			  };
