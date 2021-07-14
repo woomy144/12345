@@ -1552,7 +1552,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
-              me = document.getElementById("startMenuWrapper"),
+              m = document.getElementById("startMenuWrapper"),
               k = document.getElementById("viewOptionText1"),
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
@@ -1570,10 +1570,10 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
-				 me.innerText = b ? "close Options" : "Sandbox Options";
-				b ? me.classList.add("sandhow") : me.classList.remove("sandhow");
-				me[0].style.opacity = b ? 0 : 1;
-				me[2].style.opacity = b ? 1 : 0;
+				 m.innerText = b ? "close" : "Sandbox";
+				b ? m.classList.add("sandhow") : me.classList.remove("sandhow");
+				m[0].style.top = "-600px"
+				m[2].style.top = "600px"
 			  };
 			Q.onclick = () => {
 			  b = !b;
