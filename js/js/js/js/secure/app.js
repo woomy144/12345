@@ -1572,7 +1572,8 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close" : "Sandbox";
 				b ? u.classList.add("sandhow") : u.classList.remove("sandhow");
-				m[0].style.top = "-600px";
+				m[0].style.opacity = b ? 0 : 1;
+				m[2].style.opacity = b ? 1 : 0;
 			  };
 			j.onclick = () => {
 			  b = !b;
