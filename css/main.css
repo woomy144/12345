@@ -849,16 +849,19 @@
   }
   
   .box {
-  width: 50000px;
-  height: 60px;
-	-webkit-transition: top 1s;
-	-moz-transition: top 1s;
-	-o-transition: top 1s;
-  top: 50px;
-  justify-content: center;
-	  align-items: center;
-  background-color:#DDE6EB;
-  }
+    width: 370px;
+    height: 60px;
+    left: 388px;
+    border-radius: 5%;
+    position: relative;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDE6EB;
+}
   
   .Spli {
   position: relative;
@@ -868,7 +871,29 @@
   font-family: Ubuntu;
   Color: white;
   }
-  
+.csBottomc
+{
+    display: inline-block;
+    position: relative;
+    margin: 2px;
+    border: 0px;
+    padding: 5px;
+    width: 96px;
+    height: 16px;
+    font-size: smaller;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 25%);
+    text-decoration: none;
+    cursor: pointer;
+    background: #A9D86D;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: inset 0 -4px rgb(0 0 0 / 15%);
+    -webkit-box-shadow: inset 0 -4px rgb(0 0 0 / 15%);
+}
+
   #menu-btn-select {
 	  font-size: 28px;
 	  line-height: 40px;
