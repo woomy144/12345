@@ -1551,6 +1551,12 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
                j = document.getElementById("startMenuSlidingTrigger1"),
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
+			  	instructionsText = document.getElementById("instructionsText"),
+				  instructionsIndex = 0,
+	instructionsSpeed = 5500,
+	insturctionsCountdown = 0,
+	instructionsList = ["use A & D or Arrow Keys control the direction of your ship", "use your mouse to aim and fire your cannons", "destroy enemy ships and collect doblons to upgrade your ship", "you can shoot coins by pressing the F key"],
+	instructionsIndex = UTILS.randInt(0, instructionsList.length - 1),
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
               k = document.getElementById("Sandboxid")[0],
@@ -1573,14 +1579,18 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				k[0].style.opacity = r ? 1 : 0;
 				k[2].style.opacity = r ? 0 : 1;
 			  };
-			s.onclick = () => {
-			  r = !r;
-			  C();
-			};
+			    instructionsText = () => {
+				Ins1();
+			  };
 				a.onclick = () => {
 			  b = !b;
 			  f();
 			};
+
+function Ins1() {
+	1 != gameState && (insturctionsCountdown -= b, 0 >= insturctionsCountdown && (insturctionsCountdown = instructionsSpeed, instructionsText.innerHTML = instructionsList[instructionsIndex], instructionsIndex++, instructionsIndex >= instructionsList.length && (instructionsIndex = 0)))
+}
+
 			return () => {
 			  b || ((b = !0), f());
 			};
