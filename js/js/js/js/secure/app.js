@@ -2582,9 +2582,8 @@ function Ins1() {
 				  if (10 > S.length)
 					setTimeout(() => g.talk("S", Date.now() - P - Q), 1),
 					  (b.message = `Loading Socket If loading not start restart game page. ${1 * S.length}%`);
-					   if (50 > S.length1)
 					  setTimeout(() => g.talk("S", Date.now() - P - Q), 1),
-					  (b.message = `Loading Socket If loading not start restart game page. ${1 * S.length1}%`);
+					  (b.message = `Loading App.js, Utils.js. ${1 * S.length}%`);
 				  else {
 					S.sort((b, a) => b.latency - a.latency);
 					let a = S[Math.floor(S.length / 2)].latency,
