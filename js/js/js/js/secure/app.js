@@ -1566,7 +1566,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
-               p = () => {
+               j = () => {
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
@@ -1574,6 +1574,10 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				b ? me.classList.add("startMenuWrapperhoe") : me.classList.remove("startMenuWrapperhoe");
 			  };
 			Q.onclick = () => {
+			  b = !b;
+			  f();
+			};
+				h.onclick = () => {
 			  b = !b;
 			  f();
 			};
