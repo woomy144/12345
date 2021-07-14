@@ -1552,8 +1552,8 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
-              s = document.getElementById("Sandboxid"),
-              k = document.getElementById("viewOptionText1"),
+              s = document.getElementById("viewOptionText1"),
+              k = document.getElementById("Sandboxid"),
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
@@ -1571,10 +1571,10 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 h.innerText = r ? "close" : "Sandbox";
-				s[0].style.opacity = r ? 0 : 1;
-				s[2].style.opacity = r ? 1 : 0;
+				k[0].style.opacity = b ? 0 : 1;
+				k[2].style.opacity = b ? 1 : 0;
 			  };
-			j.onclick = () => {
+			s.onclick = () => {
 			  r = !r;
 			  C();
 			};
