@@ -1552,7 +1552,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
-              s = document.getElementById("viewOptionText1"),
+              s = document.getElementById("viewOptionText1")[0],
               k = document.getElementById("Sandboxid")[0],
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
@@ -1570,7 +1570,6 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				c.style.transform = c.style.webkitTransform = r
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
-				 s.innerText = r ? "close" : "sandbox";
 				k[0].style.opacity = r ? 1 : 0;
 				k[2].style.opacity = r ? 0 : 1;
 			  };
