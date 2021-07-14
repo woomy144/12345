@@ -1573,7 +1573,6 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				 h.innerText = b ? "close" : "Sandbox";
 				b ? u.classList.add("sandhow") : u.classList.remove("sandhow");
 				m[0].style.top = "-600px";
-				m[2].style.top = "600px";
 			  };
 			j.onclick = () => {
 			  b = !b;
