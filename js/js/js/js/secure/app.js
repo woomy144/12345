@@ -1589,7 +1589,7 @@ var UTILS = {
               v = document.getElementById("optionArrow1"),
 			  	instructionsText = document.getElementById("instructionsText"),
 				
-
+  instructionsIndexg = 0,
 				  
 	instructionsSpeed = 5500,
 	insturctionsCountdown = 0,
@@ -1626,7 +1626,7 @@ var UTILS = {
 			};
 
 function Ins1() {
-	1 != gameState && (insturctionsCountdown -= b, 0 >= insturctionsCountdown && (insturctionsCountdown = instructionsSpeed, instructionsText.innerHTML = instructionsList[instructionsIndex], instructionsIndex++, instructionsIndex >= instructionsList.length && (instructionsIndex = 0)))
+	1 != gameState && (insturctionsCountdown -= b, 0 >= insturctionsCountdown && (insturctionsCountdown = instructionsSpeed, instructionsText.innerHTML = instructionsList[instructionsIndex], instructionsIndex++, instructionsIndex >= instructionsList.length && (instructionsIndexg = 0)))
 }
 
 			return () => {
