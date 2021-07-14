@@ -1571,8 +1571,8 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 s.innerText = r ? "close" : "sandbox";
-				k[0].style.opacity = r ? 0 : 1;
-				k[2].style.opacity = r ? 1 : 0;
+				k[0].style.opacity = r ? 1 : 0;
+				k[2].style.opacity = r ? 0 : 1;
 			  };
 			s.onclick = () => {
 			  r = !r;
