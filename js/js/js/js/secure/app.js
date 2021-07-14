@@ -1566,20 +1566,20 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
-               j = () => {
-				c.style.transform = c.style.webkitTransform = b
+               i = () => {
+				v.style.transform = v.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
-				 m.innerText = b ? "close" : "Sandbox";
+				 h.innerText = b ? "close" : "Sandbox";
 				b ? m.classList.add("sandhow") : me.classList.remove("sandhow");
 				m[0].style.top = "-600px"
 				m[2].style.top = "600px"
 			  };
-			Q.onclick = () => {
+			j.onclick = () => {
 			  b = !b;
-			  f();
+			  i();
 			};
-				h.onclick = () => {
+				a.onclick = () => {
 			  b = !b;
 			  f();
 			};
