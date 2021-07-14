@@ -1571,7 +1571,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 h.innerText = b ? "close" : "Sandbox";
-				b ? m.classList.add("sandhow") : me.classList.remove("sandhow");
+				b ? u.classList.add("sandhow") : u.classList.remove("sandhow");
 				m[0].style.top = "-600px";
 				m[2].style.top = "600px";
 			  };
@@ -6586,3 +6586,6 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 	  }
 	]);
   }.call(this);
+  
+  
+  
