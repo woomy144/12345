@@ -1571,7 +1571,9 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
 				 me.innerText = b ? "close Options" : "Sandbox Options";
-				b ? me.classList.add("startMenuWrapperhoe") : me.classList.remove("startMenuWrapperhoe");
+				b ? me.classList.add("sandhow") : me.classList.remove("sandhow");
+				me[0].style.opacity = b ? 0 : 1;
+				me[2].style.opacity = b ? 1 : 0;
 			  };
 			Q.onclick = () => {
 			  b = !b;
