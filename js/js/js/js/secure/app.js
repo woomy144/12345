@@ -1553,7 +1553,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
               v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
-              k = document.getElementById("Sandboxid"),
+              k = document.getElementById("Sandboxid")[0],
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
@@ -1566,17 +1566,17 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				y[0].style.opacity = b ? 0 : 1;
 				y[2].style.opacity = b ? 1 : 0;
 			  };
-               C = () => {
-				v.style.transform = v.style.webkitTransform = r
+			    n = () => {
+				c.style.transform = c.style.webkitTransform = r
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
-				 h.innerText = r ? "close" : "Sandbox";
-				k[0].style.opacity = b ? 0 : 1;
-				k[2].style.opacity = b ? 1 : 0;
+				 s.innerText = r ? "close" : "sandbox";
+				k[0].style.opacity = r ? 0 : 1;
+				k[2].style.opacity = r ? 1 : 0;
 			  };
 			s.onclick = () => {
 			  r = !r;
-			  C();
+			  n();
 			};
 				a.onclick = () => {
 			  b = !b;
@@ -6585,6 +6585,3 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 	  }
 	]);
   }.call(this);
-  
-  
-  
