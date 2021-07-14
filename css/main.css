@@ -611,10 +611,7 @@
 	top: 0px;
   }
 
- .sandhow {
-	-webkit-transition: top 1s;
-	-moz-transition: top 1s;
-	-o-transition: top 1s;
+ sandhow {
 	transition: top 1s;
 	position: relative;
 	overflow: hidden;
