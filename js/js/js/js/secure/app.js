@@ -1552,7 +1552,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
 			  h = document.getElementById("viewOptionText"),
-              S = document.getElementById("startMenuWrapper"),
+              S = document.getElementById("startMenu"),
               k = document.getElementById("viewOptionText1"),
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
