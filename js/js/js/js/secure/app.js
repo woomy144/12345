@@ -1570,7 +1570,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 				v.style.transform = v.style.webkitTransform = r
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
-				 h.innerText = b ? "close" : "Sandbox";
+				 h.innerText = r ? "close" : "Sandbox";
 				S[0].style.opacity = r ? 0 : 1;
 				S[2].style.opacity = r ? 1 : 0;
 			  };
