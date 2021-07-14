@@ -1552,10 +1552,11 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 			  c = document.getElementById("optionArrow"),
               v = document.getElementById("optionArrow1"),
 			  	instructionsText = document.getElementById("instructionsText"),
-				  instructionsIndex = 0,
+				  
 	instructionsSpeed = 5500,
 	insturctionsCountdown = 0,
 	instructionsList = ["use A & D or Arrow Keys control the direction of your ship", "use your mouse to aim and fire your cannons", "destroy enemy ships and collect doblons to upgrade your ship", "you can shoot coins by pressing the F key"],
+			    instructionsIndex = UTILS.randInt(0, instructionsList.length - 1),
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
               k = document.getElementById("Sandboxid")[0],
