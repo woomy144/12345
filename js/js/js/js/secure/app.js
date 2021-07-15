@@ -192,6 +192,25 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 
 ~function() {
   "use strict";
+  
+  const sprite = require("./js/sprite.js");
+const resources = require("./js/resources.js");
+  
+  resources.load([
+  './img/space_ball.png'
+    ]);
+  // ==============================================================================
+// Sprite Bullets.
+// ==============================================================================
+let spriteInfo = {
+  20: {
+    url: './img/space_ball.png',
+    width: 93,
+    height: 100,
+    frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+  }
+};
+// ==============================================================================
   var I = I || {};
   I.scope = {};
   I.checkStringArgs = function(r, p, w) {
