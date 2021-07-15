@@ -1597,20 +1597,18 @@ var UTILS = {
 			    instructionsIndex = UTILS.randInt(0, instructionsList.length - 1),
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
-              Blbtsc = document.getElementById("Blbtsc"),
-              i = document.getElementById("startmenu"),
-               g = document.getElementById("serverSelector"),
-                q = document.getElementById("patchNotes"),
+              Bl = document.getElementById("Blbtsc"),
+              i = document.getElementById("startMenu"),
               k = document.getElementById("Sandboxid")[0],
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Qqq = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
-			  hs = () => {
-                   Blbtsc.innerText = r ? "Return" : "Blue";
+			  /*hs = () => {
+                   Bl.innerText = r ? "Return" : "Blue";
 				r ? i.classList.add("Blue") : i.classList.remove("blue");
-                r ? g.classList.add("Blue") : g.classList.remove("blue");
-                 r ? q.classList.add("Blue") : q.classList.remove("blue");
-			  };
+                r ? aa.classList.add("Blue") : aa.classList.remove("blue");
+                 r ? sa.classList.add("Blue") : q.classList.remove("blue");
+			  };*/
                 h = () => {
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
@@ -1627,9 +1625,10 @@ var UTILS = {
 			  b = !b;
 			  h();
 			};
-            Blbtsc.onclick = () => {
-			  r = !r;
-			  hs();
+            Bl.onclick = () => {
+			document.getElementById("startMenu").style.color = blue;
+			document.getElementById("patchNotes").style.color = blue;
+			document.getElementById("serverSelector").style.color = blue;
             };
 
 function Ins1() {
