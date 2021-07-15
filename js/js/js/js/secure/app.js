@@ -1605,13 +1605,13 @@ var UTILS = {
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
-			  Z = () => {
+			  Blbtsc = () => {
                    Blbtsc.innerText = b ? "Return" : "Blue";
 				b ? startblue.classList.add("Blue") : startblue.classList.remove("blue");
                 b ? startblue1.classList.add("Blue") : startblue1.classList.remove("blue");
                  b ? startblue2.classList.add("Blue") : startblue2.classList.remove("blue");
 			  };
-                X = () => {
+                h = () => {
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
@@ -1625,7 +1625,7 @@ var UTILS = {
 			  };
 				a.onclick = () => {
 			  b = !b;
-			  X();
+			  h();
 			};
             Blbtsc.onclick = () => {
 			  b = !b;
