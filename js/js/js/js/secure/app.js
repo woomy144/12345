@@ -455,7 +455,7 @@ let spriteInfo = {
         10000: 'img/asteroid_v2-5aa26862c4.png',
       };
 
-       context.drawImage(
+       ctx.drawImage(
         resources.get(imgs[sides]), // img
         -radius * 1.5,
         -radius * 2.5,
