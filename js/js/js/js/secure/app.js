@@ -1628,7 +1628,7 @@ var UTILS = {
             Bl.onclick = () => {
 			document.getElementById("startMenu").style.background = "#2736a0";
 			document.getElementById("patchNotes").style.background = "#2736a0";
-			document.getElementById("serverSelector").style.background = "#2736a0";
+			document.getElementById("serverSelector1").style.background = "#2736a0";
             };
 
 function Ins1() {
