@@ -1611,7 +1611,7 @@ var UTILS = {
                 b ? startblue1.classList.add("Blue") : startblue1.classList.remove("blue");
                  b ? startblue2.classList.add("Blue") : startblue2.classList.remove("blue");
 			  };
-                f = () => {
+                X = () => {
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
@@ -1625,7 +1625,7 @@ var UTILS = {
 			  };
 				a.onclick = () => {
 			  b = !b;
-			  f();
+			  X();
 			};
             Blbtsc.onclick = () => {
 			  b = !b;
