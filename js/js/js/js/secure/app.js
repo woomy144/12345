@@ -2153,17 +2153,16 @@ function Ins1() {
 		});
 		var U = new (w(5))();
 		b.mobile && document.body.classList.add("mobile");
-		var g = U.cv.getContext("2d"),
+		var ctx = U.cv.getContext("2d"),
 
- g.drawImage(
+		  Ma = document.createElement("canvas").getContext("2d"),
+		   ctx.drawImage(
         resources.get(imgs[sides]), // img
         -radius * 1.5,
         -radius * 2.5,
         radius * 3,
         radius * 5
       );
-
-		  Ma = document.createElement("canvas").getContext("2d"),
 		  S = [],
 		  P = 0,
 		  Q = 0,
