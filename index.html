@@ -45,25 +45,18 @@
          
         
                 <div class="box" id="Blbtsc">
-                  <a id="myId" class="eq">Hi</a>
-                  <a id="myId2" class="eq">Hello</a>
+                  <a class="eq">Hi</a>
+                  <a  class="eq">Hello</a>
                   </div>
       </div>
 <script>
-  var text = document.getElementById("myId");
-var text2 = document.getElementById("myId2");
-
-var intervalID = window.setInterval(myCallback, 1000);
-
-function myCallback() {
-  text.textContent = "Changed after 1 second";
+function replaceContentsOfElement(){
+    document.querySelector(".eq").innerHTML = new Date().getHours() + ":" + new Date().getMinutes()
 }
-
-var timer = setInterval(setTime, 1000);
-
-function setTime(){
-  text2.textContent = new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds();
-}
+  setTimeout(function(){
+    replaceContentsOfElement(),
+    setInterval(replaceContentsOfElement, 6000)
+}, 6 - (new Date().getSeconds()))
     </script>
        <div id="startMenu">
                 <div  class="startMenuHolder">
