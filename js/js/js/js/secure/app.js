@@ -455,13 +455,6 @@ let spriteInfo = {
         10000: 'img/asteroid_v2-5aa26862c4.png',
       };
 
-       ctx.drawImage(
-        resources.get(imgs[sides]), // img
-        -radius * 1.5,
-        -radius * 2.5,
-        radius * 3,
-        radius * 5
-      );
   
 		function e(b) {
 		  switch (b) {
@@ -2161,9 +2154,16 @@ function Ins1() {
 		var U = new (w(5))();
 		b.mobile && document.body.classList.add("mobile");
 		var g = U.cv.getContext("2d"),
+
+ g.drawImage(
+        resources.get(imgs[sides]), // img
+        -radius * 1.5,
+        -radius * 2.5,
+        radius * 3,
+        radius * 5
+      );
+
 		  Ma = document.createElement("canvas").getContext("2d"),
-          var ctx = cvs.getContext('2d');
-           var cvs = document.getElementById('canvas');
 		  S = [],
 		  P = 0,
 		  Q = 0,
