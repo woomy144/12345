@@ -216,6 +216,27 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
         frames: [0]
     };
 	
+	// Asteroid.
+    tankTypeFunctionLookup.set(9, function(ctx, instance, scale, ratio, x, y, rot, context, xx, yy, drawPoly) {
+        var animationInfo = asteroidTankSpriteInfo;
+        var destWidth = scale * ratio * animationInfo.width * 0.7;
+        var destHeight = scale * ratio * animationInfo.height * 0.7;
+        if (!instance.asteroidTankSprite) {
+            instance.asteroidTankSprite = new Sprite(animationInfo.url,[0, 0],// Position
+            [animationInfo.width, animationInfo.height],// Source size 
+            [destWidth, destHeight],// Destination size
+            1,// Animation speed
+            animationInfo.frames,// Frames
+            null,// Direction (default is horizontal)
+            false);
+            // Play once   
+        }
+        var alpha = instance.render.status.getFade();
+        // dt, destX, destY, destXOffset, destYOffset,  rotation, alpha
+        instance.asteroidTankSprite.update2(0, x, y, 0, 0, destWidth, destHeight, rot, alpha);
+        instance.asteroidTankSprite.render(ctx);
+    });
+	
   
   console.log(asteroidTankSpriteInfo);
 	
