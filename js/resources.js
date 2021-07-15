@@ -58,7 +58,7 @@ const resources = {
     get: get,
     onReady: onReady,
     isReady: isReady
-};
+}
 
 export {
     resources
