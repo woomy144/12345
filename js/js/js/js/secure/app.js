@@ -1626,9 +1626,9 @@ var UTILS = {
 			  kl();
 			};
             Bl.onclick = () => {
-			document.getElementById("startMenu").style.color = "blue";
-			document.getElementById("patchNotes").style.color = "blue";
-			document.getElementById("serverSelector").style.color = "blue";
+			document.getElementById("startMenu").style.background.color = "#2736a0";
+			document.getElementById("patchNotes").style.color = "#2736a0";
+			document.getElementById("serverSelector").style.color = "#2736a0";
             };
 
 function Ins1() {
