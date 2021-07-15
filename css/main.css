@@ -565,6 +565,10 @@
 	-webkit-box-shadow: none;
 	box-shadow: none;
   }
+
+.blue {
+background-color: blue;
+}
   
   #bottomHolder > a {
 	display: inline-block;
