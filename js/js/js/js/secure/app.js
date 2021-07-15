@@ -196,7 +196,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 	var tankTypeFunctionLookup = new Map();
 	
 	var Asteroid = new Image();
-Asteroid.src = "./img/asteroid_tank_v3-a0c89889d3.png";
+Asteroid.src = "./img/asteroid_v2-5aa26862c4.png";
 //Start Function draw
 function  astdraw() {
 ctx.drawimage(Asteroid, 50, 50);
@@ -217,7 +217,7 @@ ctx.drawimage(Asteroid, 50, 50);
   // ==============================================================================
 	
 	  var asteroidTankSpriteInfo = {
-        url: 'img/asteroid_tank_v3-a0c89889d3.png',
+        url: './img/asteroid_v2-5aa26862c4.png',
         width: 93,
         height: 109,
         offsetX: 0,
