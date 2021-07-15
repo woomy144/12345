@@ -193,8 +193,6 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 ~function() {
   "use strict";
   
-  const sprite = require("./js/sprite.js");
-const resources = require("./js/resources.js");
   
   resources.load([
   './img/space_ball.png'
