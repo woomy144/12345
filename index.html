@@ -46,8 +46,25 @@
         
                 <div class="box" id="Blbtsc">
                   <a id="myId" class="eq">Hi</a>
+                  <a id="myId2" class="eq">Hello</a>
                   </div>
       </div>
+<script>
+  var text = document.getElementById("myId");
+var text2 = document.getElementById("myId2");
+
+var intervalID = window.setInterval(myCallback, 1000);
+
+function myCallback() {
+  text.textContent = "Changed after 1 second";
+}
+
+var timer = setInterval(setTime, 1000);
+
+function setTime(){
+  text2.textContent = new Date().getHours() + ':' + new Date().getMinutes() + ':' + new Date().getSeconds();
+}
+    </script>
        <div id="startMenu">
                 <div  class="startMenuHolder">
                   <iframe src="https://discord.com/widget?id=853933123702882324&theme=dark" width="350" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
