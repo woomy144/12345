@@ -1626,7 +1626,7 @@ var UTILS = {
 			  kl();
 			};
             Bl.onclick = () => {
-			document.getElementById("startMenu").style.background.color = "#2736a0";
+			document.getElementById("startMenu").style.background = "#2736a0";
 			document.getElementById("patchNotes").style.color = "#2736a0";
 			document.getElementById("serverSelector").style.color = "#2736a0";
             };
