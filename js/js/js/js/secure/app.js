@@ -840,7 +840,8 @@ let spriteInfo = {
           b.playerKey = z.key = d.value;
           b.screenWidth = window.innerWidth;
           b.screenHeight = window.innerHeight;
-          document.getElementById("startMenuWrapper").style.top = "-600px";
+          document.getElementById("startMenu").style.top = "-600px";
+           document.getElementById("startMenuWrapper").style.top = "-600px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
           if (!b.socket) {
             d = "https:" === location.protocol ? 1 : -1;
