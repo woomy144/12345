@@ -1606,6 +1606,7 @@ var UTILS = {
                Q = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
 			  Z = () => {
+                   Blbtsc.innerText = b ? "Return" : "Blue";
 				b ? startblue.classList.add("Blue") : startblue.classList.remove("blue");
                 b ? startblue1.classList.add("Blue") : startblue1.classList.remove("blue");
                  b ? startblue2.classList.add("Blue") : startblue2.classList.remove("blue");
@@ -1629,6 +1630,7 @@ var UTILS = {
             Blbtsc.onclick = () => {
 			  b = !b;
 			  Z();
+            };
 
 function Ins1() {
 	1 != gameState && (insturctionsCountdown -= b, 0 >= insturctionsCountdown && (insturctionsCountdown = instructionsSpeed, instructionsText.innerHTML = instructionsList[instructionsIndex], instructionsIndex++, instructionsIndex >= instructionsList.length && (instructionsIndexg = 0)))
