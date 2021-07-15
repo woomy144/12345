@@ -2154,15 +2154,9 @@ function Ins1() {
 		var U = new (w(5))();
 		b.mobile && document.body.classList.add("mobile");
 		var ctx = U.cv.getContext("2d"),
+		ctx.drawImage(tctx.canvas, x - xx, y - yy * (1.05 + !center * 0.45));
 
 		  Ma = document.createElement("canvas").getContext("2d"),
-		   ctx.drawImage(
-        resources.get(imgs[sides]), // img
-        -radius * 1.5,
-        -radius * 2.5,
-        radius * 3,
-        radius * 5
-      );
 		  S = [],
 		  P = 0,
 		  Q = 0,
@@ -2196,6 +2190,15 @@ function Ins1() {
 			lastUpdate: 0,
 			time: 0
 		  };
+
+   ctx.drawImage(
+        resources.get(imgs[sides]), // img
+        -radius * 1.5,
+        -radius * 2.5,
+        radius * 3,
+        radius * 5
+      );
+
 		b.player = z;
 		var ya = (() => {
 		  let a = 0,
