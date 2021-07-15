@@ -2162,6 +2162,8 @@ function Ins1() {
 		b.mobile && document.body.classList.add("mobile");
 		var g = U.cv.getContext("2d"),
 		  Ma = document.createElement("canvas").getContext("2d"),
+          var ctx = cvs.getContext('2d');
+           var cvs = document.getElementById('canvas');
 		  S = [],
 		  P = 0,
 		  Q = 0,
