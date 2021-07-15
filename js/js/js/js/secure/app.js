@@ -194,16 +194,23 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 	"use strict";
 	
 	var tankTypeFunctionLookup = new Map();
+	
+	var Asteroid = new Image();
+Asteroid.src = "./img/asteroid_tank_v3-a0c89889d3.png";
+//Start Function draw
+function  astdraw() {
+ctx.drawimage(Asteroid, 50, 50);
+}
   
   // ==============================================================================
   // Spaceball Shooter.
   // ==============================================================================
   resources.load([    
-	  'img/space_ball.png',    
+	  './img/space_ball.png',    
   ]);
   
   let spaceBallSpriteInfo = {
-		  url: 'img/space_ball.png', 
+		  url: './img/space_ball.png', 
 		  width: 93,
 		  height: 100
 	  };
