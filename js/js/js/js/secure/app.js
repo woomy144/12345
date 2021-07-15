@@ -207,10 +207,17 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 	  };
   // ==============================================================================
 	
-	var asteroidTankSpriteInfo = { url: 'img/asteroid_tank_v3-a0c89889d3.png', width: 93, height: 109, offsetX: 0, offsetY: 0, frames: [0] };var asteroidSpriteInfo = { url: 'img/asteroid_v2-5aa26862c4.png', width: 147, height: 196, offsetX: 0, offsetY: 0, frames: [0] };var forceFieldBulletSpriteInfo = { url: 'img/force_field_v3-1e474a92ed.png', width: 380, height: 379, offsetX: 0, offsetY: 0, frames: [0, 1, 2, 3, 4, 5, 6] };var forceFieldTankSpriteInfo = { url: 'img/force_field_tank_v5-864267f5bb.png', width: 110, height: 110, offsetX: 0, offsetY: 0, frames: [0] };var babyForceFieldTankSpriteInfo = { url: 'img/force_field_tank_v5-864267f5bb.png', width: 130, height: 130, offsetX: 0, offsetY: 0, frames: [0] };var shockwaveEffectSpriteInfo = { url: 'img/shockwave_effect_v3-c55aa4d872.png', width: 512, height: 512, offsetX: 0, offsetY: 0, frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] };var shockwaveTankSpriteInfo = { url: 'img/shockwave_tank_v3-c3143c8dca.png', width: 94, height: 94, offsetX: 0, offsetY: 0, frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] };var tankExplosionInfos = [{ url: 'img/tank_explosion_v4-254a517531.png', width: 382, height: 402, offsetX: 0, offsetY: 0, frames: [0, 1, 2, 3, 4, 5, 6, 7] }];var pentagonExplosionInfos = [{ url: 'img/pentagon_explosion_v3-44f56ec0c6.png', width: 470, height: 473, offsetX: 0, offsetY: 0, frames: [0, 1, 2, 3, 4, 5, 6, 7, 8] }];var teleportSpriteInfos = [// Teleport out (disappear).
+	  var asteroidTankSpriteInfo = {
+        url: 'img/asteroid_tank_v3-a0c89889d3.png',
+        width: 93,
+        height: 109,
+        offsetX: 0,
+        offsetY: 0,
+        frames: [0]
+    };
 	
   
-  
+  console.log(asteroidTankSpriteInfo);
 	
 	var I = I || {};
 	I.scope = {};
