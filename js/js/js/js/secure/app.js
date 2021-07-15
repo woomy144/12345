@@ -1598,7 +1598,7 @@ var UTILS = {
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
               Bl = document.getElementById("Blbtsc"),
-			      Bll = document.getElementById("Blbtsc1"),
+			      Ba = document.getElementById("Blbtsc1"),
               i = document.getElementById("startMenu"),
               k = document.getElementById("Sandboxid")[0],
 			  u = document.getElementsByClassName("sliderHolder")[0],
@@ -1632,7 +1632,7 @@ var UTILS = {
 			document.getElementById("serverSelector1").style.background = "#2736a0";
             };
 			
-			 Bll.onclick = () => {
+			 Bla.onclick = () => {
 			document.getElementById("startMenu").style.background = "#c72626";
 			document.getElementById("patchNotes").style.background = "#c72626";
 			document.getElementById("serverSelector1").style.background = "#c72626";
