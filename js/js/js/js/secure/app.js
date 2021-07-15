@@ -192,6 +192,8 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 
 ~function() {
 	"use strict";
+	
+	var tankTypeFunctionLookup = new Map();
   
   // ==============================================================================
   // Spaceball Shooter.
