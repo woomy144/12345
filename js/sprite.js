@@ -1,6 +1,4 @@
-import {
-  resources
-} from './resources.js';
+
 
 
 (function() {
