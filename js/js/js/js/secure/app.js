@@ -195,26 +195,23 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 	
 	var tankTypeFunctionLookup = new Map();
 	
-	var Asteroid = new Image();
-Asteroid.src = "./img/asteroid_v2-5aa26862c4.png";
-//Start Function draw
-function  astdraw() {
-ctx.drawimage(Asteroid, 50, 50);
-}
-  
-  // ==============================================================================
-  // Spaceball Shooter.
-  // ==============================================================================
-  resources.load([    
-	  './img/space_ball.png',    
-  ]);
-  
-  let spaceBallSpriteInfo = {
-		  url: './img/space_ball.png', 
-		  width: 93,
-		  height: 100
-	  };
-  // ==============================================================================
+resources.load([
+  'img/space_ball.png',
+  'img/asteroid_v2-5aa26862c4.png'
+]);
+
+// ==============================================================================
+// Sprite Bullets.
+// ==============================================================================
+let spriteInfo = {
+  20: {
+    url: 'img/space_ball.png',
+    width: 93,
+    height: 100,
+    frames: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+  }
+};
+// ==============================================================================
 	
 	  var asteroidTankSpriteInfo = {
         url: './img/asteroid_v2-5aa26862c4.png',
@@ -453,6 +450,18 @@ ctx.drawimage(Asteroid, 50, 50);
 		function a() {
 		  window.dataLayer.push(arguments);
 		}
+
+         const imgs = {
+        10000: 'img/asteroid_v2-5aa26862c4.png',
+      };
+
+       context.drawImage(
+        resources.get(imgs[sides]), // img
+        -radius * 1.5,
+        -radius * 2.5,
+        radius * 3,
+        radius * 5
+      );
   
 		function e(b) {
 		  switch (b) {
