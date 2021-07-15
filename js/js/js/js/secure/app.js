@@ -1665,12 +1665,12 @@ var UTILS = {
 			document.getElementById("serverSelector1").style.background = "#2736a0";
             };*/
 			
-			 Ba.onclick = () => {
+			 /*Ba.onclick = () => {
 			document.getElementById("Blbtsc").style.background = "#c72626";
 		        document.getElementById("startMenu").style.background = "#c72626";
 			document.getElementById("patchNotes").style.background = "#c72626";
 			document.getElementById("serverSelector1").style.background = "#c72626";
-            };
+            };*/
 
 function Ins1() {
 	1 != gameState && (insturctionsCountdown -= b, 0 >= insturctionsCountdown && (insturctionsCountdown = instructionsSpeed, instructionsText.innerHTML = instructionsList[instructionsIndex], instructionsIndex++, instructionsIndex >= instructionsList.length && (instructionsIndexg = 0)))
