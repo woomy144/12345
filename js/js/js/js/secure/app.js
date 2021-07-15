@@ -1627,14 +1627,14 @@ var UTILS = {
 			  kl();
 			};
             Bl.onclick = () => {
-		        document.getElementById("csBottomc").style.background = "#2736a0";
+		        document.getElementById("Blbtsc").style.background = "#2736a0";
 			document.getElementById("startMenu").style.background = "#2736a0";
 			document.getElementById("patchNotes").style.background = "#2736a0";
 			document.getElementById("serverSelector1").style.background = "#2736a0";
             };
 			
 			 Ba.onclick = () => {
-			document.getElementById("startMenu").style.background = "#c72626";
+			document.getElementById("Blbtsc").style.background = "#c72626";
 		        document.getElementById("csBottomc").style.background = "#c72626";
 			document.getElementById("patchNotes").style.background = "#c72626";
 			document.getElementById("serverSelector1").style.background = "#c72626";
