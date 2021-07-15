@@ -451,9 +451,7 @@ let spriteInfo = {
 		  window.dataLayer.push(arguments);
 		}
 
-         const imgs = {
-        10000: 'img/asteroid_v2-5aa26862c4.png',
-      };
+       
 
   
 		function e(b) {
@@ -2153,8 +2151,8 @@ function Ins1() {
 		});
 		var U = new (w(5))();
 		b.mobile && document.body.classList.add("mobile");
-		var ctx = U.cv.getContext("2d"),
-		ctx.drawImage(tctx.canvas, x - xx, y - yy * (1.05 + !center * 0.45));
+		var g = U.cv.getContext("2d"),
+
 
 		  Ma = document.createElement("canvas").getContext("2d"),
 		  S = [],
@@ -2190,15 +2188,6 @@ function Ins1() {
 			lastUpdate: 0,
 			time: 0
 		  };
-
-   ctx.drawImage(
-        resources.get(imgs[sides]), // img
-        -radius * 1.5,
-        -radius * 2.5,
-        radius * 3,
-        radius * 5
-      );
-
 		b.player = z;
 		var ya = (() => {
 		  let a = 0,
