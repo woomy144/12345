@@ -1658,12 +1658,12 @@ var UTILS = {
 			  b = !b;
 			  kl();
 			};
-            Bl.onclick = () => {
+           /* Bl.onclick = () => {
 		        document.getElementById("Blbtsc").style.background = "#2736a0";
 			document.getElementById("startMenu").style.background = "#2736a0";
 			document.getElementById("patchNotes").style.background = "#2736a0";
 			document.getElementById("serverSelector1").style.background = "#2736a0";
-            };
+            };*/
 			
 			 Ba.onclick = () => {
 			document.getElementById("Blbtsc").style.background = "#c72626";
