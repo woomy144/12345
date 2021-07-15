@@ -852,10 +852,10 @@ background-color: blue;
 	  align-items: center;
   }
   
-  .box {
+ .box {
     width: 370px;
     height: 60px;
-    left: 388px;
+    left: 500px;
     border-radius: 5%;
     position: relative;
     -webkit-transition: top 1s;
