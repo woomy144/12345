@@ -1635,7 +1635,7 @@ var UTILS = {
 			
 			 Ba.onclick = () => {
 			document.getElementById("Blbtsc").style.background = "#c72626";
-		        document.getElementById("csBottomc").style.background = "#c72626";
+		        document.getElementById("startmenu").style.background = "#c72626";
 			document.getElementById("patchNotes").style.background = "#c72626";
 			document.getElementById("serverSelector1").style.background = "#c72626";
             };
