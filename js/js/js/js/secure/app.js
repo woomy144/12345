@@ -1598,18 +1598,18 @@ var UTILS = {
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
               Blbtsc = document.getElementById("Blbtsc"),
-              startblue = document.getElementById("startmenu"),
-               startblue1 = document.getElementById("serverSelector"),
-                startblue2 = document.getElementById("patchNotes"),
+              i = document.getElementById("startmenu"),
+               g = document.getElementById("serverSelector"),
+                q = document.getElementById("patchNotes"),
               k = document.getElementById("Sandboxid")[0],
 			  u = document.getElementsByClassName("sliderHolder")[0],
-               Q = document.getElementsByClassName("slider1")[0],
+               Qqq = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
 			  hs = () => {
-                   Blbtsc.innerText = b ? "Return" : "Blue";
-				b ? startblue.classList.add("Blue") : startblue.classList.remove("blue");
-                b ? startblue1.classList.add("Blue") : startblue1.classList.remove("blue");
-                 b ? startblue2.classList.add("Blue") : startblue2.classList.remove("blue");
+                   Blbtsc.innerText = r ? "Return" : "Blue";
+				r ? startblue.classList.add("Blue") : startblue.classList.remove("blue");
+                r ? startblue1.classList.add("Blue") : startblue1.classList.remove("blue");
+                 r ? startblue2.classList.add("Blue") : startblue2.classList.remove("blue");
 			  };
                 h = () => {
 				c.style.transform = c.style.webkitTransform = b
@@ -1628,7 +1628,7 @@ var UTILS = {
 			  h();
 			};
             Blbtsc.onclick = () => {
-			  b = !b;
+			  r = !r;
 			  hs();
             };
 
