@@ -1632,7 +1632,7 @@ var UTILS = {
 			document.getElementById("serverSelector1").style.background = "#2736a0";
             };
 			
-			 Bla.onclick = () => {
+			 Ba.onclick = () => {
 			document.getElementById("startMenu").style.background = "#c72626";
 			document.getElementById("patchNotes").style.background = "#c72626";
 			document.getElementById("serverSelector1").style.background = "#c72626";
