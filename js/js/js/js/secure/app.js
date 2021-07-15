@@ -1597,8 +1597,8 @@ var UTILS = {
 			    instructionsIndex = UTILS.randInt(0, instructionsList.length - 1),
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
-              Bl = document.getElementById("Blbtsc"),
-			      Ba = document.getElementById("Blbtsc1"),
+              Bl = document.getElementById("blue1"),
+			      Ba = document.getElementById("red1"),
               i = document.getElementById("startMenu"),
               k = document.getElementById("Sandboxid")[0],
 			  u = document.getElementsByClassName("sliderHolder")[0],
@@ -1627,6 +1627,7 @@ var UTILS = {
 			  kl();
 			};
             Bl.onclick = () => {
+		        document.getElementById("csBottomc").style.background = "#2736a0";
 			document.getElementById("startMenu").style.background = "#2736a0";
 			document.getElementById("patchNotes").style.background = "#2736a0";
 			document.getElementById("serverSelector1").style.background = "#2736a0";
@@ -1634,6 +1635,7 @@ var UTILS = {
 			
 			 Ba.onclick = () => {
 			document.getElementById("startMenu").style.background = "#c72626";
+		        document.getElementById("csBottomc").style.background = "#c72626";
 			document.getElementById("patchNotes").style.background = "#c72626";
 			document.getElementById("serverSelector1").style.background = "#c72626";
             };
