@@ -1607,9 +1607,9 @@ var UTILS = {
 			  y = document.getElementsByClassName("slider"),
 			  hs = () => {
                    Blbtsc.innerText = r ? "Return" : "Blue";
-				r ? startblue.classList.add("Blue") : startblue.classList.remove("blue");
-                r ? startblue1.classList.add("Blue") : startblue1.classList.remove("blue");
-                 r ? startblue2.classList.add("Blue") : startblue2.classList.remove("blue");
+				r ? i.classList.add("Blue") : i.classList.remove("blue");
+                r ? g.classList.add("Blue") : g.classList.remove("blue");
+                 r ? q.classList.add("Blue") : q.classList.remove("blue");
 			  };
                 h = () => {
 				c.style.transform = c.style.webkitTransform = b
