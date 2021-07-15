@@ -1597,11 +1597,20 @@ var UTILS = {
 			    instructionsIndex = UTILS.randInt(0, instructionsList.length - 1),
 			  h = document.getElementById("viewOptionText"),
               s = document.getElementById("viewOptionText1"),
+              Blbtsc = document.getElementById("Blbtsc"),
+              startblue = document.getElementById("startmenu"),
+               startblue1 = document.getElementById("serverSelector"),
+                startblue2 = document.getElementById("patchNotes"),
               k = document.getElementById("Sandboxid")[0],
 			  u = document.getElementsByClassName("sliderHolder")[0],
                Q = document.getElementsByClassName("slider1")[0],
 			  y = document.getElementsByClassName("slider"),
-			  f = () => {
+			  Z = () => {
+				b ? startblue.classList.add("Blue") : startblue.classList.remove("blue");
+                b ? startblue1.classList.add("Blue") : startblue1.classList.remove("blue");
+                 b ? startblue2.classList.add("Blue") : startblue2.classList.remove("blue");
+			  };
+                f = () => {
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
@@ -1617,6 +1626,9 @@ var UTILS = {
 			  b = !b;
 			  f();
 			};
+            Blbtsc.onclick = () => {
+			  b = !b;
+			  Z();
 
 function Ins1() {
 	1 != gameState && (insturctionsCountdown -= b, 0 >= insturctionsCountdown && (insturctionsCountdown = instructionsSpeed, instructionsText.innerHTML = instructionsList[instructionsIndex], instructionsIndex++, instructionsIndex >= instructionsList.length && (instructionsIndexg = 0)))
