@@ -1609,7 +1609,7 @@ var UTILS = {
                 r ? aa.classList.add("Blue") : aa.classList.remove("blue");
                  r ? sa.classList.add("Blue") : q.classList.remove("blue");
 			  };*/
-                h = () => {
+                kl = () => {
 				c.style.transform = c.style.webkitTransform = b
 				  ? "translate(2px, -2px) rotate(45deg)"
 				  : "rotate(-45deg)";
@@ -1623,7 +1623,7 @@ var UTILS = {
 			  };
 				a.onclick = () => {
 			  b = !b;
-			  h();
+			  kl();
 			};
             Bl.onclick = () => {
 			document.getElementById("startMenu").style.color = blue;
