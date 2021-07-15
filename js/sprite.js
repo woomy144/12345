@@ -1,4 +1,6 @@
-const  resources = require("./resources.js");
+import {
+  resources
+} from './resources.js';
 
 
 (function() {
