@@ -481,6 +481,8 @@ let spriteInfo = {
             return "#ffd300";
             case 37:
             return "#00fffb";
+             case 38:
+            return "#4853b5";
           case 36:
             return "#" + Math.floor(Math.random() * 16777215).toString(16);
           default:
