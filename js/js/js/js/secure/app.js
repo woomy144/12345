@@ -479,6 +479,8 @@ let spriteInfo = {
             return "#00e00b";
           case 35:
             return "#ffd300";
+            case 37:
+            return "#00fffb";
           case 36:
             return "#" + Math.floor(Math.random() * 16777215).toString(16);
           default:
@@ -493,7 +495,7 @@ let spriteInfo = {
 
       function x(b) {
         switch (b) {
-          case "bas1":
+          //case "bas1":
           case "bap1":
           case "boss1":
           case "dom1":
