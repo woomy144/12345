@@ -5000,6 +5000,7 @@ let spaceBallSpriteInfo = {
           },
           [
             [{ id: "p", to: "Private" }],
+             [{ id: "s", to: "Siege" }],
             [{ id: "e", dynamic: "word" }],
             [{ id: "w", dynamic: "words" }],
             [{ id: "o", to: "Developer Server" }],
@@ -5022,17 +5023,17 @@ let spaceBallSpriteInfo = {
              servers: [
           {
              visible: 0,
-            id: "4",
-            type: "4TDM",
-            code: "Host-local-4",
+            id: "f",
+            type: "FFa",
+            code: "Host-singapore-f",
             at: p.heroku("voidsarrasmahick"),
             prefer: !0
             // featured: 1, // For Featured Status.
           }, {
        visible: 0,
-            id: "d",
-            type: "4DOM",
-            code: "Host-local-d",
+            id: "s",
+            type: "Siege",
+            code: "Host-germany-s",
             at: p.heroku("bosdse"),
             prefer: !0
             // featured: 1, // For Featured Status.
