@@ -415,7 +415,7 @@ let spriteInfo = {
 
       function e(b) {
         switch (b) {
-          case 0:
+         case 0:
             return l.teal;
           case 1:
             return l.lgreen;
@@ -457,6 +457,26 @@ let spriteInfo = {
             return l.guiblack;
           case 20:
             return 150 > Date.now() % 300 ? l.blue : l.red;
+           case 59:
+            return T(
+              [
+                "#ff1000",
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf"
+              ][Math.floor((Date.now() / 200) % 6)],
+              [
+                "#ff9000",
+                "#ffd300",
+                "#00e00b",
+                "#226ef6",
+                "#a913cf",
+                "#ff1000"
+              ][Math.floor((Date.now() / 200) % 6)],
+              (Date.now() / 200) % 1
+            );
           case 21:
             return 150 > Date.now() % 300 ? l.blue : l.grey;
           case 22:
@@ -481,8 +501,16 @@ let spriteInfo = {
             return "#ffd300";
             case 37:
             return "#00fffb";
-             case 38:
+              case 38:
             return "#4853b5";
+             case 55:
+            return "#0028ff";
+              case 58:
+            return "#ff9b00";
+             case 56:
+            return "#b200ff";
+             case 57:
+            return "#00fffb";
           case 36:
             return "#" + Math.floor(Math.random() * 16777215).toString(16);
           default:
