@@ -525,7 +525,7 @@ let spriteInfo = {
 
       function x(b) {
         switch (b) {
-          //case "bas1":
+          case "bas1":
           case "bap1":
           case "boss1":
           case "dom1":
@@ -4227,10 +4227,10 @@ let spaceBallSpriteInfo = {
                                       g.fillStyle = e(u + 10);
                                       G(c, d, 100, 100);
                                       g.globalAlpha = .1;
-                                      g.fillStyle = e(u);
+                                      g.fillStyle = blue;
                                       u++;
                                       G(c, d, 100, 60);
-                                      g.fillStyle = l.black;
+                                      g.fillStyle = l.blue;
                                       G(c, d + 60, 100, 40);
                                       g.globalAlpha = 1;
                                       let t = D(m, A.color);
@@ -5045,9 +5045,8 @@ let spaceBallSpriteInfo = {
             ],
             [
               { id: "d", to: "Domination" },
-              { id: "be", to: "Boss_Event" },
-              { id: "m", to: "Mothership", remove: "2" },
-              { id: "a", to: "Boss Event", remove: "2" }
+              { id: "be", to: "Boss_Event" }
+             
             ]
           ]
         ],
@@ -5055,9 +5054,9 @@ let spaceBallSpriteInfo = {
              servers: [
           {
              visible: 0,
-            id: "f",
-            type: "FFa",
-            code: "Host-singapore-f",
+            id: "m",
+            type: "Maze",
+            code: "Host-singaporem-m",
             at: p.heroku("voidsarrasmahick"),
             prefer: !0
             // featured: 1, // For Featured Status.
