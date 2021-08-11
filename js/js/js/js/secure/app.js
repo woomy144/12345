@@ -4224,10 +4224,10 @@ let spaceBallSpriteInfo = {
                                       h = c;
                                       b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
                                       g.globalAlpha = .5;
-                                      g.fillStyle = e(u + 10);
+                                      g.fillStyle = blue;
                                       G(c, d, 100, 100);
                                       g.globalAlpha = .1;
-                                      g.fillStyle = blue;
+                                      g.fillStyle = e(u);
                                       u++;
                                       G(c, d, 100, 60);
                                       g.fillStyle = l.blue;
