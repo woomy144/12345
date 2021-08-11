@@ -5045,8 +5045,9 @@ let spaceBallSpriteInfo = {
             ],
             [
               { id: "d", to: "Domination" },
-              { id: "be", to: "Boss_Event" }
-             
+              { id: "be", to: "Boss_Event" },
+              { id: "m", to: "Mothership", remove: "2" },
+              { id: "a", to: "Boss Event", remove: "2" }
             ]
           ]
         ],
