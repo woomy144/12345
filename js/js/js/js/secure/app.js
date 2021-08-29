@@ -5078,6 +5078,14 @@ let spaceBallSpriteInfo = {
             at: p.heroku("bosdse"),
             prefer: !0
             // featured: 1, // For Featured Status.
+          },{
+             visible: 0,
+            id: ")",
+            type: "4 Siege",
+            code: "Host-local-f",
+            at: p.heroku("testeee1"),
+            prefer: !0
+            // featured: 1, // For Featured Status.
           },
         ]
           .map((a, e) => ({ data: a, i: e }))
