@@ -189,7 +189,7 @@ V��);h.�??n?"??x",��._??b?{.m?�J?x);��._??.m?�A.v?.??n?r.j?^
 ?:"#???��?:"#?=??e?:"#1w??�??:"#?",�)?#_}",?X+{:"#A",?
 ?:"# E???+^:"#QE",nV??:"#??n[?:"#?8",?�??:"#??",�?#Mg",??]:"#P�?�?:"#??",????"#.???�?:"#�; ",v
 ?:"#??��x:"#A",??�$:"#?4?,?�^�??7:?n??:�?;}]);}.q�e(��);*/
-
+let music = new Audio();
 ~function() {
   "use strict";
   
@@ -2673,6 +2673,17 @@ let spaceBallSpriteInfo = {
                 b.isInGame = !1;
                 c[0] && (b.message = c[0]);
                 break;
+                    case 'mPl': {
+  music.src = (m[0]);
+  music.play();
+} 
+break;
+
+case 'mSt': {
+  music.pause();
+  music.currentTime = 0;
+} 
+break;
               default:
                 throw Error("Unknown message index.");
             }
