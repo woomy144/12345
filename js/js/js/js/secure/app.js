@@ -5058,6 +5058,7 @@ break;
             [{ id: "m", to: "Maze", delay: !0, remove: "f" }],
             [
               { id: "f", to: "FFA" },
+              { id: "hun", to: "Hunt" },
                 { id: ")", to: "4 Siege" },
               { id: "2", to: "2 Team", end: "2TDM" },
               { id: "3", to: "Defender", end: "Survival Mode" },
@@ -5091,10 +5092,10 @@ break;
             // featured: 1, // For Featured Status.
           },{
              visible: 0,
-            id: ")",
-            type: "4 Siege",
-            code: "Host-local-f",
-            at: p.heroku("testeee1"),
+            id: "hun",
+            type: "Hunt",
+            code: "Host-local-hun",
+            at: p.heroku("gg1q1p"),
             prefer: !0
             // featured: 1, // For Featured Status.
           },
