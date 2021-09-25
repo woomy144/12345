@@ -5090,14 +5090,6 @@ break;
             at: p.heroku("bosdse"),
             prefer: !0
             // featured: 1, // For Featured Status.
-          },{
-             visible: 0,
-            id: "h",
-            type: "Hunt",
-            code: "Host-local-h",
-            at: p.heroku("gg1q1p"),
-            prefer: !0
-            // featured: 1, // For Featured Status.
           },
         ]
           .map((a, e) => ({ data: a, i: e }))
