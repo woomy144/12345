@@ -4241,7 +4241,7 @@ break;
                                       h = c;
                                       b.clickables.upgrade.place(q++, c * n, d * n, 100 * n, 100 * n);
                                       g.globalAlpha = .5;
-                                      g.fillStyle = l.blue;
+                                      g.fillStyle = l.blue, l.pink, l.red;
                                       G(c, d, 100, 100);
                                       g.globalAlpha = .1;
                                       g.fillStyle = e(u);
