@@ -1587,7 +1587,7 @@ let dev = document.getElementById("devbutton");
 let dev1 = document.getElementById("devconsole");
 dev.onclick = () => {
     b = !b;
-    dev1.style.opacity = b ? 0.55 : 0;
+    dev1.style.opacity = b ? 0 : 0.55;
   };
 //---
 
