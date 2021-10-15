@@ -4133,8 +4133,9 @@ break;
                       "right"
                     );
                   } else
+                    var vvval = 100
                     W[3].draw(
-                        "Connect Status" + setInterval(() =>{Math.random, Math.floor},300),
+                        "Connect Status:" + setInterval(() =>{Math.random(, Math.floor() * vvval)},600) + "%",
                        h + 200,
                        m - 98,
                        10,
