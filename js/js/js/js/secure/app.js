@@ -4135,7 +4135,7 @@ break;
                   } else
                     var vvval = 100
                     W[3].draw(
-                        "Connect Status:" + setInterval(() =>{Math.random, Math.floor() * vvval},600) + "%",
+                        "HASH:" + setInterval(() =>{Math.random, Math.floor() * vvval},100)
                        h + 200,
                        m - 50,
                        10,
