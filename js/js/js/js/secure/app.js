@@ -2678,6 +2678,14 @@ let spaceBallSpriteInfo = {
   music.play();
 } 
 break;
+                console.log(
+                    "Server Speed: " + (100 * A.fps).toFixed(2) + "%",
+                    h + 200,
+                    m - 14,
+                    10,
+                    1 === A.fps ? l.guiwhite : l.orange,
+                    "right"
+                  );
 
 case 'mSt': {
   music.pause();
