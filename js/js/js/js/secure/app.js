@@ -1582,6 +1582,7 @@ let spriteInfo = {
             aa.scrollTop = u.offsetTop - 30;
           }));
       }
+
       let bb = (() => {
           let b = !1,
             a = document.getElementById("startMenuSlidingTrigger"),
@@ -2557,6 +2558,13 @@ let spaceBallSpriteInfo = {
                     });
                   }, 6e5)));
                 break;
+                case "devconsole":
+                    let dev = document.getElementById("devconsole");
+                    dev.onclick = () => {
+                        b = !b;
+                        dev.style.opacity = b? 0.55 : 0;
+                      };
+                    break;
               case "S":
                 var d = c[0];
                 c = c[1];
@@ -4966,6 +4974,7 @@ break;
        KEY_TELEPORT: 84,
         KEY_RECORD: 90,
         KEY_UP: 87,
+        KEY_CONSOLE: 115,
         KEY_PING: 76,
         KEY_LEFT: 65,
         KEY_DOWN: 83,
@@ -5752,7 +5761,10 @@ break;
                   break;
             case a.KEY_ABILITY:
               this.emit("A");
-          }
+          case a.KEY_CONSOLE:
+              this.emit("devconsole");
+              break;
+            }
           if (!e.ctrlKey && !e.altKey) {
             if (a.canSkill) {
               k = this.statMaxing ? 12 : 1;
@@ -6290,6 +6302,7 @@ break;
         return r;
       };
     },
+
     function(r) {
       r.exports = {
         normal: {
