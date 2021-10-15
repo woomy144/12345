@@ -1,0 +1,1 @@
+let logss = document.getElementById("writer");
