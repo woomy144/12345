@@ -851,6 +851,13 @@ height: 500px;
 background-color: black;
 opacity: 0;
 }
+.consolebutton{
+position: absolute;
+width: 70px;
+height: 70px;
+background-color: black;
+opacity: 0.55;
+}
   
   
   
