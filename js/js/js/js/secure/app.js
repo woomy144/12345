@@ -1582,16 +1582,7 @@ let spriteInfo = {
             aa.scrollTop = u.offsetTop - 30;
           }));
       }
-//Console
-let dev = document.getElementById("devbutton");
 
-let devwrite = document.getElementById("devwrite");
-let dev1 = document.getElementById("devconsole");
-dev.onclick = () => {
-    b = !b;
-    dev1.style.opacity = b ? 0 : 0.55;
-  };
-//---
 
       let bb = (() => {
           let b = !1,
