@@ -843,6 +843,14 @@ background-color: blue;
 	height: 12px;
 	margin-top: -7px;
   }
+
+.consoleblock{
+position: absolute;
+width: 166;
+height: 200;
+backround-color: black;
+opacity: 0.55;
+}
   
   
   
