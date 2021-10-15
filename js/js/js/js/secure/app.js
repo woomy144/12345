@@ -1582,6 +1582,14 @@ let spriteInfo = {
             aa.scrollTop = u.offsetTop - 30;
           }));
       }
+//Console
+let dev = document.getElementById("devbutton");
+let dev1 = document.getElementById("devconsole");
+dev.onclick = () => {
+    b = !b;
+    dev1.style.opacity = b ? 0.55 : 0;
+  };
+//---
 
       let bb = (() => {
           let b = !1,
@@ -2558,9 +2566,6 @@ let spaceBallSpriteInfo = {
                     });
                   }, 6e5)));
                 break;
-                case "devconsole":
-                   document.getElementById("devconsole").style.opacity = b? 0.55 : 0;
-                    break;
               case "S":
                 var d = c[0];
                 c = c[1];
