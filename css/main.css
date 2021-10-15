@@ -846,9 +846,9 @@ background-color: blue;
 
 .consoleblock{
 position: absolute;
-width: 166;
-height: 200;
-backround-color: black;
+width: 166px;
+height: 200px;
+background-color: black;
 opacity: 0.55;
 }
   
