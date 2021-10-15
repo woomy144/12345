@@ -1584,6 +1584,8 @@ let spriteInfo = {
       }
 //Console
 let dev = document.getElementById("devbutton");
+
+let devwrite = document.getElementById("devwrite");
 let dev1 = document.getElementById("devconsole");
 dev.onclick = () => {
     b = !b;
