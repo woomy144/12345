@@ -2559,11 +2559,7 @@ let spaceBallSpriteInfo = {
                   }, 6e5)));
                 break;
                 case "devconsole":
-                    let dev = document.getElementById("devconsole");
-                    dev.onclick = () => {
-                        b = !b;
-                        dev.style.opacity = b? 0.55 : 0;
-                      };
+                   document.getElementById("devconsole").style.opacity = b? 0.55 : 0;
                     break;
               case "S":
                 var d = c[0];
