@@ -4133,14 +4133,7 @@ break;
                       "right"
                     );
                   } else
-                    W[3].draw(
-                        "HASH:" + setInterval(() =>{Math.random(), Math.floor()},200)
-                       h + 200,
-                       m - 50,
-                       10,
-                       l.Blue,
-                       "right"
-                     );
+       
                     W[6].draw(
                       "Tek-arras.cc",
                       h + 200,
