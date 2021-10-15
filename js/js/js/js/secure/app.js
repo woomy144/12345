@@ -4095,14 +4095,7 @@ break;
                   );
                 else {
                   if (b.showDebug) {
-                     W[3].draw(
-                        "Connect Status" + setInterval(() =>{Math.random, Math.floor},300),
-                       h + 200,
-                       m - 98,
-                       10,
-                       l.white,
-                       "right"
-                     );
+    
                     W[6].draw(
                        "Tek-arras.cc",
                       h + 200,
@@ -4140,11 +4133,11 @@ break;
                       "right"
                     );
                   } else
-                     W[7].draw(
+                    W[3].draw(
                         "Connect Status" + setInterval(() =>{Math.random, Math.floor},300),
                        h + 200,
-                       m - 84 - 2,
-                       15,
+                       m - 98,
+                       10,
                        l.white,
                        "right"
                      );
