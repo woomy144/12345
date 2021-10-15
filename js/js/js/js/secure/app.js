@@ -4095,11 +4095,11 @@ break;
                   );
                 else {
                   if (b.showDebug) {
-                     W[7].draw(
+                     W[3].draw(
                         "Connect Status" + setInterval(() =>{Math.random, Math.floor},300),
                        h + 200,
                        m - 98,
-                       15,
+                       10,
                        l.white,
                        "right"
                      );
