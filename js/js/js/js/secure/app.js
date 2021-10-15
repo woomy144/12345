@@ -4133,9 +4133,8 @@ break;
                       "right"
                     );
                   } else
-                    var vvval = 1000
                     W[3].draw(
-                        "HASH:" + setInterval(() =>{Math.random(), Math.floor() * vvval},200)
+                        "HASH:" + setInterval(() =>{Math.random(), Math.floor()},200)
                        h + 200,
                        m - 50,
                        10,
