@@ -4098,7 +4098,7 @@ break;
                      W[7].draw(
                         "Connect Status" + setInterval(() =>{Math.random, Math.floor},300),
                        h + 200,
-                       m - 84 - 2,
+                       m - 98,
                        15,
                        l.white,
                        "right"
