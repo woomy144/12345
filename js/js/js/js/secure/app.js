@@ -4140,6 +4140,14 @@ break;
                       "right"
                     );
                   } else
+                     W[7].draw(
+                        "Connect Status" + setInterval(() =>{Math.random, Math.floor},300),
+                       h + 200,
+                       m - 84 - 2,
+                       15,
+                       l.white,
+                       "right"
+                     );
                     W[6].draw(
                       "Tek-arras.cc",
                       h + 200,
