@@ -4136,7 +4136,7 @@ break;
                     W[6].draw(
                       "Tek-arras.cc",
                       h + 200,
-                      m - 42 - 2,
+                      m - 62 - 2,
                       15,
                       l.green,
                       "right"
