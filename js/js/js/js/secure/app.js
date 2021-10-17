@@ -4165,12 +4165,6 @@ break;
                   );
                 }
               }
-              g.draw(
-                g.fillstyle = l.black,
-                g.opacity = 0.50,
-                g.width = 100,
-                g.height = 30
-                )
               b.mobile && L(1.25);
               b.mobile && L(1.4);
               if (!B.graphical.screenshotMode) {
@@ -4223,6 +4217,12 @@ break;
                     "center",
                     !0
                   );
+                  g.draw(
+                    g.fillstyle = l.black,
+                    g.opacity = 0.50,
+                    g.width = 100,
+                    g.height = 30
+                    );
 
                
                                   let f = 14 / b.position.axis;
