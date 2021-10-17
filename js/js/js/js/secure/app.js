@@ -4136,7 +4136,7 @@ break;
                     W[6].draw(
                       "Tek-arras.cc",
                       h + 200,
-                      m - 72 - 2,
+                      m - 69 - 2,
                       15,
                       l.green,
                       "right"
@@ -4144,7 +4144,7 @@ break;
                   W[2].draw(
                     "Client Speed: " + J.rendertime + " FPS",
                     h + 200,
-                    m - 58,
+                    m - 55,
                     10,
                     10 < J.rendertime ? l.guiwhite : l.orange,
                     "right"
@@ -4152,7 +4152,7 @@ break;
                   W[1].draw(
                     "Server Speed: " + (100 * A.fps).toFixed(2) + "%",
                     h + 200,
-                    m - 44,
+                    m - 41,
                     10,
                     1 === A.fps ? l.guiwhite : l.orange,
                     "right"
@@ -4165,7 +4165,7 @@ break;
                       b.server.type +
                       ":",
                     h + 200,
-                    m - 30,
+                    m - 27,
                     10,
                     l.guiwhite,
                     "right"
@@ -4449,7 +4449,7 @@ break;
              
                 g.fillStyle = l.black,
                 g.globalAlpha = 0.7,
-              G(1220, 535, 200, 30, 0);
+              G(1220, 538, 200, 30, 0);
               //1 = left, 2=top 3=widht, 4=height, 5=?
               if (b.mobile) {
                 b.canSkill =
