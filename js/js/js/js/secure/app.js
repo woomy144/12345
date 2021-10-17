@@ -3620,6 +3620,13 @@ break;
                   g.lineTo(Math.round(d) + 0.5, Math.round(f) + 0.5);
                 }
                 g.stroke();
+                g.draw(
+                  g.fillstyle = l.black,
+                  g.opacity = 0.50,
+                  g.left = 50,
+                  g.width = 100,
+                  g.height = 30
+                  );
                 for (let { x: a, y: d, colorIndex: f, index: x } of c) {
                   let c = b.screenWidth / 2 + (a - h.width / 2) * k + 2,
                     u = b.screenHeight / 2 + (d - h.height / 2) * k + 2;
