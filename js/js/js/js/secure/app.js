@@ -2557,7 +2557,6 @@ let spaceBallSpriteInfo = {
                     });
                   }, 6e5)));
                 break;
-                     /** */var valll = 10; var valll1 = 100; var valll2 = 50; var val = ['A', 'a', 'W']; var val1 = ['L', 'l', 'h']; var val2 = ['b', 'B', 'J']; var val3 = ['T', 'U', 'q'];
               case "S":
                 var d = c[0];
                 c = c[1];
@@ -2569,7 +2568,6 @@ let spaceBallSpriteInfo = {
                 });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 1),
-                  (b.message = `HASH:`+ Math.random, Math.floor * valll + Math.random == val, Math.random, Math.floor * valll1 + Math.random, Math.floor * valll2 +  Math.random == val + Math.radom == val + Math.random == val1),
                     (b.message = `Loading Socket If loading not start restart game page. ${1 * S.length}%`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
