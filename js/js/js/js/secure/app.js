@@ -4144,7 +4144,7 @@ break;
                   W[2].draw(
                     "Client Speed: " + J.rendertime + " FPS",
                     h + 200,
-                    m - 28,
+                    m - 48,
                     10,
                     10 < J.rendertime ? l.guiwhite : l.orange,
                     "right"
@@ -4152,7 +4152,7 @@ break;
                   W[1].draw(
                     "Server Speed: " + (100 * A.fps).toFixed(2) + "%",
                     h + 200,
-                    m - 14,
+                    m - 34,
                     10,
                     1 === A.fps ? l.guiwhite : l.orange,
                     "right"
@@ -4165,7 +4165,7 @@ break;
                       b.server.type +
                       ":",
                     h + 200,
-                    m,
+                    m - 14,
                     10,
                     l.guiwhite,
                     "right"
