@@ -4256,9 +4256,9 @@ break;
                                       g.globalAlpha = .1;
                                       g.fillStyle = e(u);
                                       u++;
-                                      G(c, d, 100, 60);
+                                      G(c, d, 200, 60);
                                       g.fillstyle = l.Blue;
-                                      G(c, d + 100, 100, 40);
+                                      G(c, d + 60, 100, 40);
                                     
                                       g.globalAlpha = 1;
                                       let t = D(m, A.color);
