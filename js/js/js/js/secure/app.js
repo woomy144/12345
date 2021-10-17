@@ -4184,7 +4184,6 @@ break;
                                   K(c, c + 200, d + 7, 11, l.grey);
                                   K(c, c + 200 * Math.min(1, b.score / na), d + 7, 10.5, b.barColor);
                                   ca[a].draw(b.label + ": " + H.handleLargeNumber(Math.round(b.score)), c + 100, d + 7, 9, l.guiwhite, "center", !0);
-                                
                                   
                    if (b.label.includes("[RP]Abstrakt"))
                   ca[a].draw(
@@ -4217,12 +4216,6 @@ break;
                     "center",
                     !0
                   );
-                  g.draw(
-                    g.fillstyle = l.black,
-                    g.opacity = 0.50,
-                    g.width = 100,
-                    g.height = 30
-                    );
 
                
                                   let f = 14 / b.position.axis;
