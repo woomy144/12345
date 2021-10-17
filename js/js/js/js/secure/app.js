@@ -4165,7 +4165,7 @@ break;
                   );
                 }
               }
-              b.draw(
+              g.draw(
                 g.fillstyle = l.black,
                 g.opacity = 0.50,
                 g.width = 100,
