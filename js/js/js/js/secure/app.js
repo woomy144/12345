@@ -4133,8 +4133,16 @@ break;
                       "right"
                     );
                   } else
+                  W[7].draw(
+                    "id: ",
+                    h + 200,
+                    m - 69 - 2,
+                    15,
+                    l.green,
+                    "right"
+                  );
                     W[6].draw(
-                      "Tek-arras.cc",
+                      "Tekloro.io",
                       h + 200,
                       m - 69 - 2,
                       15,
@@ -4449,8 +4457,7 @@ break;
              
                 g.fillStyle = l.black,
                 g.globalAlpha = 0.7,
-              G(1220, 538, 200, 30, 0),
-              q.draw("id: ", l.guiwhite);
+              G(1220, 538, 200, 30, 0);
               //1 = left, 2=top 3=widht, 4=height, 5=?
               if (b.mobile) {
                 b.canSkill =
