@@ -3622,7 +3622,7 @@ break;
                 g.stroke();
                 g.draw(
                   g.fillstyle = l.black,
-                  g.opacity = 0.50,
+                  g.globalAlpha = 0.50,
                   g.left = 50,
                   g.width = 100,
                   g.height = 30
@@ -4258,7 +4258,8 @@ break;
                                       u++;
                                       G(c, d, 100, 60);
                                       g.fillstyle = l.Blue;
-                                      G(c, d + 60, 100, 40);
+                                      G(c, d + 100, 100, 40);
+                                    
                                       g.globalAlpha = 1;
                                       let t = D(m, A.color);
                                       m = M[m].position;
