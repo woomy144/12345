@@ -4258,7 +4258,7 @@ break;
                                       u++;
                                       G(c, d, 100, 60);
                                       g.fillstyle = l.Blue;
-                                      G(c, d + 100, 140, 80);
+                                      G(c, d + 60, 100, 40);
                                     
                                       g.globalAlpha = 1;
                                       let t = D(m, A.color);
@@ -4446,6 +4446,11 @@ break;
                 } else
                   b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide();
               }*/
+              g.draw(
+                g.fillStyle = l.black,
+                g.globalAlpha = 1,
+              G(c, d + 60, 100, 40),
+              );
               if (b.mobile) {
                 b.canSkill =
                   0 < A.points &&
