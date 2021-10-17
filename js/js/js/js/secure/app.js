@@ -4448,8 +4448,8 @@ break;
               }*/
              
                 g.fillStyle = l.black,
-                g.globalAlpha = 1,
-              G(700, 600, 180, 30, 0);
+                g.globalAlpha = 0.7,
+              G(700, 550, 180, 30, 0);
               //1 = top, 2=left 3=widht, 4=height, 5=?
               if (b.mobile) {
                 b.canSkill =
