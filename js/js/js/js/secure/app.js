@@ -4446,11 +4446,11 @@ break;
                 } else
                   b.clickables.upgrade.hide(), b.clickables.skipUpgrades.hide();
               }*/
-              g.draw(
+             
                 g.fillStyle = l.black,
                 g.globalAlpha = 1,
-              G(222, 30, 60, 100, 40),
-              );
+              G(2, 3, 60, 100, 40);
+              
               if (b.mobile) {
                 b.canSkill =
                   0 < A.points &&
