@@ -2568,6 +2568,8 @@ let spaceBallSpriteInfo = {
                 });
                 if (10 > S.length)
                   setTimeout(() => g.talk("S", Date.now() - P - Q), 1),
+                   valll = 10, valll1 = 100, valll2 = 50, val = ['A', 'a', 'W'], val1 = ['L', 'l', 'h'], val2 = ['b', 'B', 'J'], val3 = ['T', 'U', 'q']
+                  (b.message = `HASH:`+ Math.random, Math.floor * valll + Math.random == val, Math.random, Math.floor * valll1 + Math.random, Math.floor * valll2 +  Math.random == val + Math.radom == val + Math.random == val1),
                     (b.message = `Loading Socket If loading not start restart game page. ${1 * S.length}%`);
                 else {
                   S.sort((b, a) => b.latency - a.latency);
@@ -2678,14 +2680,6 @@ let spaceBallSpriteInfo = {
   music.play();
 } 
 break;
-                console.log(
-                    "Server Speed: " + (100 * A.fps).toFixed(2) + "%",
-                    h + 200,
-                    m - 14,
-                    10,
-                    1 === A.fps ? l.guiwhite : l.orange,
-                    "right"
-                  );
 
 case 'mSt': {
   music.pause();
@@ -4093,9 +4087,10 @@ break;
                     l.guiwhite,
                     "right"
                   );
+
                 else {
                   if (b.showDebug) {
-    
+
                     W[6].draw(
                        "Tek-arras.cc",
                       h + 200,
@@ -4133,7 +4128,6 @@ break;
                       "right"
                     );
                   } else
-       
                     W[6].draw(
                       "Tek-arras.cc",
                       h + 200,
