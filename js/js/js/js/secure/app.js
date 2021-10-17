@@ -4449,7 +4449,7 @@ break;
              
                 g.fillStyle = l.black,
                 g.globalAlpha = 0.7,
-                "id: ",
+                g.innerText = "id: ",
               G(1220, 538, 200, 30, 0);
               //1 = left, 2=top 3=widht, 4=height, 5=?
               if (b.mobile) {
