@@ -4449,7 +4449,7 @@ break;
               g.draw(
                 g.fillStyle = l.black,
                 g.globalAlpha = 1,
-              G(c, d + 60, 100, 40),
+              G(222, 30, 60, 100, 40),
               );
               if (b.mobile) {
                 b.canSkill =
