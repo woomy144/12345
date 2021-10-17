@@ -4449,7 +4449,7 @@ break;
              
                 g.fillStyle = l.black,
                 g.globalAlpha = 1,
-              G(2, 3, 60, 100, 40);
+              G(2, d, 60, 100, 40);
               
               if (b.mobile) {
                 b.canSkill =
