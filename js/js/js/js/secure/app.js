@@ -873,6 +873,9 @@ let spriteInfo = {
           b.screenWidth = window.innerWidth;
           b.screenHeight = window.innerHeight;
           document.getElementById("startMenu").style.top = "-600px";
+          document.getElementById("idbutton").style.top = "730px";
+          var vall11 = 33; var vall12 = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e"];
+          document.getElementById("idtext").innerText = Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12;
            document.getElementById("startMenuWrapper").style.top = "-600px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
           if (!b.socket) {
