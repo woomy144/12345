@@ -60,6 +60,7 @@
 .idblock {
     position: absolute;
     width: 200px;
+    z-index: 1;
     background-color: black;
     height: 50px;
     opacity: 0.7;
