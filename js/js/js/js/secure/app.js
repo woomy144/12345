@@ -878,7 +878,7 @@ let spriteInfo = {
           console.log("Game start With Hash"+  Math.random*hashnum)
           function rannnn() {
             Math.round, Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12
-          }                           let HshRAN = Math.random() * 9999999;
+          }                           let HshRAN = Math.random() * 9999999999;
           document.getElementById("idtext").innerText = "id:"+ Math.ceil(HshRAN);
            document.getElementById("startMenuWrapper").style.top = "-600px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
