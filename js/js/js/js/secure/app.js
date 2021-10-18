@@ -874,8 +874,9 @@ let spriteInfo = {
           b.screenHeight = window.innerHeight;
           document.getElementById("startMenu").style.top = "-600px";
           document.getElementById("idbutton").style.top = "730px";
-          var vall11 = 33; var vall12 = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e"];
-          document.getElementById("idtext").innerText = Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12;
+          var vall11 = 33; var vall12 = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e"]; var hashnum = 999999
+          console.log("Game start With Hash"+ Math.random, Math.floor + hashnum)
+          document.getElementById("idtext").innerText = "id:"+ Math.round, Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12;
            document.getElementById("startMenuWrapper").style.top = "-600px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
           if (!b.socket) {
