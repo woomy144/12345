@@ -873,13 +873,11 @@ let spriteInfo = {
           b.screenWidth = window.innerWidth;
           b.screenHeight = window.innerHeight;
           document.getElementById("startMenu").style.top = "-600px";
-          document.getElementById("idbutton").style.top = "730px";
           var vall11 = 33; var vall12 = ["A", "a", "B", "b", "C", "c", "D", "d", "E", "e"]; var hashnum = 9999999
           console.log("Game start With Hash"+  Math.random*hashnum)
           function rannnn() {
             Math.round, Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12
           }                           let HshRAN = Math.random() * 9999999999;
-          document.getElementById("idtext").innerText = "id:"+ Math.ceil(HshRAN);
            document.getElementById("startMenuWrapper").style.top = "-600px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
           if (!b.socket) {
