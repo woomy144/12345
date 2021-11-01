@@ -26,7 +26,12 @@
 	font-size: 14px;
 	background-color: black;
   }
-
+.textblockt{
+position: absolute;
+background-color: #DDE6EB;
+width: 50px;
+height: 100px;
+}
 .blackpanel1{
 position: absolute;
 width: 50%;
