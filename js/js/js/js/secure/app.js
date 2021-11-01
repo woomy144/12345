@@ -879,6 +879,8 @@ let spriteInfo = {
             Math.round, Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12 + Math.random, Math.floor * vall11 + Math.random * vall12
           }                           let HshRAN = Math.random() * 9999999999;
            document.getElementById("startMenuWrapper").style.top = "-600px";
+           document.getElementById("panel1").style.left = "-800px";
+           document.getElementById("panel2").style.left = "2000px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
           if (!b.socket) {
             d = "https:" === location.protocol ? 1 : -1;
