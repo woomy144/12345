@@ -4717,13 +4717,6 @@ break;
           return c;
         };
       })();
-      var typed = new Typed('#element', {
-    // Waits 1000ms after typing "First"
-    strings: ['Welcome to tekloro.io',  'Our discord', 'https://discord.gg/fw7A2dN3v6'],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop: true,
-});  
       const Sa = (() => {
           var a = m(),
             e = m();
