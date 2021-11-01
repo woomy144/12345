@@ -881,7 +881,6 @@ let spriteInfo = {
            document.getElementById("startMenuWrapper").style.top = "-600px";
            document.getElementById("panel1").style.left = "-1000px";
            document.getElementById("panel2").style.left = "2000px";
-          document.getElementById("element").style.left = "2000px";
           document.getElementById("gameAreaWrapper").style.opacity = 1;
           if (!b.socket) {
             d = "https:" === location.protocol ? 1 : -1;
