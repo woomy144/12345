@@ -4739,8 +4739,11 @@ break;
               "Multiboxing is when you use a script to control multiple tanks at the same time. This is considered CHEATING and will result in a ban."
             ]
           ];
-          c = c[Math.floor(Math.random() * c.length)];
-          let g = c[Math.floor(Math.random() * c.length)];
+        c = c[Math.floor(Math.random() * c.length)];
+          let g =
+          setTimeout(() => {
+          c[Math.floor(Math.random() * c.length)];
+          }, 2000)
           return () => {
             F(l.white, 0.5);
             a.draw(
