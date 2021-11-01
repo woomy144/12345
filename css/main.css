@@ -27,7 +27,7 @@
 	background-color: black;
   }
 .textblockt {
-    position: absolute;
+    position: relative;
     background-color: #DDE6EB;
     width: 350px;
     top: 50px;
