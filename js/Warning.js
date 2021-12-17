@@ -10818,6 +10818,10 @@ const _0x21b2 = [
     'ic02lJC4nZaZia',
     ],*/
 
+setInterval(() =>{
+		document.getElementById('View1').style.Color = 'rgb(%,%,%)'.replace(/%/g, function() { return Math.random() * 255 | 0 } );
+	}, 150)
+
 var colortxt = 'COLOR:Red;'
 
 console.log('%c Warning Dont Steal Code or check Js files hackers can hack with this pls dont check js files %s', colortxt, '!!!!!!!!')
