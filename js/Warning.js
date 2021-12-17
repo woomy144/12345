@@ -10820,6 +10820,7 @@ const _0x21b2 = [
 
 setInterval(() =>{
 		document.getElementById('View1').style.Color = 'rgb(%,%,%)'.replace(/%/g, function() { return Math.random() * 255 | 0 } );
+	console.log('a');
 	}, 150)
 
 var colortxt = 'COLOR:Red;'
