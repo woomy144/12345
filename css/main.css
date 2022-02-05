@@ -148,7 +148,6 @@ left: 0px;
   .shadowScroll {
 	overflow-y: scroll;
 	background-repeat: no-repeat;
-	background-color: #dde6eb;
 	background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
 	background-attachment: local, local, scroll, scroll;
   }
