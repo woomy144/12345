@@ -214,7 +214,7 @@ left: 0px;
  #startMenu {
     position: relative;
     margin: 0 auto;
-    max-width: 1250px;
+    max-width: 1150px;
     max-height: 430px;
     padding: 10px;
     border-radius: 5px;
@@ -263,7 +263,7 @@ left: 0px;
   
   .startMenuHolder1 {
 	width: 350px;
-	height: 350px;
+	height: 400px;
 	padding: 10px;
 	overflow: hidden;
 	display: inline-block;
@@ -276,7 +276,7 @@ left: 0px;
   }
 .startMenuHolder2 {
 	width: 350px;
-	height: 350px;
+	height: 400px;
 	padding: 10px;
 	overflow: hidden;
 	display: inline-block;
