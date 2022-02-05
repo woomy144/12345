@@ -228,7 +228,6 @@ left: 0px;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    background-color: #DDE6EB;
     background-image: url(media.discordapp.net/attachments/711385424144236597/722597417442213928/screenshot_AVATAR.png);
     box-sizing: border-box;
     overflow: hidden;
@@ -270,7 +269,7 @@ left: 0px;
 	height: 100%;
   }
   
-  .startMenuHolder {
+  .startMenuHolder1 {
 	width: 350px;
 	height: 400px;
 	padding: 10px;
@@ -278,13 +277,28 @@ left: 0px;
 	display: inline-block;
 	vertical-align: text-top;
 	  border-radius: 5px;
+	   background-color: #DDE6EB;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #DDE6EB;
+    background-image: url(media.discordapp.net/attachments/711385424144236597/722597417442213928/screenshot_AVATAR.png);
+  }
+.startMenuHolder2 {
+	width: 350px;
+	height: 400px;
+	padding: 10px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: text-top;
+	  border-radius: 5px;
+	   background-color: #DDE6EB;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     background-color: #DDE6EB;
     background-image: url(media.discordapp.net/attachments/711385424144236597/722597417442213928/screenshot_AVATAR.png);
   }
   
-  .startMenuHolder.shrinkable {
+  .startMenuHolder1.shrinkable {
 	width: calc(100% - 780px);
   }
   body.mobile .startMenuHolder {
