@@ -24,7 +24,7 @@
   body {
 	font-family: Ubuntu;
 	font-size: 14px;
-	background: url(./img/bpanel.png);
+	background-image: url(../img/bpanel.png);
   }
 .textblockt {
     position: relative;
