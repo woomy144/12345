@@ -31,8 +31,17 @@ height:100%;
   body {
 	font-family: Ubuntu;
 	font-size: 14px;
-	background-image: url(../img/bpanel.png);
+	 background: url('https://cdn.glitch.com/53ad2008-c229-48de-b9a3-900186b7a262%2Fthumbnails%2Fbackground.png?1585055561910');
+	  animation: upwee 500s linear infinite
   }
+@keyframes upwee {
+  0%{
+    background-position: 0% 0%
+  }
+  100%{
+    background-position: 1000% -1000%
+  }
+}
 .textblockt {
     position: relative;
     background-color: #DDE6EB;
